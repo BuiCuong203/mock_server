@@ -1,0 +1,21 @@
+{
+  "name": "cw_11_connection_drop",
+  "description": "GĐ3 - Lỗi mạng: mock cắt kết nối không trả response (connection reset/EOF) -> lỗi mạng, giữ nguyên last_query",
+  "rules": [
+    {
+      "id": "cw_11_connection_drop_1",
+      "name": "[CW] Cắt kết nối",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "drop_connection": true
+      }
+    }
+  ]
+}

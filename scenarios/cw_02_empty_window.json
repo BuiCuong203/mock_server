@@ -1,0 +1,33 @@
+{
+  "name": "cw_02_empty_window",
+  "description": "GĐ3 - Phản hồi RỖNG (0 event): không đẩy Kafka nhưng VẪN lưu last_query = endTime + 1 (Time-Window Advance)",
+  "rules": [
+    {
+      "id": "cw_02_empty_window_1",
+      "name": "[CW] FilterLogEvents rỗng",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "m365_audit_dlp_all",
+  "description": "M365 - Mock content type DLP_All",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "CreationTime": "{{NOW_ISO}}",
+            "Id": "dlp-{{TIMESTAMP}}",
+            "Operation": "DlpRuleMatch",
+            "PolicyDetails": [
+              {
+                "PolicyName": "PCI-DSS Credit Card",
+                "Rules": [
+                  {
+                    "RuleName": "Detect Card"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

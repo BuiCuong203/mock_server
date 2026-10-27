@@ -1,0 +1,28 @@
+[
+  {
+    "id": "rule_sls_logstore_api",
+    "name": "Alibaba SLS: consumer group + cursor + PullLogs (protobuf/LZ4), luồng log tự sinh",
+    "category": "log_service_alibaba",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "*",
+      "path": "/logstores/",
+      "path_match": "prefix",
+      "headers": {
+        "x-log-apiversion": "*"
+      }
+    },
+    "response": {
+      "stateful": {
+        "type": "sls",
+        "shards": 2,
+        "rate_per_shard": 2,
+        "backlog_seconds": 300,
+        "log_group_size": 10,
+        "topic": "actiontrail_audit_event",
+        "source": "10.0.0.1"
+      }
+    }
+  }
+]

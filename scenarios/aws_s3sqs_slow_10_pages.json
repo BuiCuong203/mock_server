@@ -1,0 +1,108 @@
+{
+  "name": "aws_s3sqs_slow_10_pages",
+  "description": "aws_s3sqs - Ch\u1eadm 3s trong 10 trang \u0111\u1ea7u",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "name": "Override: aws_s3sqs Slow 10 Pages",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "sequence": [
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          },
+          {
+            "delay_ms": 10,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+          }
+        ]
+      }
+    }
+  ]
+}

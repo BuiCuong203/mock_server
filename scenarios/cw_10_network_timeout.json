@@ -1,0 +1,42 @@
+{
+  "name": "cw_10_network_timeout",
+  "description": "GĐ3 - Lỗi mạng: treo 70s không phản hồi (vượt ResponseHeaderTimeout 60s khi đi qua proxy) -> lỗi timeout, giữ nguyên last_query",
+  "rules": [
+    {
+      "id": "cw_10_network_timeout_1",
+      "name": "[CW] Treo 70s",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "{{UUID}}",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:5}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-late-{{COUNTER}}\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        },
+        "delay_ms": 70000
+      }
+    }
+  ]
+}

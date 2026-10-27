@@ -1,0 +1,31 @@
+{
+  "name": "azure_single_record",
+  "description": "azure - Tr\u1ea3 v\u1ec1 duy nh\u1ea5t 1 b\u1ea3n ghi",
+  "rules": [
+    {
+      "id": "rule_azure_signin_logs_proxy",
+      "name": "Override: azure Single Record",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "value": [
+            {
+              "id": "azure-single-1",
+              "createdDateTime": "2030-10-06T00:00:00Z",
+              "userPrincipalName": "admin@contoso.com"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cw_15_auth_invalid_key",
+  "description": "GĐ2 - Sai Access Key ID (UnrecognizedClientException 400)",
+  "rules": [
+    {
+      "id": "cw_15_auth_invalid_key_1",
+      "name": "[CW] UnrecognizedClient",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "UnrecognizedClientException"
+        },
+        "body": {
+          "__type": "UnrecognizedClientException",
+          "message": "The security token included in the request is invalid."
+        }
+      }
+    }
+  ]
+}

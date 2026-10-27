@@ -1,0 +1,55 @@
+{
+  "name": "cw_01_success_single_page",
+  "description": "GĐ3 - CÓ dữ liệu, 1 trang (không nextToken): 3 event -> Kafka nhận 3 bản ghi, last_query = endTime + 1",
+  "rules": [
+    {
+      "id": "cw_01_success_single_page_1",
+      "name": "[CW] FilterLogEvents 3 event, hết trang",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "{{UUID}}",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:9}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-{{COUNTER}}\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "{{UUID}}",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:6}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-{{COUNTER}}\",\"user\":\"developer_01\",\"action\":\"AuthorizeSecurityGroupIngress\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "{{UUID}}",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:3}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-{{COUNTER}}\",\"user\":\"ops\",\"action\":\"DeleteBucket\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

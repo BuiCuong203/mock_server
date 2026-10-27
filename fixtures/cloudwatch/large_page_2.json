@@ -1,0 +1,3510 @@
+{
+ "events": [
+  {
+   "eventId": "cw-big-p2-0001",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0001\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0002",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0002\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0003",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0003\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0004",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0004\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0005",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0005\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0006",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0006\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0007",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0007\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0008",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0008\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0009",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0009\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0010",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0010\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0011",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0011\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0012",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0012\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0013",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0013\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0014",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0014\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0015",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0015\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0016",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0016\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0017",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0017\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0018",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0018\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0019",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0019\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0020",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0020\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0021",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0021\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0022",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0022\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0023",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0023\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0024",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0024\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0025",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0025\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0026",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0026\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0027",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0027\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0028",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0028\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0029",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0029\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0030",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0030\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0031",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0031\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0032",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0032\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0033",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0033\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0034",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0034\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0035",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0035\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0036",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0036\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0037",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0037\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0038",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0038\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0039",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0039\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0040",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0040\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0041",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0041\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0042",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0042\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0043",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0043\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0044",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0044\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0045",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0045\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0046",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0046\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0047",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0047\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0048",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0048\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0049",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0049\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0050",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0050\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0051",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0051\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0052",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0052\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0053",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0053\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0054",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0054\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0055",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0055\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0056",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0056\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0057",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0057\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0058",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0058\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0059",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0059\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0060",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0060\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0061",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0061\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0062",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0062\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0063",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0063\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0064",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0064\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0065",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0065\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0066",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0066\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0067",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0067\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0068",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0068\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0069",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0069\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0070",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0070\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0071",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0071\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0072",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0072\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0073",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0073\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0074",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0074\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0075",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0075\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0076",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0076\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0077",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0077\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0078",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0078\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0079",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0079\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0080",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0080\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0081",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0081\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0082",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0082\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0083",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0083\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0084",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0084\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0085",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0085\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0086",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0086\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0087",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0087\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0088",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0088\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0089",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0089\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0090",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0090\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0091",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0091\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0092",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0092\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0093",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0093\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0094",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0094\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0095",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0095\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0096",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0096\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0097",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0097\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0098",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0098\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0099",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0099\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0100",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0100\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0101",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0101\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0102",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0102\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0103",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0103\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0104",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0104\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0105",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0105\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0106",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0106\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0107",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0107\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0108",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0108\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0109",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0109\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0110",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0110\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0111",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0111\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0112",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0112\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0113",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0113\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0114",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0114\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0115",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0115\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0116",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0116\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0117",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0117\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0118",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0118\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0119",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0119\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0120",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0120\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0121",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0121\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0122",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0122\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0123",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0123\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0124",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0124\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0125",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0125\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0126",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0126\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0127",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0127\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0128",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0128\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0129",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0129\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0130",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0130\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0131",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0131\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0132",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0132\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0133",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0133\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0134",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0134\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0135",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0135\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0136",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0136\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0137",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0137\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0138",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0138\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0139",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0139\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0140",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0140\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0141",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0141\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0142",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0142\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0143",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0143\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0144",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0144\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0145",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0145\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0146",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0146\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0147",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0147\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0148",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0148\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0149",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0149\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0150",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0150\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0151",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0151\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0152",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0152\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0153",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0153\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0154",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0154\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0155",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0155\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0156",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0156\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0157",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0157\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0158",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0158\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0159",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0159\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0160",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0160\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0161",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0161\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0162",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0162\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0163",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0163\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0164",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0164\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0165",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0165\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0166",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0166\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0167",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0167\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0168",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0168\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0169",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0169\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0170",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0170\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0171",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0171\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0172",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0172\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0173",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0173\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0174",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0174\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0175",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0175\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0176",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0176\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0177",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0177\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0178",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0178\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0179",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0179\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0180",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0180\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0181",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0181\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0182",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0182\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0183",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0183\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0184",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0184\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0185",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0185\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0186",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0186\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0187",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0187\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0188",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0188\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0189",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0189\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0190",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0190\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0191",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0191\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0192",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0192\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0193",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0193\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0194",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0194\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0195",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0195\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0196",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0196\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0197",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0197\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0198",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0198\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0199",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0199\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0200",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0200\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0201",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0201\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0202",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0202\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0203",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0203\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0204",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0204\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0205",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0205\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0206",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0206\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0207",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0207\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0208",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0208\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0209",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0209\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0210",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0210\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0211",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0211\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0212",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0212\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0213",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0213\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0214",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0214\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0215",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0215\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0216",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0216\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0217",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0217\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0218",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0218\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0219",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0219\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0220",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0220\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0221",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0221\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0222",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0222\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0223",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0223\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0224",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0224\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0225",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0225\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0226",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0226\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0227",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0227\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0228",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0228\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0229",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0229\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0230",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0230\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0231",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0231\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0232",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0232\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0233",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0233\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0234",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0234\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0235",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0235\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0236",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0236\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0237",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0237\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0238",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0238\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0239",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0239\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0240",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0240\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0241",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0241\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0242",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0242\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0243",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0243\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0244",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0244\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0245",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0245\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0246",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0246\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0247",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0247\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0248",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0248\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0249",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0249\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0250",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0250\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0251",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0251\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0252",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0252\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0253",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0253\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0254",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0254\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0255",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0255\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0256",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0256\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0257",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0257\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0258",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0258\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0259",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0259\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0260",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0260\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0261",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0261\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0262",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0262\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0263",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0263\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0264",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0264\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0265",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0265\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0266",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0266\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0267",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0267\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0268",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0268\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0269",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0269\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0270",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0270\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0271",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0271\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0272",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0272\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0273",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0273\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0274",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0274\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0275",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0275\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0276",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0276\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0277",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0277\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0278",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0278\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0279",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0279\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0280",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0280\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0281",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0281\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0282",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0282\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0283",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0283\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0284",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0284\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0285",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0285\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0286",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0286\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0287",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0287\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0288",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0288\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0289",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0289\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0290",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0290\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0291",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0291\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0292",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0292\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0293",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0293\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0294",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0294\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0295",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0295\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0296",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0296\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0297",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0297\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0298",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0298\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0299",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0299\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0300",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0300\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0301",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0301\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0302",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0302\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0303",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0303\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0304",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0304\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0305",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0305\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0306",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0306\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0307",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0307\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0308",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0308\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0309",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0309\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0310",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0310\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0311",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0311\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0312",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0312\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0313",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0313\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0314",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0314\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0315",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0315\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0316",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0316\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0317",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0317\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0318",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0318\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0319",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0319\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0320",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0320\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0321",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0321\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0322",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0322\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0323",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0323\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0324",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0324\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0325",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0325\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0326",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0326\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0327",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0327\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0328",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0328\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0329",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0329\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0330",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0330\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0331",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0331\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0332",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0332\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0333",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0333\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0334",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0334\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0335",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0335\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0336",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0336\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0337",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0337\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0338",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0338\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0339",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0339\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0340",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0340\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0341",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0341\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0342",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0342\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0343",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0343\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0344",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0344\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0345",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0345\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0346",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0346\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0347",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0347\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0348",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0348\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0349",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0349\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0350",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0350\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0351",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0351\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0352",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0352\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0353",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0353\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0354",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0354\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0355",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0355\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0356",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0356\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0357",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0357\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0358",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0358\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0359",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0359\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0360",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0360\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0361",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0361\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0362",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0362\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0363",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0363\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0364",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0364\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0365",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0365\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0366",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0366\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0367",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0367\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0368",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0368\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0369",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0369\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0370",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0370\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0371",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0371\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0372",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0372\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0373",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0373\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0374",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0374\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0375",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0375\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0376",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0376\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0377",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0377\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0378",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0378\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0379",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0379\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0380",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0380\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0381",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0381\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0382",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0382\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0383",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0383\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0384",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0384\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0385",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0385\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0386",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0386\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0387",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0387\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0388",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0388\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0389",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0389\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0390",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0390\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0391",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0391\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0392",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0392\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0393",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0393\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0394",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0394\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0395",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0395\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0396",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0396\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0397",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0397\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0398",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0398\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0399",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0399\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0400",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0400\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0401",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0401\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0402",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0402\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0403",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0403\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0404",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0404\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0405",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0405\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0406",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0406\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0407",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0407\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0408",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0408\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0409",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0409\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0410",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0410\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0411",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0411\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0412",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0412\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0413",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0413\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0414",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0414\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0415",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0415\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0416",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0416\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0417",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0417\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0418",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0418\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0419",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0419\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0420",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0420\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0421",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0421\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0422",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0422\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0423",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0423\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0424",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0424\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0425",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0425\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0426",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0426\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0427",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0427\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0428",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0428\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0429",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0429\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0430",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0430\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0431",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0431\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0432",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0432\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0433",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0433\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0434",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0434\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0435",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0435\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0436",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0436\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0437",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0437\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0438",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0438\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0439",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0439\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0440",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0440\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0441",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0441\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0442",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0442\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0443",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0443\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0444",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0444\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0445",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0445\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0446",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0446\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0447",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0447\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0448",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0448\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0449",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0449\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0450",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0450\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0451",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0451\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0452",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0452\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0453",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0453\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0454",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0454\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0455",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0455\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0456",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0456\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0457",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0457\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0458",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0458\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0459",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0459\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0460",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0460\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0461",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0461\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0462",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0462\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0463",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0463\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0464",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0464\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0465",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0465\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0466",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0466\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0467",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0467\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0468",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0468\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0469",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0469\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0470",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0470\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0471",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0471\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0472",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0472\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0473",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0473\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0474",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0474\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0475",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0475\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0476",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0476\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0477",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0477\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0478",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0478\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0479",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0479\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0480",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0480\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0481",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0481\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0482",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0482\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0483",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0483\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0484",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0484\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0485",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0485\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0486",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0486\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0487",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0487\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0488",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0488\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0489",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0489\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0490",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0490\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0491",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0491\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0492",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0492\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0493",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0493\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0494",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0494\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0495",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0495\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0496",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0496\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0497",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0497\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0498",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0498\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0499",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0499\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  },
+  {
+   "eventId": "cw-big-p2-0500",
+   "logStreamName": "mock-stream-01",
+   "timestamp": "{{PAST_MS:15}}",
+   "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-big-p2-0500\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+   "ingestionTime": "{{NOW_MS}}"
+  }
+ ],
+ "searchedLogStreams": [
+  {
+   "logStreamName": "mock-stream-01",
+   "searchedCompletely": true
+  }
+ ]
+}

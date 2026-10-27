@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  snmpd-mock:
+    build: .
+    image: snmpd-mock:latest
+    container_name: snmpd-mock
+    hostname: mock-snmp-01
+    restart: unless-stopped
+    ports:
+      - "1161:161/udp"   # collector poll: udp:<IP máy host>/1161/cym_ro_2026
+      - "1161:161/tcp"   # hoặc tcp:<IP máy host>/1161/cym_ro_2026
+    volumes:
+      - ./snmpd.conf:/etc/snmp/snmpd.conf:ro   # sửa conf rồi: docker compose restart

@@ -1,0 +1,29 @@
+{
+  "name": "m365_single_record",
+  "description": "m365 - Tr\u1ea3 v\u1ec1 duy nh\u1ea5t 1 b\u1ea3n ghi",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "name": "Override: m365 Single Record",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "CreationTime": "2030-10-06T00:00:00Z",
+            "Id": "m365-single-1",
+            "Operation": "Mock"
+          }
+        ]
+      }
+    }
+  ]
+}

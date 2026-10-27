@@ -1,0 +1,15 @@
+# e2e: beats_default — giống cấu hình genconfig sinh (log source beats, codec plain); e2e đổi port 5044 -> 15046
+input:
+  - type: beats
+    client_inactivity_timeout: 60
+    codec:
+      type: plain
+    port: 15046
+    input_id: "beats_default"
+    add_field:
+      input_plugin: beats
+      proto_id: beats_5044
+      input_id: beats_default
+      log_source_name: "e2e beats_default"
+output:
+  - type: stdout

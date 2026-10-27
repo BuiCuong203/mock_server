@@ -1,0 +1,90 @@
+{
+  "name": "cw_21_single_page_3_events",
+  "description": "CloudWatch - 1 trang duy nhất chứa 3 bản ghi (Kiểm tra chỉ số thời gian)",
+  "rules": [
+    {
+      "id": "rule_cloudwatch_filter_events",
+      "name": "Override: CloudWatch FilterLogEvents 3 records",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "evt-cw-1",
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 1\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "evt-cw-2",
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 2\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "evt-cw-3",
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 3\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ],
+          "nextToken": null
+        }
+      }
+    },
+    {
+      "id": "rule_cloudwatch_getlogevents",
+      "name": "Override: CloudWatch GetLogEvents 3 records",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.GetLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 1\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 2\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "timestamp": "{{NOW_MS}}",
+              "message": "{\"msg\":\"Event 3\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "nextForwardToken": "f/mock_next_fwd_token",
+          "nextBackwardToken": "b/mock_next_bwd_token"
+        }
+      }
+    }
+  ]
+}

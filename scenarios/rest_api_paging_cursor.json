@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_paging_cursor",
+  "description": "REST API - Phân trang Cursor-Based (Stateful, hỗ trợ truyền param cursor)",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: REST API Logs Stateful Cursor",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "cursor",
+          "dataset_file": "rest_cursor_dataset.json",
+          "page_size": 50
+        }
+      }
+    }
+  ]
+}

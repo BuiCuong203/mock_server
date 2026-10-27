@@ -1,0 +1,29 @@
+{
+  "name": "cw_18_log_group_not_found",
+  "description": "GĐ2 - Sai log group / log group đã bị xóa (ResourceNotFoundException 400)",
+  "rules": [
+    {
+      "id": "cw_18_log_group_not_found_1",
+      "name": "[CW] ResourceNotFound",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "ResourceNotFoundException"
+        },
+        "body": {
+          "__type": "ResourceNotFoundException",
+          "message": "The specified log group does not exist."
+        }
+      }
+    }
+  ]
+}

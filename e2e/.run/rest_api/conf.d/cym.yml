@@ -1,0 +1,18 @@
+# e2e: rest_api  (http://localhost:18081 được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: rest_api
+    input_id: "e2e_rest_api"
+    log_url: "http://localhost:18081/mock/rest_api/logs"
+    api_key: "Authorization"
+    api_secret: "Bearer mock_api_secret_123456"
+    interval_minute: 1
+    duration_hour: 24
+    event_key: "events"
+    time_key: ".timestamp"
+    time_filter_key: "since"
+    cursor_param_key: "cursor"
+    cursor_data_key: ".body.next_cursor"
+    add_field:
+      log_source_name: "e2e rest_api"
+output:
+  - type: stdout

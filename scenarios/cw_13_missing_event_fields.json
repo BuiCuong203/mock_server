@@ -1,0 +1,39 @@
+{
+  "name": "cw_13_missing_event_fields",
+  "description": "PHÁT HIỆN LỖI - Event thiếu message/ingestionTime: receive.go deref con trỏ nil -> shipper PANIC",
+  "rules": [
+    {
+      "id": "cw_13_missing_event_fields_1",
+      "name": "[CW] Event thiếu field",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "cw-nofield-{{COUNTER}}",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:5}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

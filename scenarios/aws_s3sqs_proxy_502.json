@@ -1,0 +1,24 @@
+{
+  "name": "aws_s3sqs_proxy_502",
+  "description": "aws_s3sqs - L\u1ed7i 502 Bad Gateway",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "name": "Override: 502 Bad Gateway",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "status": 502,
+        "headers": {
+          "Content-Type": "text/html",
+          "Server": "nginx/1.18.0"
+        },
+        "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.18.0</center>\r\n</body>\r\n</html>"
+      }
+    }
+  ]
+}

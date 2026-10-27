@@ -1,0 +1,14 @@
+# e2e: beats_tls — input beats bật TLS (dùng server cert của mock), Mock Sender gửi với tls: true
+input:
+  - type: beats
+    host: "0.0.0.0"
+    port: 15045
+    ssl: true
+    ssl_certificate: "__ROOT_DIR__/certs/server.crt"
+    ssl_key: "__ROOT_DIR__/certs/server.key"
+    codec:
+      type: plain
+    add_field:
+      log_source_name: "e2e beats_tls"
+output:
+  - type: stdout

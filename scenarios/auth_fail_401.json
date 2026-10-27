@@ -1,0 +1,64 @@
+{
+  "name": "auth_fail_401",
+  "description": "Giả lập lỗi xác thực Token (401 Unauthorized / Token Expired) để test cơ chế tự làm mới token của Shipper",
+  "rules": [
+    {
+      "id": "rule_auth_fail_rest",
+      "name": "401 Unauthorized on REST API",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "WWW-Authenticate": "Bearer error=\"invalid_token\", error_description=\"The access token expired\""
+        },
+        "body": {
+          "error": "Unauthorized",
+          "message": "Access token has expired or is invalid."
+        }
+      }
+    },
+    {
+      "id": "rule_auth_fail_azure",
+      "name": "401 Invalid Authentication on Azure",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/azure",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": {
+            "code": "InvalidAuthenticationToken",
+            "message": "Access token has expired or is not yet valid."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_auth_fail_defender",
+      "name": "401 Unauthorized on Microsoft Defender",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": {
+            "code": "Unauthorized",
+            "message": "Caller is not authorized to read alert entities."
+          }
+        }
+      }
+    }
+  ]
+}

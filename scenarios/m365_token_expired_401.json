@@ -1,0 +1,50 @@
+{
+  "name": "m365_token_expired_401",
+  "description": "M365 - Token hết hạn (Các API Content trả về 401), ép Shipper xin lại token",
+  "rules": [
+    {
+      "id": "rule_m365_content_blobs",
+      "name": "Override: M365 Content Blobs Expired",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/subscriptions/content",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "AF40001",
+            "message": "The token is expired or invalid."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_m365_blob_content",
+      "name": "Override: M365 Blob Content Expired",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "AF40001",
+            "message": "The token is expired or invalid."
+          }
+        }
+      }
+    }
+  ]
+}

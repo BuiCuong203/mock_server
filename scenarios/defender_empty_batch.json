@@ -1,0 +1,48 @@
+{
+  "name": "defender_empty_batch",
+  "description": "Defender - Trả về dữ liệu rỗng (0 alert) qua cả Proxy và Direct",
+  "rules": [
+    {
+      "id": "rule_defender_alerts",
+      "name": "Override: Defender Direct Empty",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
+          "@odata.nextLink": null,
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Defender Proxy Empty",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Alerts",
+          "@odata.nextLink": null,
+          "value": []
+        }
+      }
+    }
+  ]
+}

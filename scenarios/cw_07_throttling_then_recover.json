@@ -1,0 +1,56 @@
+{
+  "name": "cw_07_throttling_then_recover",
+  "description": "GĐ3 - Throttling rồi phục hồi: request lẻ bị 400 Throttling, request chẵn thành công -> SDK retry tự vượt qua trong cùng chu kỳ",
+  "rules": [
+    {
+      "id": "cw_07_throttling_then_recover_1",
+      "name": "[CW] Throttling xen kẽ thành công",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "sequence": [
+          {
+            "status": 400,
+            "headers": {
+              "Content-Type": "application/x-amz-json-1.1",
+              "x-amzn-ErrorType": "ThrottlingException"
+            },
+            "body": {
+              "__type": "ThrottlingException",
+              "message": "Rate exceeded"
+            }
+          },
+          {
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/x-amz-json-1.1"
+            },
+            "body": {
+              "events": [
+                {
+                  "eventId": "{{UUID}}",
+                  "logStreamName": "mock-stream-01",
+                  "timestamp": "{{PAST_MS:5}}",
+                  "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-recover-{{COUNTER}}\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+                  "ingestionTime": "{{NOW_MS}}"
+                }
+              ],
+              "searchedLogStreams": [
+                {
+                  "logStreamName": "mock-stream-01",
+                  "searchedCompletely": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

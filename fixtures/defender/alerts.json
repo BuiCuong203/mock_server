@@ -1,0 +1,28 @@
+{
+  "@odata.nextLink": null,
+  "value": [
+    {
+      "id": "da-{{TIMESTAMP}}",
+      "incidentId": {{RANDOM_INT:10000:99999}},
+      "investigationId": null,
+      "assignedTo": null,
+      "severity": "Medium",
+      "status": "New",
+      "classification": null,
+      "determination": null,
+      "investigationState": "Queued",
+      "detectionSource": "WindowsDefenderAtp",
+      "detectorId": "powershell_encoded_exec",
+      "category": "Execution",
+      "threatFamilyName": null,
+      "title": "Suspicious execution via PowerShell encoded payload",
+      "description": "A base64 encoded command was executed in powershell.exe invoking hidden window bypass execution policy",
+      "alertCreationTime": "{{NOW_ISO}}",
+      "firstEventTime": "{{PAST_ISO:60}}",
+      "lastEventTime": "{{NOW_ISO}}",
+      "lastUpdateTime": "{{NOW_ISO}}",
+      "machineId": "{{UUID}}",
+      "computerDnsName": "DESKTOP-SEC-VN01"
+    }
+  ]
+}

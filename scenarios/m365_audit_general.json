@@ -1,0 +1,32 @@
+{
+  "name": "m365_audit_general",
+  "description": "M365 - Mock content type General",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "CreationTime": "{{NOW_ISO}}",
+            "Id": "tm-{{TIMESTAMP}}",
+            "Operation": "MemberAdded",
+            "OrganizationId": "tenant-01",
+            "RecordType": 25,
+            "ResultStatus": "Success",
+            "UserId": "admin@contoso.com",
+            "TeamName": "Security Incident Team"
+          }
+        ]
+      }
+    }
+  ]
+}

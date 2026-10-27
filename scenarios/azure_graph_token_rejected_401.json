@@ -1,0 +1,35 @@
+{
+  "name": "azure_graph_token_rejected_401",
+  "description": "Azure: lấy token OK nhưng Graph từ chối token -> 401 InvalidAuthenticationToken (token sai audience/hết hạn)",
+  "rules": [
+    {
+      "id": "azure_graph_401",
+      "name": "[AZURE GRAPH] 401 InvalidAuthenticationToken",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json",
+          "request-id": "{{UUID}}"
+        },
+        "body": {
+          "error": {
+            "code": "InvalidAuthenticationToken",
+            "message": "Access token validation failure. Invalid audience.",
+            "innerError": {
+              "date": "{{NOW_ISO}}",
+              "request-id": "{{UUID}}",
+              "client-request-id": "{{UUID}}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

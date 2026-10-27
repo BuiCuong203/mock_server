@@ -1,0 +1,26 @@
+{
+  "name": "cw_12_malformed_response",
+  "description": "GĐ3 - Phản hồi 200 nhưng JSON hỏng -> SDK lỗi deserialize, giữ nguyên last_query",
+  "rules": [
+    {
+      "id": "cw_12_malformed_response_1",
+      "name": "[CW] JSON hỏng",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body_type": "text",
+        "body": "{\"events\": [ {\"eventId\": \"broken\", \"message\": \"cut here"
+      }
+    }
+  ]
+}

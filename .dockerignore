@@ -1,0 +1,28 @@
+.git
+.server.pid
+server.log
+*.log
+**/*.tar.gz
+__pycache__
+*.pyc
+*.7z
+**/*.bak
+**/*.bak-*
+
+# Dữ liệu mount từ ngoài (xem volumes trong docker-compose.yml) -> không đóng vào image
+certs
+fixtures
+rules
+scenarios
+datasets
+
+# Nexpose / Rapid7 mock: không đóng vào image (nặng, chạy riêng)
+nexpose_mock
+generate_rapid7_dataset.py
+
+# Log / thư mục chạy thử e2e và binary pubsub_mock (chạy ngoài container)
+e2e/.run
+pubsub_mock/pubsub_mock
+
+# binary build sẵn trên máy (image tự build pubsub_mock ở stage riêng)
+bin/

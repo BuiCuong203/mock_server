@@ -1,0 +1,25 @@
+{
+  "@odata.nextLink": "",
+  "value": [
+    {
+      "id": "{{UUID}}",
+      "createdDateTime": "{{NOW_ISO}}",
+      "userPrincipalName": "john.doe@contoso.com",
+      "userDisplayName": "John Doe",
+      "userId": "{{UUID}}",
+      "appId": "{{UUID}}",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "14.162.140.22",
+      "clientAppUsed": "Browser",
+      "status": {
+        "errorCode": 0,
+        "failureReason": null
+      },
+      "location": {
+        "city": "Hanoi",
+        "state": "Hanoi",
+        "countryOrRegion": "VN"
+      }
+    }
+  ]
+}

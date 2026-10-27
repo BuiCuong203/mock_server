@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_large_dataset",
+  "description": "REST API - 8315 events (5 events/phút) (Stateful cursor)",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: REST API Stateful Dataset",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "cursor",
+          "dataset_file": "rest_large.json",
+          "page_size": 100
+        }
+      }
+    }
+  ]
+}

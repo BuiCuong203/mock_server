@@ -1,0 +1,3898 @@
+{
+  "data": [
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1000",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-000",
+      "ip": "10.19.155.162",
+      "mac": "77:2B:4F:C7:A6:FD",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-16T04:25:29.000Z",
+      "last_scan_end": "2026-10-16T05:05:29.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T05:05:29.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1001",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 4,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "WIN-db-001",
+      "ip": "10.12.15.11",
+      "mac": "44:B8:35:C0:E7:19",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 2438.57,
+      "last_scan_start": "2026-10-16T12:37:44.000Z",
+      "last_scan_end": "2026-10-16T12:48:44.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T12:48:44.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-13T12:48:44.000Z",
+          "key": "",
+          "last_found": "2026-10-16T12:48:44.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-19T12:48:44.000Z",
+          "key": "",
+          "last_found": "2026-10-16T12:48:44.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-13T12:48:44.000Z",
+          "key": "",
+          "last_found": "2026-10-16T12:48:44.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-10-05T12:48:44.000Z",
+          "key": "",
+          "last_found": "2026-10-16T12:48:44.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1002",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-db-002",
+      "ip": "10.16.118.190",
+      "mac": "EB:FC:C3:27:F5:93",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-16T10:11:19.000Z",
+      "last_scan_end": "2026-10-16T10:30:19.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T10:30:19.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1003",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 3,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 5,
+      "exploits": 3,
+      "malware_kits": 0,
+      "host_name": "srv-app-003",
+      "ip": "10.25.137.249",
+      "mac": "32:6F:FA:94:92:ED",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 3452.26,
+      "last_scan_start": "2026-10-15T23:50:32.000Z",
+      "last_scan_end": "2026-10-16T00:09:32.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T00:09:32.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-07T00:09:32.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:09:32.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-17T00:09:32.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:09:32.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-09T00:09:32.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:09:32.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-10-07T00:09:32.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:09:32.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-20T00:09:32.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:09:32.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1004",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-db-004",
+      "ip": "10.26.134.244",
+      "mac": "B8:43:8F:39:BA:76",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-15T15:00:47.000Z",
+      "last_scan_end": "2026-10-15T15:16:47.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T15:16:47.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1005",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-ad-005",
+      "ip": "10.21.192.81",
+      "mac": "3D:A9:00:A6:AD:CB",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 966.74,
+      "last_scan_start": "2026-10-15T11:31:58.000Z",
+      "last_scan_end": "2026-10-15T11:34:58.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T11:34:58.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-08T11:34:58.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:34:58.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-29T11:34:58.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:34:58.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-26T11:34:58.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:34:58.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1006",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-006",
+      "ip": "10.19.76.64",
+      "mac": "88:DF:A1:61:BF:DB",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1176.78,
+      "last_scan_start": "2026-10-16T01:45:57.000Z",
+      "last_scan_end": "2026-10-16T02:15:57.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T02:15:57.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-06T02:15:57.000Z",
+          "key": "",
+          "last_found": "2026-10-16T02:15:57.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-25T02:15:57.000Z",
+          "key": "",
+          "last_found": "2026-10-16T02:15:57.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1007",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-ad-007",
+      "ip": "10.23.175.73",
+      "mac": "98:82:85:CF:7A:9A",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 2185.2,
+      "last_scan_start": "2026-10-16T22:34:49.000Z",
+      "last_scan_end": "2026-10-16T22:55:49.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T22:55:49.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-25T22:55:49.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:55:49.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-26T22:55:49.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:55:49.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-20T22:55:49.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:55:49.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1008",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-db-008",
+      "ip": "10.27.98.63",
+      "mac": "2E:59:AF:2E:A3:7A",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 606.29,
+      "last_scan_start": "2026-10-16T15:47:40.000Z",
+      "last_scan_end": "2026-10-16T16:04:40.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T16:04:40.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-25T16:04:40.000Z",
+          "key": "",
+          "last_found": "2026-10-16T16:04:40.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-25T16:04:40.000Z",
+          "key": "",
+          "last_found": "2026-10-16T16:04:40.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-10T16:04:40.000Z",
+          "key": "",
+          "last_found": "2026-10-16T16:04:40.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1009",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-009",
+      "ip": "10.28.184.33",
+      "mac": "6E:2F:8A:7F:C4:CC",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-15T19:16:41.000Z",
+      "last_scan_end": "2026-10-15T19:40:41.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T19:40:41.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1010",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-010",
+      "ip": "10.22.239.249",
+      "mac": "E5:7F:37:72:4F:4D",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1937.18,
+      "last_scan_start": "2026-10-15T09:10:57.000Z",
+      "last_scan_end": "2026-10-15T09:15:57.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T09:15:57.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-05T09:15:57.000Z",
+          "key": "",
+          "last_found": "2026-10-15T09:15:57.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-10T09:15:57.000Z",
+          "key": "",
+          "last_found": "2026-10-15T09:15:57.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-29T09:15:57.000Z",
+          "key": "",
+          "last_found": "2026-10-15T09:15:57.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1011",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-app-011",
+      "ip": "10.13.36.77",
+      "mac": "62:C6:85:72:00:05",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 913.49,
+      "last_scan_start": "2026-10-16T22:38:15.000Z",
+      "last_scan_end": "2026-10-16T23:00:15.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T23:00:15.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-06T23:00:15.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:00:15.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1012",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-ad-012",
+      "ip": "10.30.157.15",
+      "mac": "0B:63:FF:D7:29:83",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 106.94,
+      "last_scan_start": "2026-10-16T10:00:38.000Z",
+      "last_scan_end": "2026-10-16T10:36:38.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T10:36:38.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-17T10:36:38.000Z",
+          "key": "",
+          "last_found": "2026-10-16T10:36:38.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1013",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-013",
+      "ip": "10.26.34.53",
+      "mac": "FD:66:9F:63:76:EE",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 710.86,
+      "last_scan_start": "2026-10-16T00:07:58.000Z",
+      "last_scan_end": "2026-10-16T00:36:58.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T00:36:58.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-29T00:36:58.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:36:58.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-30T00:36:58.000Z",
+          "key": "",
+          "last_found": "2026-10-16T00:36:58.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1014",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 3,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 5,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-app-014",
+      "ip": "10.29.72.107",
+      "mac": "1A:1E:5E:C9:E6:A0",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 3519.75,
+      "last_scan_start": "2026-10-16T10:50:13.000Z",
+      "last_scan_end": "2026-10-16T11:19:13.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T11:19:13.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-04T11:19:13.000Z",
+          "key": "",
+          "last_found": "2026-10-16T11:19:13.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-23T11:19:13.000Z",
+          "key": "",
+          "last_found": "2026-10-16T11:19:13.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-10T11:19:13.000Z",
+          "key": "",
+          "last_found": "2026-10-16T11:19:13.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-18T11:19:13.000Z",
+          "key": "",
+          "last_found": "2026-10-16T11:19:13.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-07T11:19:13.000Z",
+          "key": "",
+          "last_found": "2026-10-16T11:19:13.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1015",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-015",
+      "ip": "10.12.179.108",
+      "mac": "3F:6A:C2:B6:9E:DD",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 1185.85,
+      "last_scan_start": "2026-10-16T02:49:31.000Z",
+      "last_scan_end": "2026-10-16T03:13:31.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T03:13:31.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-30T03:13:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:13:31.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-20T03:13:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:13:31.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-05T03:13:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:13:31.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1016",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-ad-016",
+      "ip": "10.11.237.17",
+      "mac": "1F:83:63:20:AD:B9",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 363.57,
+      "last_scan_start": "2026-10-15T01:43:18.000Z",
+      "last_scan_end": "2026-10-15T02:12:18.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T02:12:18.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-19T02:12:18.000Z",
+          "key": "",
+          "last_found": "2026-10-15T02:12:18.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1017",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 5,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "WIN-ad-017",
+      "ip": "10.22.128.234",
+      "mac": "DC:FC:43:FE:5D:04",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 3049.19,
+      "last_scan_start": "2026-10-15T21:36:23.000Z",
+      "last_scan_end": "2026-10-15T21:39:23.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T21:39:23.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-30T21:39:23.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:39:23.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-04T21:39:23.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:39:23.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-18T21:39:23.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:39:23.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-31T21:39:23.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:39:23.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-11T21:39:23.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:39:23.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1018",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 3,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "WIN-web-018",
+      "ip": "10.15.218.227",
+      "mac": "35:24:87:2B:6A:31",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 1375.16,
+      "last_scan_start": "2026-10-15T11:20:46.000Z",
+      "last_scan_end": "2026-10-15T11:38:46.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T11:38:46.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-16T11:38:46.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:38:46.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-23T11:38:46.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:38:46.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-28T11:38:46.000Z",
+          "key": "",
+          "last_found": "2026-10-15T11:38:46.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1019",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-web-019",
+      "ip": "10.18.133.51",
+      "mac": "E0:7E:5F:7D:78:4E",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 930.79,
+      "last_scan_start": "2026-10-16T15:03:01.000Z",
+      "last_scan_end": "2026-10-16T15:13:01.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T15:13:01.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-08T15:13:01.000Z",
+          "key": "",
+          "last_found": "2026-10-16T15:13:01.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-14T15:13:01.000Z",
+          "key": "",
+          "last_found": "2026-10-16T15:13:01.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1020",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 5,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-ad-020",
+      "ip": "10.21.20.225",
+      "mac": "96:77:3D:19:61:63",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 2859.85,
+      "last_scan_start": "2026-10-16T23:09:19.000Z",
+      "last_scan_end": "2026-10-16T23:18:19.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T23:18:19.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-20T23:18:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:18:19.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-13T23:18:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:18:19.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-10-16T23:18:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:18:19.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-27T23:18:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:18:19.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-18T23:18:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T23:18:19.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1021",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-db-021",
+      "ip": "10.18.19.154",
+      "mac": "68:05:A7:D1:BE:5E",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 545.17,
+      "last_scan_start": "2026-10-15T15:45:54.000Z",
+      "last_scan_end": "2026-10-15T15:50:54.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T15:50:54.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-11T15:50:54.000Z",
+          "key": "",
+          "last_found": "2026-10-15T15:50:54.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-06T15:50:54.000Z",
+          "key": "",
+          "last_found": "2026-10-15T15:50:54.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1022",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-db-022",
+      "ip": "10.22.138.105",
+      "mac": "91:9D:D5:1A:9F:B6",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1100.82,
+      "last_scan_start": "2026-10-16T05:34:19.000Z",
+      "last_scan_end": "2026-10-16T05:43:19.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T05:43:19.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-26T05:43:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T05:43:19.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-27T05:43:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T05:43:19.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-26T05:43:19.000Z",
+          "key": "",
+          "last_found": "2026-10-16T05:43:19.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1023",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 3,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-web-023",
+      "ip": "10.24.83.34",
+      "mac": "07:1A:48:CB:2D:BD",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1861.33,
+      "last_scan_start": "2026-10-16T07:23:53.000Z",
+      "last_scan_end": "2026-10-16T07:36:53.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T07:36:53.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-02T07:36:53.000Z",
+          "key": "",
+          "last_found": "2026-10-16T07:36:53.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-26T07:36:53.000Z",
+          "key": "",
+          "last_found": "2026-10-16T07:36:53.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-25T07:36:53.000Z",
+          "key": "",
+          "last_found": "2026-10-16T07:36:53.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1024",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-024",
+      "ip": "10.25.161.14",
+      "mac": "C6:2C:52:71:CF:64",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1018.51,
+      "last_scan_start": "2026-10-16T03:22:33.000Z",
+      "last_scan_end": "2026-10-16T03:56:33.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T03:56:33.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-11T03:56:33.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:56:33.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1025",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-db-025",
+      "ip": "10.16.21.227",
+      "mac": "13:A5:3C:C7:E9:9C",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-16T03:30:52.000Z",
+      "last_scan_end": "2026-10-16T03:55:52.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T03:55:52.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1026",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-ad-026",
+      "ip": "10.24.120.115",
+      "mac": "EA:5B:F2:CC:36:22",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 1873.04,
+      "last_scan_start": "2026-10-16T03:54:29.000Z",
+      "last_scan_end": "2026-10-16T04:20:29.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T04:20:29.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-05T04:20:29.000Z",
+          "key": "",
+          "last_found": "2026-10-16T04:20:29.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-13T04:20:29.000Z",
+          "key": "",
+          "last_found": "2026-10-16T04:20:29.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-24T04:20:29.000Z",
+          "key": "",
+          "last_found": "2026-10-16T04:20:29.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1027",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-027",
+      "ip": "10.11.193.168",
+      "mac": "45:0D:21:38:63:43",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-16T22:09:38.000Z",
+      "last_scan_end": "2026-10-16T22:20:38.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T22:20:38.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1028",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 2,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-web-028",
+      "ip": "10.24.73.66",
+      "mac": "F5:6A:86:79:A3:BE",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 1059.15,
+      "last_scan_start": "2026-10-15T15:59:07.000Z",
+      "last_scan_end": "2026-10-15T16:06:07.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T16:06:07.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-25T16:06:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T16:06:07.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-10T16:06:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T16:06:07.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1029",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-029",
+      "ip": "10.24.53.65",
+      "mac": "C9:BE:87:C0:BC:4A",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 755.28,
+      "last_scan_start": "2026-10-16T03:13:26.000Z",
+      "last_scan_end": "2026-10-16T03:26:26.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T03:26:26.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-17T03:26:26.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:26:26.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-30T03:26:26.000Z",
+          "key": "",
+          "last_found": "2026-10-16T03:26:26.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1030",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-app-030",
+      "ip": "10.11.113.39",
+      "mac": "94:DD:D5:BA:18:43",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1015.26,
+      "last_scan_start": "2026-10-15T20:58:55.000Z",
+      "last_scan_end": "2026-10-15T21:34:55.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T21:34:55.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-09T21:34:55.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:34:55.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-04T21:34:55.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:34:55.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1031",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "WIN-db-031",
+      "ip": "10.16.187.160",
+      "mac": "F3:51:44:07:7C:4C",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 999.95,
+      "last_scan_start": "2026-10-15T07:08:42.000Z",
+      "last_scan_end": "2026-10-15T07:44:42.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T07:44:42.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-22T07:44:42.000Z",
+          "key": "",
+          "last_found": "2026-10-15T07:44:42.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-25T07:44:42.000Z",
+          "key": "",
+          "last_found": "2026-10-15T07:44:42.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1032",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 2,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "srv-ad-032",
+      "ip": "10.17.84.232",
+      "mac": "00:16:1F:0C:CF:5F",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1611.12,
+      "last_scan_start": "2026-10-15T03:27:14.000Z",
+      "last_scan_end": "2026-10-15T04:05:14.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T04:05:14.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-14T04:05:14.000Z",
+          "key": "",
+          "last_found": "2026-10-15T04:05:14.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-06T04:05:14.000Z",
+          "key": "",
+          "last_found": "2026-10-15T04:05:14.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1033",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-033",
+      "ip": "10.12.153.161",
+      "mac": "18:F4:03:C0:DF:EE",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 332.88,
+      "last_scan_start": "2026-10-15T09:52:34.000Z",
+      "last_scan_end": "2026-10-15T10:21:34.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T10:21:34.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-17T10:21:34.000Z",
+          "key": "",
+          "last_found": "2026-10-15T10:21:34.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1034",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-034",
+      "ip": "10.11.136.163",
+      "mac": "DF:87:97:6F:2B:07",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-15T16:49:55.000Z",
+      "last_scan_end": "2026-10-15T16:54:55.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T16:54:55.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1035",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 3,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-ad-035",
+      "ip": "10.25.3.220",
+      "mac": "0D:DF:77:9D:6C:C8",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 1489.65,
+      "last_scan_start": "2026-10-15T23:33:07.000Z",
+      "last_scan_end": "2026-10-15T23:48:07.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T23:48:07.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-27T23:48:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T23:48:07.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-12T23:48:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T23:48:07.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-10-02T23:48:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T23:48:07.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1036",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 5,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "srv-app-036",
+      "ip": "10.11.33.220",
+      "mac": "BA:66:21:C4:36:7E",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 2399.83,
+      "last_scan_start": "2026-10-16T00:54:43.000Z",
+      "last_scan_end": "2026-10-16T01:06:43.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T01:06:43.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-12T01:06:43.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:06:43.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-05T01:06:43.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:06:43.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-28T01:06:43.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:06:43.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-16T01:06:43.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:06:43.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-30T01:06:43.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:06:43.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1037",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-037",
+      "ip": "10.18.144.13",
+      "mac": "BC:A4:F3:93:0F:D3",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 422.5,
+      "last_scan_start": "2026-10-15T21:03:30.000Z",
+      "last_scan_end": "2026-10-15T21:26:30.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T21:26:30.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-16T21:26:30.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:26:30.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-09T21:26:30.000Z",
+          "key": "",
+          "last_found": "2026-10-15T21:26:30.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1038",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-db-038",
+      "ip": "10.19.27.2",
+      "mac": "B2:FB:30:FB:5E:FD",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 248.89,
+      "last_scan_start": "2026-10-15T05:58:06.000Z",
+      "last_scan_end": "2026-10-15T06:37:06.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T06:37:06.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-09T06:37:06.000Z",
+          "key": "",
+          "last_found": "2026-10-15T06:37:06.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-18T06:37:06.000Z",
+          "key": "",
+          "last_found": "2026-10-15T06:37:06.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1039",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 5,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "WIN-web-039",
+      "ip": "10.21.48.103",
+      "mac": "CA:2C:D8:0C:BE:69",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 2247.87,
+      "last_scan_start": "2026-10-15T11:54:21.000Z",
+      "last_scan_end": "2026-10-15T12:04:21.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T12:04:21.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-28T12:04:21.000Z",
+          "key": "",
+          "last_found": "2026-10-15T12:04:21.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-16T12:04:21.000Z",
+          "key": "",
+          "last_found": "2026-10-15T12:04:21.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "tls-server-cert-expired"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-29T12:04:21.000Z",
+          "key": "",
+          "last_found": "2026-10-15T12:04:21.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-31T12:04:21.000Z",
+          "key": "",
+          "last_found": "2026-10-15T12:04:21.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-30T12:04:21.000Z",
+          "key": "",
+          "last_found": "2026-10-15T12:04:21.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1040",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 1,
+      "total_vulnerabilities": 2,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-040",
+      "ip": "10.15.237.113",
+      "mac": "83:76:40:AB:EC:79",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 521.6,
+      "last_scan_start": "2026-10-16T00:42:33.000Z",
+      "last_scan_end": "2026-10-16T01:22:33.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T01:22:33.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-18T01:22:33.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:22:33.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-27T01:22:33.000Z",
+          "key": "",
+          "last_found": "2026-10-16T01:22:33.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "http-trace-method-enabled"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1041",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 2,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 4,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-041",
+      "ip": "10.13.84.247",
+      "mac": "34:64:C4:4D:4B:9A",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 1137.05,
+      "last_scan_start": "2026-10-15T17:38:41.000Z",
+      "last_scan_end": "2026-10-15T18:01:41.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T18:01:41.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-20T18:01:41.000Z",
+          "key": "",
+          "last_found": "2026-10-15T18:01:41.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-26T18:01:41.000Z",
+          "key": "",
+          "last_found": "2026-10-15T18:01:41.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-10T18:01:41.000Z",
+          "key": "",
+          "last_found": "2026-10-15T18:01:41.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-27T18:01:41.000Z",
+          "key": "",
+          "last_found": "2026-10-15T18:01:41.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1042",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-ad-042",
+      "ip": "10.10.72.66",
+      "mac": "CF:02:7C:DC:D7:75",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1216.56,
+      "last_scan_start": "2026-10-15T00:27:07.000Z",
+      "last_scan_end": "2026-10-15T00:55:07.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T00:55:07.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-07-25T00:55:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T00:55:07.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-18T00:55:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T00:55:07.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-05T00:55:07.000Z",
+          "key": "",
+          "last_found": "2026-10-15T00:55:07.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1043",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 1,
+      "malware_kits": 0,
+      "host_name": "srv-ad-043",
+      "ip": "10.10.209.133",
+      "mac": "5D:A7:05:C7:FA:36",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 929.39,
+      "last_scan_start": "2026-10-16T06:15:10.000Z",
+      "last_scan_end": "2026-10-16T06:33:10.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T06:33:10.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-21T06:33:10.000Z",
+          "key": "",
+          "last_found": "2026-10-16T06:33:10.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-02T06:33:10.000Z",
+          "key": "",
+          "last_found": "2026-10-16T06:33:10.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-04T06:33:10.000Z",
+          "key": "",
+          "last_found": "2026-10-16T06:33:10.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "tls-server-cert-expired"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1044",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 0,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 0,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-web-044",
+      "ip": "10.23.233.54",
+      "mac": "5E:C8:3E:B6:1C:81",
+      "os_architecture": "x86_64",
+      "os_description": "Red Hat Enterprise Linux 8.6",
+      "os_family": "Linux",
+      "os_name": "Red Hat Enterprise Linux",
+      "os_system_name": "Red Hat Enterprise Linux",
+      "os_type": "General",
+      "os_vendor": "Red Hat",
+      "os_version": "8.6",
+      "risk_score": 0.0,
+      "last_scan_start": "2026-10-16T10:03:31.000Z",
+      "last_scan_end": "2026-10-16T10:38:31.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T10:38:31.000Z",
+      "tags": [
+        {
+          "name": "DMZ",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1045",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 2,
+      "total_vulnerabilities": 3,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-db-045",
+      "ip": "10.19.205.241",
+      "mac": "70:C8:EC:6C:54:42",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 1335.82,
+      "last_scan_start": "2026-10-15T04:59:29.000Z",
+      "last_scan_end": "2026-10-15T05:28:29.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T05:28:29.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-16T05:28:29.000Z",
+          "key": "",
+          "last_found": "2026-10-15T05:28:29.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-05T05:28:29.000Z",
+          "key": "",
+          "last_found": "2026-10-15T05:28:29.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-17T05:28:29.000Z",
+          "key": "",
+          "last_found": "2026-10-15T05:28:29.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1046",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 2,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 3,
+      "exploits": 2,
+      "malware_kits": 0,
+      "host_name": "WIN-db-046",
+      "ip": "10.25.181.201",
+      "mac": "75:88:C0:81:DA:5F",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows Server 2019 Standard Edition",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows Server 2019",
+      "os_system_name": "Microsoft Windows Server 2019",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "1809",
+      "risk_score": 2183.78,
+      "last_scan_start": "2026-10-16T22:01:56.000Z",
+      "last_scan_end": "2026-10-16T22:30:56.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T22:30:56.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-15T22:30:56.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:30:56.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for msft-cve-2023-23397</p>",
+          "protocol": null,
+          "solution_fix": "<p>Install Microsoft Outlook March 2023 security update</p>",
+          "solution_id": "sol-msft-cve-2023-23397",
+          "solution_summary": "Install Microsoft Outlook March 2023 security update",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "msft-cve-2023-23397"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-08T22:30:56.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:30:56.000Z",
+          "nic": null,
+          "port": 80,
+          "proof": "<p>Vulnerable version detected for http-trace-method-enabled</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable HTTP TRACE method</p>",
+          "solution_id": "sol-http-trace-method-enabled",
+          "solution_summary": "Disable HTTP TRACE method",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "http-trace-method-enabled"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-16T22:30:56.000Z",
+          "key": "",
+          "last_found": "2026-10-16T22:30:56.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1047",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 1,
+      "moderate_vulnerabilities": 3,
+      "total_vulnerabilities": 5,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-047",
+      "ip": "10.14.176.163",
+      "mac": "07:05:6B:24:96:80",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 1731.85,
+      "last_scan_start": "2026-10-16T21:15:31.000Z",
+      "last_scan_end": "2026-10-16T21:23:31.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T21:23:31.000Z",
+      "tags": [
+        {
+          "name": "Branch-HN",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-23T21:23:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T21:23:31.000Z",
+          "nic": null,
+          "port": null,
+          "proof": "<p>Vulnerable version detected for generic-icmp-timestamp</p>",
+          "protocol": null,
+          "solution_fix": "<p>Block ICMP timestamp requests at the firewall</p>",
+          "solution_id": "sol-generic-icmp-timestamp",
+          "solution_summary": "Block ICMP timestamp requests at the firewall",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "generic-icmp-timestamp"
+        }
+      ],
+      "same": [
+        {
+          "check_id": null,
+          "first_found": "2026-09-02T21:23:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T21:23:31.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for openssl-cve-2022-0778</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade OpenSSL to 1.1.1n or later</p>",
+          "solution_id": "sol-openssl-cve-2022-0778",
+          "solution_summary": "Upgrade OpenSSL to 1.1.1n or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "openssl-cve-2022-0778"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-09-20T21:23:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T21:23:31.000Z",
+          "nic": null,
+          "port": 22,
+          "proof": "<p>Vulnerable version detected for ssh-weak-kex-algorithms</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Disable weak SSH key exchange algorithms</p>",
+          "solution_id": "sol-ssh-weak-kex-algorithms",
+          "solution_summary": "Disable weak SSH key exchange algorithms",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_EXPL",
+          "vulnerability_id": "ssh-weak-kex-algorithms"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-08-09T21:23:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T21:23:31.000Z",
+          "nic": null,
+          "port": 8443,
+          "proof": "<p>Vulnerable version detected for tls-server-cert-expired</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Renew the TLS server certificate</p>",
+          "solution_id": "sol-tls-server-cert-expired",
+          "solution_summary": "Renew the TLS server certificate",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "tls-server-cert-expired"
+        },
+        {
+          "check_id": null,
+          "first_found": "2026-07-30T21:23:31.000Z",
+          "key": "",
+          "last_found": "2026-10-16T21:23:31.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1048",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "srv-app-048",
+      "ip": "10.24.59.143",
+      "mac": "3C:87:D6:77:47:F2",
+      "os_architecture": "x86_64",
+      "os_description": "Ubuntu Linux 22.04",
+      "os_family": "Linux",
+      "os_name": "Ubuntu Linux",
+      "os_system_name": "Ubuntu Linux",
+      "os_type": "General",
+      "os_vendor": "Ubuntu",
+      "os_version": "22.04",
+      "risk_score": 897.51,
+      "last_scan_start": "2026-10-16T15:34:26.000Z",
+      "last_scan_end": "2026-10-16T15:56:26.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-16T15:56:26.000Z",
+      "tags": [
+        {
+          "name": "HQ-Datacenter",
+          "type": "SITE"
+        },
+        {
+          "name": "Staging",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-08-18T15:56:26.000Z",
+          "key": "",
+          "last_found": "2026-10-16T15:56:26.000Z",
+          "nic": null,
+          "port": 9443,
+          "proof": "<p>Vulnerable version detected for wso2-cve-2022-29464</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Apply WSO2 security patch WSO2-2021-1738</p>",
+          "solution_id": "sol-wso2-cve-2022-29464",
+          "solution_summary": "Apply WSO2 security patch WSO2-2021-1738",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_VERS",
+          "vulnerability_id": "wso2-cve-2022-29464"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    },
+    {
+      "id": "44d88612-fea8-a8f3-6de8-2e1278abb02f-default-asset-1049",
+      "assessed_for_policies": false,
+      "assessed_for_vulnerabilities": true,
+      "critical_vulnerabilities": 1,
+      "severe_vulnerabilities": 0,
+      "moderate_vulnerabilities": 0,
+      "total_vulnerabilities": 1,
+      "exploits": 0,
+      "malware_kits": 0,
+      "host_name": "WIN-web-049",
+      "ip": "10.24.254.171",
+      "mac": "97:EE:BF:DA:D6:26",
+      "os_architecture": "x86_64",
+      "os_description": "Microsoft Windows 10 Enterprise Edition 22H2",
+      "os_family": "Windows",
+      "os_name": "Microsoft Windows 10",
+      "os_system_name": "Microsoft Windows 10",
+      "os_type": "General",
+      "os_vendor": "Microsoft",
+      "os_version": "22H2",
+      "risk_score": 784.99,
+      "last_scan_start": "2026-10-15T17:23:15.000Z",
+      "last_scan_end": "2026-10-15T17:57:15.000Z",
+      "last_assessed_for_vulnerabilities": "2026-10-15T17:57:15.000Z",
+      "tags": [
+        {
+          "name": "Branch-HCM",
+          "type": "SITE"
+        },
+        {
+          "name": "Production",
+          "type": "CUSTOM"
+        }
+      ],
+      "new": [
+        {
+          "check_id": null,
+          "first_found": "2026-10-13T17:57:15.000Z",
+          "key": "",
+          "last_found": "2026-10-15T17:57:15.000Z",
+          "nic": null,
+          "port": 443,
+          "proof": "<p>Vulnerable version detected for apache-httpd-cve-2021-41773</p>",
+          "protocol": "TCP",
+          "solution_fix": "<p>Upgrade Apache HTTPD to 2.4.51 or later</p>",
+          "solution_id": "sol-apache-httpd-cve-2021-41773",
+          "solution_summary": "Upgrade Apache HTTPD to 2.4.51 or later",
+          "solution_type": "rollup",
+          "status": "VULNERABLE_POTENTIAL",
+          "vulnerability_id": "apache-httpd-cve-2021-41773"
+        }
+      ],
+      "same": [],
+      "remediated": []
+    }
+  ],
+  "metadata": {
+    "number": 0,
+    "size": 50,
+    "cursor": null
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://us.api.insight.rapid7.com/vm/v4/integration/assets?size=50"
+    }
+  ]
+}

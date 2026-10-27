@@ -1,0 +1,24 @@
+{
+  "name": "aws_s3sqs_large_dataset",
+  "description": "AWS S3-SQS - Trả về file S3 chứa 8315 events",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "name": "Override: AWS S3 GetObject (Download Large Log)",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/plain; charset=utf-8"
+        },
+        "body_type": "fixture",
+        "fixture": "aws_s3_large.log"
+      }
+    }
+  ]
+}

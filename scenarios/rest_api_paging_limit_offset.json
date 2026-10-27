@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_paging_limit_offset",
+  "description": "REST API - Phân trang Limit-Offset (Stateful, hỗ trợ truyền params limit/offset)",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: REST API Logs Stateful Limit Offset",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "limit_offset",
+          "dataset_file": "rest_cursor_dataset.json",
+          "limit": 50
+        }
+      }
+    }
+  ]
+}

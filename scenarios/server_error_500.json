@@ -1,0 +1,61 @@
+{
+  "name": "server_error_500",
+  "description": "Giả lập lỗi hệ thống Cloud phía máy chủ (500 Internal Error / 503 Service Unavailable) để kiểm tra khả năng sống sót của Shipper",
+  "rules": [
+    {
+      "id": "rule_err_500_rest",
+      "name": "500 Internal Server Error REST API",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 500,
+        "body": {
+          "status": "error",
+          "message": "Internal Database Connection Timeout"
+        }
+      }
+    },
+    {
+      "id": "rule_err_503_azure",
+      "name": "503 Service Unavailable Azure",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/azure",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 503,
+        "body": {
+          "error": {
+            "code": "ServiceUnavailable",
+            "message": "Microsoft Azure Graph API service is temporarily unavailable."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_err_500_defender",
+      "name": "500 Server Error Defender",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "GeneralException",
+            "message": "Defender backend pipeline failed to process request."
+          }
+        }
+      }
+    }
+  ]
+}

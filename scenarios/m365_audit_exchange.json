@@ -1,0 +1,33 @@
+{
+  "name": "m365_audit_exchange",
+  "description": "M365 - Mock content type Exchange",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "CreationTime": "{{NOW_ISO}}",
+            "Id": "ex-{{TIMESTAMP}}",
+            "Operation": "SendAs",
+            "OrganizationId": "tenant-01",
+            "RecordType": 2,
+            "ResultStatus": "Succeeded",
+            "UserId": "user@contoso.com",
+            "MailboxOwnerUPN": "ceo@contoso.com",
+            "ClientIPAddress": "1.2.3.4"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "s3sqs_auth_s3_access_denied",
+  "description": "Auth fail - nhận được message SQS nhưng thiếu quyền s3:GetObject: S3 403 AccessDenied -> Failed SQS message, không có log, message không bị xóa (AWS thật: quay lại sau visibility_timeout; có max_receive_count thì bị xóa khi đạt ngưỡng)",
+  "rules": [
+    {
+      "id": "s3sqs_auth_recv_ok",
+      "name": "ReceiveMessage bình thường",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "stateful": {
+          "type": "sqs_receive",
+          "dataset_file": "s3_cloudtrail.json",
+          "bucket": "mock-s3-bucket",
+          "key_prefix": "AWSLogs/123456789012/CloudTrail/us-east-1/",
+          "object_minutes": 1,
+          "backlog_minutes": 10
+        }
+      }
+    },
+    {
+      "id": "s3sqs_auth_s3_denied",
+      "name": "[AUTH] S3 GetObject 403 AccessDenied",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/\\d{4}/\\d{2}/\\d{2}/\\d{4}\\.json$",
+        "path_match": "regex"
+      },
+      "response": {
+        "status": 403,
+        "headers": {
+          "Content-Type": "application/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>{{RANDOM_INT:100000:999999}}MOCK</RequestId><HostId>{{UUID}}</HostId></Error>"
+      }
+    }
+  ]
+}

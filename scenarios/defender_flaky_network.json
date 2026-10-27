@@ -1,0 +1,45 @@
+{
+  "name": "defender_flaky_network",
+  "description": "Giả lập mạng chập chờn cho Defender: Gọi lần 1 và 2 thành công (Stateful Data), lần 3 văng lỗi 500",
+  "rules": [
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Microsoft Defender Flaky Network",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "sequence": [
+          {
+            "status": 200,
+            "stateful": {
+              "dataset_file": "defender_seed.json"
+            }
+          },
+          {
+            "status": 200,
+            "stateful": {
+              "dataset_file": "defender_seed.json"
+            }
+          },
+          {
+            "status": 500,
+            "delay_ms": 500,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "error": {
+                "code": "InternalServerError",
+                "message": "Connection dropped unexpectedly."
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

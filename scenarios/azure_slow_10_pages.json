@@ -1,0 +1,119 @@
+{
+  "name": "azure_slow_10_pages",
+  "description": "azure - Ch\u1eadm 3s trong 10 trang \u0111\u1ea7u",
+  "rules": [
+    {
+      "id": "rule_azure_signin_logs_proxy",
+      "name": "Override: azure Slow 10 Pages",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/",
+        "path_match": "contains"
+      },
+      "response": {
+        "sequence": [
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          },
+          {
+            "delay_ms": 10,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure/sign_ins.json"
+          }
+        ]
+      }
+    }
+  ]
+}

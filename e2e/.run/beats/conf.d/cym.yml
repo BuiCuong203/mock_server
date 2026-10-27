@@ -1,0 +1,13 @@
+# e2e: beats — shipper mở input beats (Lumberjack v2), Mock Sender (type beats) giả làm Filebeat đẩy batch vào
+input:
+  - type: beats
+    host: "0.0.0.0"
+    port: 15044
+    num_of_workers: 4
+    batch_size: 1000
+    codec:
+      type: plain
+    add_field:
+      log_source_name: "e2e beats"
+output:
+  - type: stdout

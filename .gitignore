@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.log
+!datasets/*.log
+.server.pid
+*.tar.gz
+*.7z
+*.bak
+*.bak-*
+
+# Khoá ký token cho input http (có thể là khoá agent thật) - không commit
+certs/http_input/
+
+# Khoá file + file tạm khi sinh chứng chỉ (nhiều container dùng chung certs/)
+certs/.certs.lock
+certs/*.tmp
+
+# binary build
+bin/

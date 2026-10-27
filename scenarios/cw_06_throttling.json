@@ -1,0 +1,29 @@
+{
+  "name": "cw_06_throttling",
+  "description": "GĐ3 - API lỗi ThrottlingException (400): SDK tự retry, sau đó shipper log 'fail get log event', giữ nguyên last_query, thử lại sau 10s",
+  "rules": [
+    {
+      "id": "cw_06_throttling_1",
+      "name": "[CW] ThrottlingException",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "ThrottlingException"
+        },
+        "body": {
+          "__type": "ThrottlingException",
+          "message": "Rate exceeded"
+        }
+      }
+    }
+  ]
+}

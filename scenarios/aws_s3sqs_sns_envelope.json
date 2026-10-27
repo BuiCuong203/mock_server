@@ -1,0 +1,20 @@
+{
+  "name": "aws_s3sqs_sns_envelope",
+  "description": "AWS S3-SQS - Message b\u1ecdc qua SNS Envelope",
+  "rules": [
+    {
+      "id": "rule_aws_sqs_receive",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body": "<ReceiveMessageResponse><ReceiveMessageResult><Message><MessageId>msg-1</MessageId><ReceiptHandle>receipt-1</ReceiptHandle><Body>{&quot;Type&quot;:&quot;Notification&quot;,&quot;MessageId&quot;:&quot;sns-msg-123&quot;,&quot;TopicArn&quot;:&quot;arn:aws:sns:s3-notify&quot;,&quot;Message&quot;:&quot;{\\&quot;Records\\&quot;:[{\\&quot;eventVersion\\&quot;:\\&quot;2.1\\&quot;,\\&quot;s3\\&quot;:{\\&quot;bucket\\&quot;:{\\&quot;name\\&quot;:\\&quot;mock-s3-bucket\\&quot;},\\&quot;object\\&quot;:{\\&quot;key\\&quot;:\\&quot;logs/app.log\\&quot;}}}]}&quot;}</Body></Message></ReceiveMessageResult></ReceiveMessageResponse>"
+      }
+    }
+  ]
+}

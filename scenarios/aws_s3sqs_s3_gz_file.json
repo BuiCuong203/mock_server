@@ -1,0 +1,22 @@
+{
+  "name": "aws_s3sqs_s3_gz_file",
+  "description": "AWS S3 - Tr\u1ea3 v\u1ec1 file n\u00e9n Gzip (.gz)",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/gzip"
+        },
+        "body_type": "fixture",
+        "fixture": "mock_s3_payload.json.gz"
+      }
+    }
+  ]
+}

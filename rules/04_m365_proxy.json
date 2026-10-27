@@ -1,0 +1,183 @@
+[
+  {
+    "id": "rule_m365_oauth2_token",
+    "name": "Microsoft 365 OAuth2 Token (Proxy)",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "host": "*.microsoftonline.com",
+      "path": "/oauth2/",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_m365_abc123",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  },
+  {
+    "id": "rule_m365_token_direct",
+    "name": "Microsoft 365 OAuth2 Token (Direct Path)",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "path": "/mock/m365/token",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_m365_abc123",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  },
+  {
+    "id": "rule_m365_list_subscriptions",
+    "name": "Office 365 List Subscriptions",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/subscriptions/list",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": [
+        {
+          "contentType": "Audit.AzureActiveDirectory",
+          "status": "enabled",
+          "webhook": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "rule_m365_start_subscription",
+    "name": "Office 365 Start Subscription",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "path": "/subscriptions/start",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "contentType": "Audit.AzureActiveDirectory",
+        "status": "enabled",
+        "webhook": null
+      }
+    }
+  },
+  {
+    "id": "rule_m365_content_blobs",
+    "name": "Office 365 Feed Content Blobs List (10s Polling)",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/subscriptions/content",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "interval_sec": 10.0,
+      "interval_response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": []
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": [
+        {
+          "contentUri": "https://manage.office.com/api/v1.0/mock_m365_tenant/activity/feed/audit/blob_{{TIMESTAMP}}",
+          "contentId": "blob_{{TIMESTAMP}}",
+          "contentType": "Audit.AzureActiveDirectory",
+          "contentCreated": "{{NOW_ISO}}",
+          "contentExpiration": "{{FUTURE_ISO:86400}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rule_m365_blob_content",
+    "name": "Office 365 Blob Content Download",
+    "category": "m365",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/audit/",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": [
+        {
+          "CreationTime": "{{NOW_ISO}}",
+          "Id": "m365-event-{{TIMESTAMP}}",
+          "Operation": "UserLoggedIn",
+          "OrganizationId": "mock-tenant-id",
+          "RecordType": 15,
+          "ResultStatus": "Success",
+          "UserKey": "admin@tenant.onmicrosoft.com",
+          "UserType": 0,
+          "Workload": "AzureActiveDirectory",
+          "ClientIP": "118.70.1.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rule_m365_stop_subscription",
+    "name": "M365 Stop Subscription",
+    "enabled": true,
+    "match": {
+      "method": "POST",
+      "path": "/subscriptions/stop",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "status": "stopped"
+      }
+    }
+  }
+]

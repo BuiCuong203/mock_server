@@ -1,0 +1,121 @@
+{
+  "name": "cw_03_pagination",
+  "description": "GĐ3 - Phân trang NextToken: trang 1 (2 event) -> trang 2 (0 event, còn token) -> trang 3 (2 event, hết token). Kafka nhận đủ 4 bản ghi",
+  "rules": [
+    {
+      "id": "cw_03_pagination_1",
+      "name": "[CW] Trang 3 - hết token",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        },
+        "body_regex": "\"nextToken\"\\s*:\\s*\"cw-page-3\""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "cw-p3-1",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:4}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-p3-1\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "cw-p3-2",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:3}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-p3-2\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cw_03_pagination_2",
+      "name": "[CW] Trang 2 - rỗng nhưng còn token",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        },
+        "body_regex": "\"nextToken\"\\s*:\\s*\"cw-page-2\""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": false
+            }
+          ],
+          "nextToken": "cw-page-3"
+        }
+      }
+    },
+    {
+      "id": "cw_03_pagination_3",
+      "name": "[CW] Trang 1",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "cw-p1-1",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:9}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-p1-1\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "cw-p1-2",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:8}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-p1-2\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": false
+            }
+          ],
+          "nextToken": "cw-page-2"
+        }
+      }
+    }
+  ]
+}

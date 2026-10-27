@@ -1,0 +1,93 @@
+{
+  "name": "cw_19_pagination_delay_last_page",
+  "description": "GĐ3 - Phân trang delay 10s ở trang cuối: Trang 1 (2 event, có nextToken) -> Trang 2 (trang cuối, hết nextToken, DELAY 10 GIÂY) để tester kịp tắt MongoDB -> Kiểm tra Shipper ghi log lỗi SaveToMongo",
+  "rules": [
+    {
+      "id": "cw_19_page_2_last_delay",
+      "name": "[CW] Trang 2 (Trang cuối) - Delay 10s trước khi trả về, hết nextToken",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        },
+        "body_regex": "\"nextToken\"\\s*:\\s*\"cw-page-last\""
+      },
+      "response": {
+        "status": 200,
+        "delay_ms": 10000,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "cw-page2-final-01",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:3}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-page2-final-01\",\"user\":\"tester\",\"action\":\"TerminateDBInstance\",\"ip\":\"10.0.0.99\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "cw-page2-final-02",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:1}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-page2-final-02\",\"user\":\"tester\",\"action\":\"StopService\",\"ip\":\"10.0.0.99\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cw_19_page_1_initial",
+      "name": "[CW] Trang 1 - Trả 2 event và nextToken cw-page-last (không delay)",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [
+            {
+              "eventId": "cw-page1-01",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:9}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-page1-01\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            },
+            {
+              "eventId": "cw-page1-02",
+              "logStreamName": "mock-stream-01",
+              "timestamp": "{{PAST_MS:7}}",
+              "message": "{\"log_type\":\"cloudtrail\",\"event_id\":\"cw-page1-02\",\"user\":\"developer_01\",\"action\":\"AuthorizeSecurityGroupIngress\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+              "ingestionTime": "{{NOW_MS}}"
+            }
+          ],
+          "searchedLogStreams": [
+            {
+              "logStreamName": "mock-stream-01",
+              "searchedCompletely": false
+            }
+          ],
+          "nextToken": "cw-page-last"
+        }
+      }
+    }
+  ]
+}

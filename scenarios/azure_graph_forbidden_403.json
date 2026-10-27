@@ -1,0 +1,35 @@
+{
+  "name": "azure_graph_forbidden_403",
+  "description": "Azure: lấy token OK nhưng app thiếu quyền AuditLog.Read.All -> Graph 403 Authorization_RequestDenied",
+  "rules": [
+    {
+      "id": "azure_graph_403",
+      "name": "[AZURE GRAPH] 403 Authorization_RequestDenied - thiếu quyền",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 403,
+        "headers": {
+          "Content-Type": "application/json",
+          "request-id": "{{UUID}}"
+        },
+        "body": {
+          "error": {
+            "code": "Authorization_RequestDenied",
+            "message": "Insufficient privileges to complete the operation.",
+            "innerError": {
+              "date": "{{NOW_ISO}}",
+              "request-id": "{{UUID}}",
+              "client-request-id": "{{UUID}}"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

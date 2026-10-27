@@ -1,0 +1,19 @@
+# e2e: http_genconfig — đúng khối genconfig sinh cho log source http (form Logstash), kiểm tra shipper có nạp được không
+input:
+  - type: http
+    additional_codecs: "{'application/json'=>'json'}"
+    codec:
+      type: json
+    host: "0.0.0.0"
+    password: "giai-ma-xong"
+    port: 9978
+    threads: 1
+    user: ""
+    input_id: "http_test"
+    add_field:
+      input_plugin: http
+      proto_id: http_9978
+      input_id: http_test
+      log_source_name: "e2e http_genconfig"
+output:
+  - type: stdout

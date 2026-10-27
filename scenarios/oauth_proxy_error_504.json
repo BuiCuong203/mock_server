@@ -1,0 +1,26 @@
+{
+  "name": "oauth_proxy_error_504",
+  "description": "OAuth Proxy - L\u1ed7i 504 (Timeout Proxy)",
+  "rules": [
+    {
+      "id": "rule_oauth_proxy_error",
+      "name": "Override: OAuth Proxy 504 Timeout",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "host": "*.microsoftonline.com",
+        "path": "/oauth2/",
+        "path_match": "contains"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 504,
+        "headers": {
+          "Content-Type": "text/html",
+          "Server": "Squid/4.10"
+        },
+        "body": "<html><head><title>504 Gateway Time-out</title></head><body><center><h1>504 Gateway Time-out</h1></center><hr><center>Squid/4.10</center></body></html>"
+      }
+    }
+  ]
+}

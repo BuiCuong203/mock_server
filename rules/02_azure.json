@@ -1,0 +1,152 @@
+[
+  {
+    "id": "rule_azure_token_domain_proxy",
+    "name": "Azure OAuth2 Access Token (Microsoft Domain Proxy)",
+    "category": "azure",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "host": "*.microsoftonline.com",
+      "path": "/oauth2/",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_azure_domain_12345",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  },
+  {
+    "id": "rule_azure_token_direct_any",
+    "name": "Azure OAuth2 Access Token (Direct & Any Token Path)",
+    "category": "azure",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "path_match": "regex",
+      "path": "(/token|/oauth2/|/mock/azure)"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_xyz1234567890",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  },
+  {
+    "id": "rule_azure_directory_audits",
+    "name": "Azure AD Directory Audits",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/auditLogs/directoryAudits",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/directoryAudits",
+        "@odata.nextLink": null,
+        "value": [
+          {
+            "id": "Directory_da-{{TIMESTAMP}}-01",
+            "category": "UserManagement",
+            "activityDateTime": "{{NOW_ISO}}",
+            "activityDisplayName": "Add user",
+            "result": "success",
+            "initiatedBy": {
+              "user": {
+                "userPrincipalName": "admin@contoso.onmicrosoft.com",
+                "ipAddress": "118.70.1.2"
+              }
+            },
+            "targetResources": [
+              {
+                "displayName": "User Test 01",
+                "type": "User"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rule_azure_signin_logs_proxy_domain",
+    "name": "Azure AD Sign-In Logs (Graph API Domain Proxy)",
+    "category": "azure",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "host": "*.graph.microsoft.com",
+      "path": "/auditLogs/",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_type": "fixture",
+      "fixture": "azure/sign_ins.json"
+    }
+  },
+  {
+    "id": "rule_azure_signin_logs",
+    "name": "Azure AD Sign-In Logs (Direct /mock/azure)",
+    "category": "azure",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/mock/azure",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_type": "fixture",
+      "fixture": "azure/sign_ins.json"
+    }
+  },
+  {
+    "id": "rule_azure_signin_logs_proxy",
+    "name": "Azure AD Sign-In Logs (Any /auditLogs/ Path)",
+    "category": "azure",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/auditLogs/",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_type": "fixture",
+      "fixture": "azure/sign_ins.json"
+    }
+  }
+]

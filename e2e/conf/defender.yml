@@ -1,0 +1,15 @@
+# e2e: defender  (__MOCK_URL__ được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: microsoft_defender
+    input_id: "e2e_defender"
+    tenant_id: "mock_tenant_id_defender"
+    client_id: "mock_client_id_defender"
+    client_secret: "mock_client_secret_defender"
+    alert_url: "__MOCK_URL__/mock/defender/alerts"
+    scope_url: "https://api.securitycenter.microsoft.com/.default"
+    proxy_url: "__MOCK_URL__"
+    duration: 60
+    add_field:
+      log_source_name: "e2e defender"
+output:
+  - type: stdout

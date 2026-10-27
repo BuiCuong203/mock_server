@@ -1,0 +1,44 @@
+{
+  "name": "cw_08_server_error_5xx",
+  "description": "GĐ3 - Lỗi phía AWS 500 InternalFailure / 503 ServiceUnavailable xen kẽ: giữ nguyên last_query",
+  "rules": [
+    {
+      "id": "cw_08_server_error_5xx_1",
+      "name": "[CW] 500/503",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "sequence": [
+          {
+            "status": 500,
+            "headers": {
+              "Content-Type": "application/x-amz-json-1.1",
+              "x-amzn-ErrorType": "InternalFailure"
+            },
+            "body": {
+              "__type": "InternalFailure",
+              "message": "The request processing has failed because of an unknown error."
+            }
+          },
+          {
+            "status": 503,
+            "headers": {
+              "Content-Type": "application/x-amz-json-1.1",
+              "x-amzn-ErrorType": "ServiceUnavailableException"
+            },
+            "body": {
+              "__type": "ServiceUnavailableException",
+              "message": "The service cannot complete the request."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "da-1791219609-be543e",
+    "incidentId": 85932,
+    "investigationId": null,
+    "assignedTo": null,
+    "severity": "High",
+    "status": "New",
+    "classification": null,
+    "determination": null,
+    "investigationState": "Queued",
+    "detectionSource": "WindowsDefenderAtp",
+    "detectorId": "powershell_encoded_exec",
+    "category": "DefenseEvasion",
+    "threatFamilyName": null,
+    "title": "Malware detected on machine",
+    "description": "A suspicious activity was detected which aligns with known attack techniques.",
+    "alertCreationTime": "2030-10-06T00:00:09.000000Z",
+    "creationTime": "2030-10-06T00:00:09.000000Z",
+    "firstEventTime": "2030-10-05T23:56:43.000000Z",
+    "lastEventTime": "2030-10-06T00:00:09.000000Z",
+    "lastUpdateTime": "2030-10-06T00:00:09.000000Z",
+    "machineId": "991c3823-ccf6-4570-9080-3ea508ff09f7",
+    "computerDnsName": "DESKTOP-SEC-VN94"
+  }
+]

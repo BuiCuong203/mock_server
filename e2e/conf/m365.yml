@@ -1,0 +1,14 @@
+# e2e: m365  (__MOCK_URL__ được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: microsoft365
+    input_id: "e2e_m365"
+    tenant_id: "mock_tenant_id_m365"
+    client_id: "mock_client_id_m365"
+    client_secret: "mock_client_secret_m365"
+    content_types: ["Audit.AzureActiveDirectory", "Audit.General", "Audit.Exchange", "Audit.SharePoint"]
+    proxy_url: "__MOCK_URL__"
+    duration: 60
+    add_field:
+      log_source_name: "e2e m365"
+output:
+  - type: stdout

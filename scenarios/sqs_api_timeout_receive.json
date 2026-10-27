@@ -1,0 +1,25 @@
+{
+  "name": "sqs_api_timeout_receive",
+  "description": "api_timeout - ReceiveMessage luôn trễ 15s (> api_timeout 10s): shipper log lỗi deadline exceeded, nghỉ 10s, thử lại; không có log, không sập. Config test: wait_time 5, api_timeout 10",
+  "rules": [
+    {
+      "id": "sqs_to_recv_slow",
+      "name": "[API TIMEOUT] ReceiveMessage trễ 15s",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ReceiveMessageResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><ReceiveMessageResult></ReceiveMessageResult><ResponseMetadata><RequestId>{{UUID}}</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+      }
+    }
+  ]
+}

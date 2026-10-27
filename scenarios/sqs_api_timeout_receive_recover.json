@@ -1,0 +1,58 @@
+{
+  "name": "sqs_api_timeout_receive_recover",
+  "description": "api_timeout - ReceiveMessage xen kẽ: lần lẻ trễ 15s (timeout), lần chẵn trả message bình thường -> shipper tự phục hồi, không mất message. Config test: wait_time 5, api_timeout 10",
+  "rules": [
+    {
+      "id": "sqs_to_recv_alternate",
+      "name": "[API TIMEOUT] ReceiveMessage trễ 15s rồi bình thường",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "sequence": [
+          {
+            "delay_ms": 15000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "text/xml"
+            },
+            "body_type": "xml",
+            "body": "<?xml version=\"1.0\"?>\n<ReceiveMessageResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><ReceiveMessageResult></ReceiveMessageResult><ResponseMetadata><RequestId>{{UUID}}</RequestId></ResponseMetadata></ReceiveMessageResponse>"
+          },
+          {
+            "stateful": {
+              "type": "sqs_receive",
+              "dataset_file": "s3_cloudtrail.json",
+              "bucket": "mock-s3-bucket",
+              "key_prefix": "AWSLogs/123456789012/CloudTrail/us-east-1/",
+              "object_minutes": 1,
+              "backlog_minutes": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "default_s3_get_object",
+      "name": "S3 GetObject .../YYYY/MM/DD/HHMM.json -> file CloudTrail {Records:[...]} của đúng phút đó",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/\\d{4}/\\d{2}/\\d{2}/\\d{4}\\.json$",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "s3_object",
+          "dataset_file": "s3_cloudtrail.json",
+          "time_field": "eventTime",
+          "object_minutes": 1
+        }
+      }
+    }
+  ]
+}

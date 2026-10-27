@@ -1,0 +1,13 @@
+# e2e: gcp_pubsub — shipper nói gRPC với pubsub_mock nhờ PUBSUB_EMULATOR_HOST (xem gcp_pubsub.env)
+# credentials_base64 bắt buộc nhưng emulator không kiểm tra: đây là service account giả
+input:
+  - type: gcp_pubsub
+    input_id: "e2e_pubsub"
+    log_type: "gcp_audit"
+    project_id: "mock-gcp-project"
+    subscription_name: "siem-audit-logs-sub"
+    credentials_base64: "eyJ0eXBlIjoic2VydmljZV9hY2NvdW50IiwicHJvamVjdF9pZCI6Im1vY2stZ2NwLXByb2plY3QiLCJwcml2YXRlX2tleV9pZCI6Im1vY2siLCJjbGllbnRfZW1haWwiOiJjeW0tc2hpcHBlckBtb2NrLWdjcC1wcm9qZWN0LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiY2xpZW50X2lkIjoiMTAwMDAwMDAwMCIsInRva2VuX3VyaSI6Imh0dHBzOi8vb2F1dGgyLmdvb2dsZWFwaXMuY29tL3Rva2VuIn0="
+    add_field:
+      log_source_name: "e2e gcp_pubsub"
+output:
+  - type: stdout

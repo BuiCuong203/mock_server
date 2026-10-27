@@ -1,0 +1,29 @@
+{
+  "name": "cw_17_auth_expired_token",
+  "description": "GĐ2 - Session token hết hạn (ExpiredTokenException 400)",
+  "rules": [
+    {
+      "id": "cw_17_auth_expired_token_1",
+      "name": "[CW] ExpiredToken",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "ExpiredTokenException"
+        },
+        "body": {
+          "__type": "ExpiredTokenException",
+          "message": "The security token included in the request is expired"
+        }
+      }
+    }
+  ]
+}

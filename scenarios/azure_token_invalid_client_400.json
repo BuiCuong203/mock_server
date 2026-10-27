@@ -1,0 +1,36 @@
+{
+  "name": "azure_token_invalid_client_400",
+  "description": "Azure lấy token: sai client_id -> Entra ID 400 unauthorized_client (AADSTS700016)",
+  "rules": [
+    {
+      "id": "azure_token_400_client",
+      "name": "[AZURE TOKEN] 400 unauthorized_client - sai client_id",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "host": "*.microsoftonline.com",
+        "path": "/oauth2/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "x-ms-request-id": "{{UUID}}"
+        },
+        "body": {
+          "error": "unauthorized_client",
+          "error_description": "AADSTS700016: Application with identifier 'mock_azure_client_id' was not found in the directory 'mock-tenant'. Trace ID: {{UUID}} Correlation ID: {{UUID}} Timestamp: {{NOW_UTC}}",
+          "error_codes": [
+            700016
+          ],
+          "timestamp": "{{NOW_ISO}}",
+          "trace_id": "{{UUID}}",
+          "correlation_id": "{{UUID}}",
+          "error_uri": "https://login.microsoftonline.com/error?code=700016"
+        }
+      }
+    }
+  ]
+}

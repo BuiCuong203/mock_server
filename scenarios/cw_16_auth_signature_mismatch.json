@@ -1,0 +1,29 @@
+{
+  "name": "cw_16_auth_signature_mismatch",
+  "description": "GĐ2 - Sai Secret Access Key (InvalidSignatureException 400)",
+  "rules": [
+    {
+      "id": "cw_16_auth_signature_mismatch_1",
+      "name": "[CW] InvalidSignature",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "InvalidSignatureException"
+        },
+        "body": {
+          "__type": "InvalidSignatureException",
+          "message": "The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method."
+        }
+      }
+    }
+  ]
+}

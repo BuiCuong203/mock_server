@@ -1,0 +1,33 @@
+{
+  "name": "m365_audit_sharepoint",
+  "description": "M365 - Mock content type SharePoint",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "CreationTime": "{{NOW_ISO}}",
+            "Id": "sp-{{TIMESTAMP}}",
+            "Operation": "FileDownloaded",
+            "OrganizationId": "tenant-01",
+            "RecordType": 6,
+            "ResultStatus": "Success",
+            "UserId": "employee@contoso.com",
+            "SourceFileName": "Report.xlsx",
+            "SiteUrl": "https://contoso.sharepoint.com/finance"
+          }
+        ]
+      }
+    }
+  ]
+}

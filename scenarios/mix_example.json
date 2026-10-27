@@ -1,0 +1,106 @@
+{
+  "name": "mix_example",
+  "description": "Kịch bản phối hợp (Mix): Azure bị 429, Defender bị 401, M365 bị 500, CloudWatch rỗng, còn REST API và AWS S3 thì vẫn 200 OK bình thường",
+  "rules": [
+    {
+      "id": "rule_mix_azure_429",
+      "name": "[MIX] Azure bị Rate Limit 429",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/azure",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Retry-After": "30",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "ActivityLimitReached",
+            "message": "Tenant has exceeded request quota at {{NOW_ISO}}"
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_mix_defender_401",
+      "name": "[MIX] Defender bị Hết Hạn Token 401",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "Unauthorized",
+            "message": "Access token expired. Re-authentication required."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_mix_m365_500",
+      "name": "[MIX] M365 bị Lỗi Máy Chủ 500",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/subscriptions/content",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 500,
+        "body": {
+          "error": {
+            "code": "InternalServerError",
+            "message": "Office 365 Feed pipeline unexpected failure."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_mix_cloudwatch_empty",
+      "name": "[MIX] CloudWatch trả về Log rỗng",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "body": {
+          "events": [],
+          "nextToken": null
+        }
+      }
+    },
+    {
+      "id": "rule_mix_rest_200",
+      "name": "[MIX] REST API hoạt động bình thường 200",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "body_type": "fixture",
+        "fixture": "rest_api/default_logs.json"
+      }
+    }
+  ]
+}

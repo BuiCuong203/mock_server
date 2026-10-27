@@ -1,0 +1,275 @@
+{
+  "name": "default",
+  "description": "Kịch bản chuẩn: dữ liệu stateful, realtime, khớp schema shipper cho cả 6 nguồn (REST v1/v2, Azure signIns + directoryAudits, Defender, M365 2 tầng, CloudWatch, S3-SQS). Sinh lại dữ liệu: python3 generate_default_datasets.py",
+  "rules": [
+    {
+      "id": "default_rest_v2_logs",
+      "name": "REST v2 (cym.rest_api_kafka.yml): data[], created_at, since, phân trang body.next, cần Bearer demo-token-123",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/v2/logs",
+        "path_match": "prefix",
+        "headers": {
+          "Authorization": "Bearer demo-token-123"
+        }
+      },
+      "response": {
+        "stateful": {
+          "type": "next_link",
+          "dataset_file": "rest_kafka_demo.json",
+          "page_size": 100,
+          "time_field": "created_at",
+          "realtime": true,
+          "events_key": "data",
+          "next_key": "next",
+          "last_page_value": ""
+        }
+      }
+    },
+    {
+      "id": "default_rest_v2_unauthorized",
+      "name": "REST v2: thiếu / sai token -> 401",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/v2/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": "unauthorized",
+          "message": "Missing or invalid bearer token"
+        }
+      }
+    },
+    {
+      "id": "default_rest_v1_logs",
+      "name": "REST v1 (cym.mock_all_cloud.yml): events[], timestamp, since, cursor/next_cursor",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "cursor",
+          "dataset_file": "rest_large.json",
+          "page_size": 100,
+          "time_field": "timestamp",
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_azure_directory_audits",
+      "name": "Azure Graph auditLogs/directoryAudits: lọc activityDateTime gt, phân trang @odata.nextLink",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/directoryAudits",
+        "path_match": "contains"
+      },
+      "response": {
+        "stateful": {
+          "type": "odata",
+          "dataset_file": "azure_directory_audits.json",
+          "time_field": "activityDateTime",
+          "page_size": 100,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_azure_signins",
+      "name": "Azure Graph auditLogs/signIns: lọc createdDateTime gt, phân trang @odata.nextLink",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "(/auditLogs/signIns|^/mock/azure)",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "odata",
+          "dataset_file": "azure_large.json",
+          "time_field": "createdDateTime",
+          "page_size": 100,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_defender_alerts",
+      "name": "Defender alerts/incidents: lọc alertCreationTime ge/le, phân trang @odata.nextLink",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "(alerts|incidents)",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "odata",
+          "dataset_file": "defender_large.json",
+          "time_field": "alertCreationTime",
+          "page_size": 100,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_m365_content_list",
+      "name": "M365 tầng 1: subscriptions/content -> mảng contentUri theo contentType + startTime/endTime",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/activity/feed/subscriptions/content",
+        "path_match": "contains"
+      },
+      "response": {
+        "stateful": {
+          "type": "m365_content",
+          "dataset_file": "m365_large.json",
+          "time_field": "CreationTime",
+          "content_type_field": "contentType",
+          "blob_minutes": 10,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_m365_blob",
+      "name": "M365 tầng 2: tải contentUri -> mảng bản ghi audit của blob",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/activity/feed/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "stateful": {
+          "type": "m365_blob",
+          "dataset_file": "m365_large.json",
+          "time_field": "CreationTime",
+          "content_type_field": "contentType"
+        }
+      }
+    },
+    {
+      "id": "default_cloudwatch_filter_events",
+      "name": "CloudWatch FilterLogEvents: lọc [startTime, endTime] ms, phân trang nextToken",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "stateful": {
+          "type": "cloudwatch",
+          "dataset_file": "cloudwatch_large.json",
+          "limit": 1000,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_cloudwatch_get_log_events",
+      "name": "CloudWatch GetLogEvents",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.GetLogEvents"
+        }
+      },
+      "response": {
+        "stateful": {
+          "type": "cloudwatch",
+          "dataset_file": "cloudwatch_large.json",
+          "limit": 1000,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_sqs_receive",
+      "name": "SQS ReceiveMessage: mỗi phút 1 thông báo ObjectCreated trỏ tới file log của phút đó, long polling khi rỗng",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "stateful": {
+          "type": "sqs_receive",
+          "dataset_file": "s3_cloudtrail.json",
+          "bucket": "mock-s3-bucket",
+          "key_prefix": "AWSLogs/123456789012/CloudTrail/us-east-1/",
+          "object_minutes": 1,
+          "backlog_minutes": 10
+        }
+      }
+    },
+    {
+      "id": "default_sqs_change_visibility",
+      "name": "SQS ChangeMessageVisibility (keepalive khi xử lý file lâu)",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ChangeMessageVisibility"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ChangeMessageVisibilityResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><ResponseMetadata><RequestId>{{UUID}}</RequestId></ResponseMetadata></ChangeMessageVisibilityResponse>"
+      }
+    },
+    {
+      "id": "default_s3_get_object",
+      "name": "S3 GetObject .../YYYY/MM/DD/HHMM.json -> file CloudTrail {Records:[...]} tự sinh theo phút (synthetic, không hết data)",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/\\d{4}/\\d{2}/\\d{2}/\\d{4}\\.json$",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "s3_object",
+          "dataset_file": "s3_cloudtrail.json",
+          "time_field": "eventTime",
+          "object_minutes": 1,
+          "synthetic": true,
+          "records_per_object": 50,
+          "error_rate": 0.08,
+          "account_id": "123456789012",
+          "region": "us-east-1"
+        }
+      }
+    }
+  ]
+}

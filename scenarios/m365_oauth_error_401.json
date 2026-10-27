@@ -1,0 +1,47 @@
+{
+  "name": "m365_oauth_error_401",
+  "description": "M365 - Lỗi 401 khi XIN cấp Token (OAuth Server từ chối)",
+  "rules": [
+    {
+      "id": "rule_m365_token_direct",
+      "name": "Override: M365 Direct Token Error",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "path": "/mock/m365/token",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": "invalid_client",
+          "error_description": "AADSTS7000215: Invalid client secret is provided for Microsoft 365."
+        }
+      }
+    },
+    {
+      "id": "rule_m365_oauth2_token",
+      "name": "Override: M365 Proxy Token Error",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "host": "*.microsoftonline.com",
+        "path": "/oauth2/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": "invalid_client",
+          "error_description": "AADSTS7000215: Invalid client secret is provided for Microsoft 365 Proxy."
+        }
+      }
+    }
+  ]
+}

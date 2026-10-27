@@ -1,0 +1,176 @@
+[
+  {
+    "id": "rule_cloudwatch_describe_streams",
+    "name": "AWS CloudWatch DescribeLogStreams (Proxy & Direct)",
+    "category": "cloudwatch",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "headers": {
+        "X-Amz-Target": "Logs_20140328.DescribeLogStreams"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/x-amz-json-1.1"
+      },
+      "body": {
+        "logStreams": [
+          {
+            "logStreamName": "mock-stream-01",
+            "creationTime": "{{NOW_MS}}",
+            "firstEventTimestamp": "{{PAST_MS:60}}",
+            "lastEventTimestamp": "{{NOW_MS}}",
+            "uploadSequenceToken": "1"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rule_cloudwatch_describe_groups",
+    "name": "AWS CloudWatch DescribeLogGroups (Proxy & Direct)",
+    "category": "cloudwatch",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "headers": {
+        "X-Amz-Target": "Logs_20140328.DescribeLogGroups"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/x-amz-json-1.1"
+      },
+      "body": {
+        "logGroups": [
+          {
+            "arn": "arn:aws:logs:us-east-1:123456789012:log-group:mock-cw-group:*",
+            "creationTime": "{{NOW_MS}}",
+            "logGroupName": "mock-cw-group",
+            "metricFilterCount": 0,
+            "storedBytes": 1024
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rule_cloudwatch_filter_events",
+    "name": "AWS CloudWatch FilterLogEvents (Proxy & Direct)",
+    "category": "cloudwatch",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "headers": {
+        "X-Amz-Target": "Logs_20140328"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/x-amz-json-1.1"
+      },
+      "body": {
+        "events": [
+          {
+            "eventId": "cw-event-{{NOW_MS}}-1",
+            "timestamp": "{{PAST_MS:5}}",
+            "message": "{\"log_type\":\"cloudtrail\",\"user\":\"iam-admin\",\"action\":\"CreateSecurityGroup\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+            "ingestionTime": "{{NOW_MS}}"
+          },
+          {
+            "eventId": "cw-event-{{NOW_MS}}-2",
+            "timestamp": "{{PAST_MS:2}}",
+            "message": "{\"log_type\":\"cloudtrail\",\"user\":\"developer_01\",\"action\":\"AuthorizeSecurityGroupIngress\",\"ip\":\"54.23.11.2\",\"time\":\"{{NOW_ISO}}\"}",
+            "ingestionTime": "{{NOW_MS}}"
+          }
+        ],
+        "searchedLogStreams": [
+          {
+            "logStreamName": "mock-stream-01",
+            "searchedCompletely": true
+          }
+        ],
+        "nextToken": null
+      }
+    }
+  },
+  {
+    "id": "rule_cloudwatch_direct_path",
+    "name": "AWS CloudWatch Direct Path Test (/mock/cloudwatch)",
+    "category": "cloudwatch",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "*",
+      "path": "/mock/cloudwatch",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "events": [
+          {
+            "eventId": "cw-event-{{NOW_MS}}-direct",
+            "timestamp": "{{PAST_MS:5}}",
+            "message": "{\"log_type\":\"cloudtrail\",\"user\":\"direct-test\",\"action\":\"DescribeInstances\",\"time\":\"{{NOW_ISO}}\"}",
+            "ingestionTime": "{{NOW_MS}}"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rule_cloudwatch_getlogevents",
+    "name": "CloudWatch GetLogEvents",
+    "enabled": true,
+    "match": {
+      "method": "POST",
+      "headers": {
+        "X-Amz-Target": "Logs_20140328.GetLogEvents"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/x-amz-json-1.1"
+      },
+      "body": {
+        "events": [
+          {
+            "timestamp": "{{NOW_MS}}",
+            "message": "{\"level\":\"info\",\"msg\":\"Service health check passed\"}",
+            "ingestionTime": "{{NOW_MS}}"
+          }
+        ],
+        "nextForwardToken": "f/mock_next_fwd_token",
+        "nextBackwardToken": "b/mock_next_bwd_token"
+      }
+    }
+  },
+  {
+    "id": "rule_aws_sts_assume_role",
+    "name": "AWS STS AssumeRole",
+    "enabled": true,
+    "match": {
+      "method": "POST",
+      "body_contains": "Action=AssumeRole"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/xml"
+      },
+      "body": "<AssumeRoleResponse><AssumeRoleResult><Credentials><AccessKeyId>mock-access-key</AccessKeyId><SecretAccessKey>mock-secret</SecretAccessKey><SessionToken>mock-token</SessionToken><Expiration>2030-10-06T00:00:00Z</Expiration></Credentials></AssumeRoleResult></AssumeRoleResponse>"
+    }
+  }
+]

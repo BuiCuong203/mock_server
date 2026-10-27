@@ -1,0 +1,24 @@
+{
+  "name": "s3sqs_auth_signature_mismatch",
+  "description": "Auth fail - sai secret_access_key: SQS ReceiveMessage 403 SignatureDoesNotMatch",
+  "rules": [
+    {
+      "id": "s3sqs_auth_recv_signature",
+      "name": "[AUTH] ReceiveMessage 403 SignatureDoesNotMatch",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 403,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ErrorResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><Error><Type>Sender</Type><Code>SignatureDoesNotMatch</Code><Message>The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.</Message><Detail/></Error><RequestId>{{UUID}}</RequestId></ErrorResponse>"
+      }
+    }
+  ]
+}

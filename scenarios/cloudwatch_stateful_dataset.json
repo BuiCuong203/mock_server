@@ -1,0 +1,42 @@
+{
+  "name": "cloudwatch_stateful_dataset",
+  "description": "AWS CloudWatch - 8400 events (5 events/phút) từ hiện tại tới cuối ngày mai (Stateful filter startTime/endTime)",
+  "rules": [
+    {
+      "id": "rule_cloudwatch_filter_events",
+      "name": "Override: AWS CloudWatch FilterLogEvents Stateful",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "stateful": {
+          "type": "cloudwatch",
+          "dataset_file": "cloudwatch_large.json",
+          "limit": 1000
+        }
+      }
+    },
+    {
+      "id": "rule_cloudwatch_getlogevents",
+      "name": "Override: CloudWatch GetLogEvents Stateful",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.GetLogEvents"
+        }
+      },
+      "response": {
+        "stateful": {
+          "type": "cloudwatch",
+          "dataset_file": "cloudwatch_large.json",
+          "limit": 1000
+        }
+      }
+    }
+  ]
+}

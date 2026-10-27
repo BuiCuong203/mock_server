@@ -1,0 +1,64 @@
+{
+  "name": "sqs_api_timeout_delete",
+  "description": "api_timeout - DeleteMessage trễ 15s: log đã đẩy nhưng xóa message thất bại (failed deleting SQS message (may be reprocessed)); trên AWS thật message sẽ quay lại sau visibility_timeout -> trùng. Config test: wait_time 5, api_timeout 10",
+  "rules": [
+    {
+      "id": "sqs_to_delete_slow",
+      "name": "[API TIMEOUT] DeleteMessage trễ 15s",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=DeleteMessage"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<DeleteMessageResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><ResponseMetadata><RequestId>{{UUID}}</RequestId></ResponseMetadata></DeleteMessageResponse>"
+      }
+    },
+    {
+      "id": "sqs_to_recv_ok",
+      "name": "ReceiveMessage bình thường",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "stateful": {
+          "type": "sqs_receive",
+          "dataset_file": "s3_cloudtrail.json",
+          "bucket": "mock-s3-bucket",
+          "key_prefix": "AWSLogs/123456789012/CloudTrail/us-east-1/",
+          "object_minutes": 1,
+          "backlog_minutes": 10
+        }
+      }
+    },
+    {
+      "id": "default_s3_get_object",
+      "name": "S3 GetObject .../YYYY/MM/DD/HHMM.json -> file CloudTrail {Records:[...]} của đúng phút đó",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/\\d{4}/\\d{2}/\\d{2}/\\d{4}\\.json$",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "s3_object",
+          "dataset_file": "s3_cloudtrail.json",
+          "time_field": "eventTime",
+          "object_minutes": 1
+        }
+      }
+    }
+  ]
+}

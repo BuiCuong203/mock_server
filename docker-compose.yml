@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  cloud-mock-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cloud-mock-server
+    restart: unless-stopped
+    ports:
+      - "8881:8881"
+      - "8085:8085"   # gRPC GCP Pub/Sub (shipper: PUBSUB_EMULATOR_HOST=<ip-mock>:8085)
+    environment:
+      - PORT=8881
+    volumes:
+      - ./src:/app/src
+      - ./certs:/app/certs
+      - ./fixtures:/app/fixtures
+      - ./rules:/app/rules
+      - ./scenarios:/app/scenarios
+      - ./datasets:/app/datasets
+      - ./streams:/app/streams

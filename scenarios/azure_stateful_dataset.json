@@ -1,0 +1,26 @@
+{
+  "name": "azure_stateful_dataset",
+  "description": "Azure - 8315 events (5 events/phút) từ hiện tại tới cuối ngày mai (Stateful OData)",
+  "rules": [
+    {
+      "id": "default_azure_signins",
+      "name": "Azure Graph auditLogs/signIns: lọc createdDateTime gt, phân trang @odata.nextLink",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "(/auditLogs/signIns|^/mock/azure)",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "odata",
+          "dataset_file": "azure_large.json",
+          "time_field": "createdDateTime",
+          "page_size": 100,
+          "realtime": true
+        }
+      }
+    }
+  ]
+}

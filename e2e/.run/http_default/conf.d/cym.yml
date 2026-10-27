@@ -1,0 +1,13 @@
+# e2e: http_default — giống khối genconfig sinh cho log source http (cổng 18080)
+input:
+  - type: http
+    port: 18080
+    tls: false
+    input_id: "http_default"
+    add_field:
+      input_plugin: http
+      proto_id: http_18080
+      input_id: http_default
+      log_source_name: "e2e http_default"
+output:
+  - type: stdout

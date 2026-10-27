@@ -1,0 +1,46 @@
+{
+  "name": "m365_stateful_dataset",
+  "description": "M365 - 8315 events (5 events/phút) từ hiện tại tới cuối ngày mai (Stateful OData)",
+  "rules": [
+    {
+      "id": "default_m365_content_list",
+      "name": "M365 tầng 1: subscriptions/content -> mảng contentUri theo contentType + startTime/endTime",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/activity/feed/subscriptions/content",
+        "path_match": "contains"
+      },
+      "response": {
+        "stateful": {
+          "type": "m365_content",
+          "dataset_file": "m365_large.json",
+          "time_field": "CreationTime",
+          "content_type_field": "contentType",
+          "blob_minutes": 10,
+          "realtime": true
+        }
+      }
+    },
+    {
+      "id": "default_m365_blob",
+      "name": "M365 tầng 2: tải contentUri -> mảng bản ghi audit của blob",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/activity/feed/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "stateful": {
+          "type": "m365_blob",
+          "dataset_file": "m365_large.json",
+          "time_field": "CreationTime",
+          "content_type_field": "contentType"
+        }
+      }
+    }
+  ]
+}

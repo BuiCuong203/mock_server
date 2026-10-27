@@ -1,0 +1,25 @@
+{
+  "name": "cw_05_special_payload",
+  "description": "GĐ3 - Nội dung đặc biệt: tiếng Việt/emoji, JSON lồng, nhiều dòng, message ~210KB (vượt limit_size 200000 của cym.yml)",
+  "rules": [
+    {
+      "id": "cw_05_special_payload_1",
+      "name": "[CW] Payload đặc biệt",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "fixture": "cloudwatch/special_payload.json"
+      }
+    }
+  ]
+}

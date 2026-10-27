@@ -1,0 +1,47 @@
+{
+  "name": "rest_api_kafka_demo",
+  "description": "REST API khớp cym.rest_api_kafka.yml: header Authorization: Bearer demo-token-123, log trong body.data, created_at RFC3339, lọc ?since=, phân trang qua body.next (100 bản ghi/trang), log xuất hiện theo thời gian thực từ datasets/rest_kafka_demo.json",
+  "rules": [
+    {
+      "id": "rest_demo_logs",
+      "name": "[REST DEMO] Logs stateful (có token)",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/v2/logs",
+        "path_match": "prefix",
+        "headers": { "Authorization": "Bearer demo-token-123" }
+      },
+      "response": {
+        "stateful": {
+          "type": "next_link",
+          "dataset_file": "rest_kafka_demo.json",
+          "page_size": 100,
+          "time_field": "created_at",
+          "realtime": true,
+          "events_key": "data",
+          "next_key": "next",
+          "next_link_scheme": "http",
+          "last_page_value": ""
+        }
+      }
+    },
+    {
+      "id": "rest_demo_unauthorized",
+      "name": "[REST DEMO] Thiếu / sai token -> 401",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/v2/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": { "Content-Type": "application/json" },
+        "body": { "error": "unauthorized", "message": "Missing or invalid bearer token" }
+      }
+    }
+  ]
+}

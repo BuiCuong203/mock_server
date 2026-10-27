@@ -1,0 +1,13 @@
+# e2e: cloudwatch  (__MOCK_URL__ được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: cloudwatch
+    input_id: "e2e_cloudwatch"
+    access_key_id: "mock_aws_access_key"
+    secret_access_key: "mock_aws_secret_key"
+    log_type: "cloudtrail"
+    log_group_arn: "arn:aws:logs:us-east-1:123456789012:log-group:mock-cw-group:*"
+    proxy_url: "__MOCK_URL__"
+    add_field:
+      log_source_name: "e2e cloudwatch"
+output:
+  - type: stdout

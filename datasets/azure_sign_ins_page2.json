@@ -1,0 +1,756 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id": "8fa24b8f-48eb-4e97-89ea-51ba91633bc9",
+      "createdDateTime": "2030-10-07T09:20:00Z",
+      "userPrincipalName": "user0@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.0",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "95ad8225-6779-4fc3-a6d7-240e021044ae",
+      "createdDateTime": "2030-10-07T09:21:00Z",
+      "userPrincipalName": "user1@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.1",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "4a24a0f9-6f4b-425b-932f-187b33b52505",
+      "createdDateTime": "2030-10-07T09:22:00Z",
+      "userPrincipalName": "user2@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.2",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "3bb8e441-36fa-475e-857a-a349bd19656c",
+      "createdDateTime": "2030-10-07T09:23:00Z",
+      "userPrincipalName": "user3@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.3",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "aee527ec-f3f7-4321-9e53-19d0f2ce83a8",
+      "createdDateTime": "2030-10-07T09:24:00Z",
+      "userPrincipalName": "user4@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.4",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "81282580-3287-4370-b683-0657a649f9ff",
+      "createdDateTime": "2030-10-07T09:25:00Z",
+      "userPrincipalName": "user5@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.5",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "0a98930c-06c2-46e1-b84d-e109112e12dc",
+      "createdDateTime": "2030-10-07T09:26:00Z",
+      "userPrincipalName": "user6@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.6",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "37b265ee-d9ed-4fb9-a41a-1dca9f5fe9ac",
+      "createdDateTime": "2030-10-07T09:27:00Z",
+      "userPrincipalName": "user7@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.7",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "617e3897-4fda-4c0c-b260-83cc7479c130",
+      "createdDateTime": "2030-10-07T09:28:00Z",
+      "userPrincipalName": "user8@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.8",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "c7e165d1-363b-4b94-a8c9-c89f4ca9e167",
+      "createdDateTime": "2030-10-07T09:29:00Z",
+      "userPrincipalName": "user9@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.9",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "0a5199f7-b916-4c7b-a0fc-9fa7051fa487",
+      "createdDateTime": "2030-10-07T09:30:00Z",
+      "userPrincipalName": "user10@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.10",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "7eca4fd0-291d-4619-8506-39ae99883228",
+      "createdDateTime": "2030-10-07T09:31:00Z",
+      "userPrincipalName": "user11@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.11",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "e84b0efe-86a2-41d9-a6b5-247a72fb1e74",
+      "createdDateTime": "2030-10-07T09:32:00Z",
+      "userPrincipalName": "user12@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.12",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "3ec54310-c385-4901-8269-0d4a39154aac",
+      "createdDateTime": "2030-10-07T09:33:00Z",
+      "userPrincipalName": "user13@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.13",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "df6dfaa6-ba0e-41e8-9c67-6762922f6488",
+      "createdDateTime": "2030-10-07T09:34:00Z",
+      "userPrincipalName": "user14@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.14",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "72f55fcf-95f2-4bfc-a60f-db35b4f7b09f",
+      "createdDateTime": "2030-10-07T09:35:00Z",
+      "userPrincipalName": "user15@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.15",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "f0b7fd8e-8ec2-4a24-9bb4-55b1bd47327f",
+      "createdDateTime": "2030-10-07T09:36:00Z",
+      "userPrincipalName": "user16@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.16",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "11fd3803-e928-4207-9442-cb68b9253dfe",
+      "createdDateTime": "2030-10-07T09:37:00Z",
+      "userPrincipalName": "user17@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.17",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "7b95a070-1188-4b2f-b172-ecd31bb82e89",
+      "createdDateTime": "2030-10-07T09:38:00Z",
+      "userPrincipalName": "user18@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.18",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "bcdcef78-d0c7-4eaa-8ab0-e2a3fe93fc05",
+      "createdDateTime": "2030-10-07T09:39:00Z",
+      "userPrincipalName": "user19@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.19",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "79266637-1c99-499a-b703-13b456f61780",
+      "createdDateTime": "2030-10-07T09:40:00Z",
+      "userPrincipalName": "user20@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.20",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "d2a2265c-1c54-4808-a166-b59e5bf3bc24",
+      "createdDateTime": "2030-10-07T09:41:00Z",
+      "userPrincipalName": "user21@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.21",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "cf255bdf-b7a6-4094-8a7a-6d3b23fda6e3",
+      "createdDateTime": "2030-10-07T09:42:00Z",
+      "userPrincipalName": "user22@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.22",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "3f7adac6-c9fd-420b-9f82-2845b32fb0e1",
+      "createdDateTime": "2030-10-07T09:43:00Z",
+      "userPrincipalName": "user23@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.23",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "81436d79-0212-4c7c-bf31-1d77990a9c5f",
+      "createdDateTime": "2030-10-07T09:44:00Z",
+      "userPrincipalName": "user24@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.24",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "e40ae390-ff22-4fff-9e56-833d7ed3eecc",
+      "createdDateTime": "2030-10-07T09:45:00Z",
+      "userPrincipalName": "user25@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.25",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "d989b79a-4824-46aa-a0ce-3025b873c89b",
+      "createdDateTime": "2030-10-07T09:46:00Z",
+      "userPrincipalName": "user26@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.26",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "0090a788-e449-404b-8e4f-72ece6eb12cc",
+      "createdDateTime": "2030-10-07T09:47:00Z",
+      "userPrincipalName": "user27@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.27",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "b83efeff-fca3-4c9f-a082-542317feb8d3",
+      "createdDateTime": "2030-10-07T09:48:00Z",
+      "userPrincipalName": "user28@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.28",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "095fff1e-e562-414d-ae13-b88f885a0442",
+      "createdDateTime": "2030-10-07T09:49:00Z",
+      "userPrincipalName": "user29@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.29",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "3719bc54-38d3-4170-9ac7-c0e4f2d5b9a0",
+      "createdDateTime": "2030-10-07T09:50:00Z",
+      "userPrincipalName": "user30@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.30",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "d6eda3d0-a039-406d-b273-825d65ea3395",
+      "createdDateTime": "2030-10-07T09:51:00Z",
+      "userPrincipalName": "user31@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.31",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "b37337e1-4cb9-4ce8-906b-1c78cd878f00",
+      "createdDateTime": "2030-10-07T09:52:00Z",
+      "userPrincipalName": "user32@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.32",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "bb176a56-0b2d-434b-b5e7-67b15f1ae587",
+      "createdDateTime": "2030-10-07T09:53:00Z",
+      "userPrincipalName": "user33@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.33",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "c38a3152-9129-4101-82af-c89050aa5929",
+      "createdDateTime": "2030-10-07T09:54:00Z",
+      "userPrincipalName": "user34@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.34",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "6edbb236-a569-452b-b22c-7b172c608d75",
+      "createdDateTime": "2030-10-07T09:55:00Z",
+      "userPrincipalName": "user35@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.35",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "121ef342-4d50-4145-a9e0-8271bd1bb290",
+      "createdDateTime": "2030-10-07T09:56:00Z",
+      "userPrincipalName": "user36@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.36",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "ad4e9be2-3682-4c09-b174-e78f829df09f",
+      "createdDateTime": "2030-10-07T09:57:00Z",
+      "userPrincipalName": "user37@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.37",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "fe774dcf-6995-48a5-8aa3-f7ed778935ff",
+      "createdDateTime": "2030-10-07T09:58:00Z",
+      "userPrincipalName": "user38@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.38",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "dc483441-04c5-413e-a1e9-81546dbcded4",
+      "createdDateTime": "2030-10-07T09:59:00Z",
+      "userPrincipalName": "user39@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.39",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "1d4f498e-802d-4cbb-bb62-395fb18f137e",
+      "createdDateTime": "2030-10-07T10:00:00Z",
+      "userPrincipalName": "user40@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.40",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "310faa97-3f1d-429a-b280-fcc98209a7ba",
+      "createdDateTime": "2030-10-07T10:01:00Z",
+      "userPrincipalName": "user41@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.41",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "2b75ad21-bbf1-4dfc-a26c-b7f8ad0a2660",
+      "createdDateTime": "2030-10-07T10:02:00Z",
+      "userPrincipalName": "user42@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.42",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "1046ed49-43f9-41a0-a66e-d3d472bb9b85",
+      "createdDateTime": "2030-10-07T10:03:00Z",
+      "userPrincipalName": "user43@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.43",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "e878d135-df68-488e-976a-97fd5f475f9a",
+      "createdDateTime": "2030-10-07T10:04:00Z",
+      "userPrincipalName": "user44@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.44",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "22ba4970-4666-4b5e-9f72-455dfcf3c6e7",
+      "createdDateTime": "2030-10-07T10:05:00Z",
+      "userPrincipalName": "user45@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.45",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "8000ec1a-0abb-4937-8510-8f8781ab728c",
+      "createdDateTime": "2030-10-07T10:06:00Z",
+      "userPrincipalName": "user46@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.46",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "e44e8848-4d69-417b-ac34-2701b17d3176",
+      "createdDateTime": "2030-10-07T10:07:00Z",
+      "userPrincipalName": "user47@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.47",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "dcde40d5-ce29-4c21-b673-bddc19ac5f7b",
+      "createdDateTime": "2030-10-07T10:08:00Z",
+      "userPrincipalName": "user48@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.48",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    },
+    {
+      "id": "e0db0e4a-d48c-4e12-8fe8-7bc20922a590",
+      "createdDateTime": "2030-10-07T10:09:00Z",
+      "userPrincipalName": "user49@contoso.onmicrosoft.com",
+      "appDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "118.70.1.49",
+      "location": {
+        "city": "Hanoi",
+        "countryOrRegion": "VN"
+      },
+      "status": {
+        "errorCode": 0
+      },
+      "clientAppUsed": "Browser"
+    }
+  ],
+  "@odata.nextLink": null
+}

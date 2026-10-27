@@ -1,0 +1,31 @@
+{
+  "name": "defender_slow_10_pages",
+  "description": "Defender - Chậm 3s trong 10 trang đầu",
+  "rules": [
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Defender Slow 10 Pages",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "sequence": [
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 3000, "stateful": { "dataset_file": "defender_seed.json" } },
+          { "delay_ms": 10, "stateful": { "dataset_file": "defender_seed.json" } }
+        ]
+      }
+    }
+  ]
+}

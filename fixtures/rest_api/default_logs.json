@@ -1,0 +1,74 @@
+{
+  "status": "success",
+  "total": 3,
+  "data": [
+    {
+      "event_id": "rest_{{TIMESTAMP}}_1",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sec_admin",
+      "ip": "10.0.4.15",
+      "action": "login_success",
+      "severity": "info",
+      "message": "Security administrator logged in successfully"
+    },
+    {
+      "event_id": "rest_{{TIMESTAMP}}_2",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sales_manager",
+      "ip": "10.0.4.88",
+      "action": "export_customers",
+      "severity": "low",
+      "message": "User exported 50 customer profiles to CSV"
+    },
+    {
+      "event_id": "rest_{{TIMESTAMP}}_3",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sys_daemon",
+      "ip": "127.0.0.1",
+      "action": "backup_completed",
+      "severity": "info",
+      "message": "Daily database snapshot completed in 42s"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "rest_{{TIMESTAMP}}_1",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sec_admin",
+      "ip": "10.0.4.15",
+      "action": "login_success",
+      "severity": "info",
+      "message": "Security administrator logged in successfully"
+    },
+    {
+      "event_id": "rest_{{TIMESTAMP}}_2",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sales_manager",
+      "ip": "10.0.4.88",
+      "action": "export_customers",
+      "severity": "low",
+      "message": "User exported 50 customer profiles to CSV"
+    },
+    {
+      "event_id": "rest_{{TIMESTAMP}}_3",
+      "timestamp": "{{NOW_ISO}}",
+      "created_at": "{{NOW_ISO}}",
+      "time": "{{NOW_ISO}}",
+      "user": "sys_daemon",
+      "ip": "127.0.0.1",
+      "action": "backup_completed",
+      "severity": "info",
+      "message": "Daily database snapshot completed in 42s"
+    }
+  ]
+}

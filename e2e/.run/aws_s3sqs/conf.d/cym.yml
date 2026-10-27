@@ -1,0 +1,19 @@
+# e2e: aws_s3sqs  (http://localhost:18081 được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: aws_s3sqs
+    input_id: "e2e_s3sqs"
+    access_key_id: "mock_aws_access_key"
+    secret_access_key: "mock_aws_secret_key"
+    default_region: "us-east-1"
+    log_type: "cloudtrail"
+    queue_url: "https://sqs.us-east-1.amazonaws.com/123456789012/mock-sqs-queue"
+    endpoint: "amazonaws.com"
+    proxy_url: "http://localhost:18081"
+    max_number_of_messages: 5
+    visibility_timeout: 300
+    wait_time: 20
+    api_timeout: 120
+    add_field:
+      log_source_name: "e2e aws_s3sqs"
+output:
+  - type: stdout

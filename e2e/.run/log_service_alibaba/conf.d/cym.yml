@@ -1,0 +1,18 @@
+# e2e: log_service_alibaba — giữ endpoint thật, mọi request SLS (HTTP thường) đi qua proxy_url = mock server
+input:
+  - type: log_service_alibaba
+    input_id: "e2e_sls"
+    log_type: "alibaba_actiontrail"
+    access_id: "mock_access_id"
+    access_key: "mock_access_key"
+    project: "mock-project"
+    logstore: "actiontrail-log"
+    consumer_group: "cym-consumer-group"
+    consumer_name: "cym-consumer-01"
+    position: "begin"
+    endpoint: "cn-hangzhou.log.aliyuncs.com"
+    proxy_url: "http://localhost:18081"
+    add_field:
+      log_source_name: "e2e log_service_alibaba"
+output:
+  - type: stdout

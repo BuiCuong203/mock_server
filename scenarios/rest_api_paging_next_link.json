@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_paging_next_link",
+  "description": "REST API - Phân trang NextLink (Stateful, hỗ trợ param start/next_link)",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: REST API Logs Stateful Next Link",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "next_link",
+          "dataset_file": "rest_cursor_dataset.json",
+          "page_size": 50
+        }
+      }
+    }
+  ]
+}

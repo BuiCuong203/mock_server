@@ -1,0 +1,21 @@
+logging:
+  level: INFO
+  caller: false
+  to_file: false
+
+node:
+  name: E2E-MOCK-NODE
+  type: COLLECTOR_V2_CLOUD
+  siem_api: http://127.0.0.1:18090/v1/
+  api_key: e2e-mock-api-key
+  datapath: ./data
+  queue:
+    input: 1000
+    output: 1000
+
+monitoring:
+  enable: false
+
+worker:
+  output: 1
+  pipeline: 1

@@ -1,0 +1,36 @@
+{
+  "name": "azure_token_tenant_not_found_400",
+  "description": "Azure lấy token: sai tenant trong token_url -> Entra ID 400 invalid_request (AADSTS90002)",
+  "rules": [
+    {
+      "id": "azure_token_400_tenant",
+      "name": "[AZURE TOKEN] 400 invalid_request - sai tenant",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "host": "*.microsoftonline.com",
+        "path": "/oauth2/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "x-ms-request-id": "{{UUID}}"
+        },
+        "body": {
+          "error": "invalid_request",
+          "error_description": "AADSTS90002: Tenant 'mock-tenant' not found. Check to make sure you have the correct tenant ID and are signing into the correct cloud. Trace ID: {{UUID}} Correlation ID: {{UUID}} Timestamp: {{NOW_UTC}}",
+          "error_codes": [
+            90002
+          ],
+          "timestamp": "{{NOW_ISO}}",
+          "trace_id": "{{UUID}}",
+          "correlation_id": "{{UUID}}",
+          "error_uri": "https://login.microsoftonline.com/error?code=90002"
+        }
+      }
+    }
+  ]
+}

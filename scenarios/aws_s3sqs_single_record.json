@@ -1,0 +1,23 @@
+{
+  "name": "aws_s3sqs_single_record",
+  "description": "aws_s3sqs - Tr\u1ea3 v\u1ec1 duy nh\u1ea5t 1 b\u1ea3n ghi",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "name": "Override: aws_s3sqs Single Record",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventTime\":\"2030-10-06T00:00:00Z\"}]}"
+      }
+    }
+  ]
+}

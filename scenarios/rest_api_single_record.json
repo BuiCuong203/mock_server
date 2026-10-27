@@ -1,0 +1,31 @@
+{
+  "name": "rest_api_single_record",
+  "description": "rest_api - Tr\u1ea3 v\u1ec1 duy nh\u1ea5t 1 b\u1ea3n ghi",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: rest_api Single Record",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "events": [
+            {
+              "id": 1,
+              "timestamp": "2030-10-06T00:00:00Z",
+              "message": "Single Record"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

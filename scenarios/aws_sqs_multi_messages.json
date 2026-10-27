@@ -1,0 +1,23 @@
+{
+  "name": "aws_sqs_multi_messages",
+  "description": "AWS SQS - Trả về 3 thông báo (messages) cùng lúc trong 1 lượt kéo (ReceiveMessage)",
+  "rules": [
+    {
+      "id": "rule_aws_sqs_receive",
+      "name": "Override: AWS SQS ReceiveMessage Multiple",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ReceiveMessageResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\">\n  <ReceiveMessageResult>\n    <Message>\n      <MessageId>msg-sqs-001</MessageId>\n      <ReceiptHandle>mock-receipt-001</ReceiptHandle>\n      <MD5OfBody>e35bb0a3c2020268800b73c7f1ef2e8b</MD5OfBody>\n      <Body>{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"eventTime\":\"{{NOW_ISO}}\",\"eventName\":\"ObjectCreated:Put\",\"s3\":{\"bucket\":{\"name\":\"mock-s3-bucket\"},\"object\":{\"key\":\"logs/app_audit_1.log\",\"size\":1024}}}]}</Body>\n    </Message>\n    <Message>\n      <MessageId>msg-sqs-002</MessageId>\n      <ReceiptHandle>mock-receipt-002</ReceiptHandle>\n      <MD5OfBody>e35bb0a3c2020268800b73c7f1ef2e8b</MD5OfBody>\n      <Body>{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"eventTime\":\"{{NOW_ISO}}\",\"eventName\":\"ObjectCreated:Put\",\"s3\":{\"bucket\":{\"name\":\"mock-s3-bucket\"},\"object\":{\"key\":\"logs/app_audit_2.log\",\"size\":2048}}}]}</Body>\n    </Message>\n    <Message>\n      <MessageId>msg-sqs-003</MessageId>\n      <ReceiptHandle>mock-receipt-003</ReceiptHandle>\n      <MD5OfBody>e35bb0a3c2020268800b73c7f1ef2e8b</MD5OfBody>\n      <Body>{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"eventTime\":\"{{NOW_ISO}}\",\"eventName\":\"ObjectCreated:Put\",\"s3\":{\"bucket\":{\"name\":\"mock-s3-bucket\"},\"object\":{\"key\":\"logs/app_audit_3.log\",\"size\":3072}}}]}</Body>\n    </Message>\n  </ReceiveMessageResult>\n  <ResponseMetadata>\n    <RequestId>req-recv-{{TIMESTAMP}}</RequestId>\n  </ResponseMetadata>\n</ReceiveMessageResponse>"
+      }
+    }
+  ]
+}

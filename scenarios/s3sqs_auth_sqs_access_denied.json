@@ -1,0 +1,24 @@
+{
+  "name": "s3sqs_auth_sqs_access_denied",
+  "description": "Auth fail - key đúng nhưng thiếu quyền sqs:ReceiveMessage: 403 AccessDenied",
+  "rules": [
+    {
+      "id": "s3sqs_auth_recv_denied",
+      "name": "[AUTH] ReceiveMessage 403 AccessDenied",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 403,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ErrorResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><Error><Type>Sender</Type><Code>AccessDenied</Code><Message>Access to the resource https://sqs.us-east-1.amazonaws.com/123456789012/mock-sqs-queue is denied.</Message><Detail/></Error><RequestId>{{UUID}}</RequestId></ErrorResponse>"
+      }
+    }
+  ]
+}

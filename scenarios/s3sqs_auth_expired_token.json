@@ -1,0 +1,24 @@
+{
+  "name": "s3sqs_auth_expired_token",
+  "description": "Auth fail - session_token hết hạn: SQS ReceiveMessage 403 ExpiredToken",
+  "rules": [
+    {
+      "id": "s3sqs_auth_recv_expired",
+      "name": "[AUTH] ReceiveMessage 403 ExpiredToken",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 403,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ErrorResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><Error><Type>Sender</Type><Code>ExpiredToken</Code><Message>The security token included in the request is expired</Message><Detail/></Error><RequestId>{{UUID}}</RequestId></ErrorResponse>"
+      }
+    }
+  ]
+}

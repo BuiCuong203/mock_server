@@ -1,0 +1,35 @@
+{
+  "_comment": "Cấu hình mock GCP Pub/Sub (pubsub_mock). Mỗi topic có các subscription và bộ sinh message theo tốc độ rate (message/giây). Template hỗ trợ {{SEQ}}, {{EVENT_TIME_ISO}}, {{EVENT_TIME_MS}}, {{UUID}}, {{RANDOM_INT:a:b}}, {{CHOICE:a|b|c}}; object JSON được gửi dạng chuỗi JSON (shipper đọc vào log_raw).",
+  "projects": [
+    {
+      "project_id": "mock-gcp-project",
+      "topics": [
+        {
+          "name": "siem-audit-logs",
+          "subscriptions": ["siem-audit-logs-sub"],
+          "generator": {
+            "rate": 2,
+            "backlog": 20,
+            "templates": [
+              {
+                "insertId": "{{UUID}}",
+                "logName": "projects/mock-gcp-project/logs/cloudaudit.googleapis.com%2Factivity",
+                "severity": "{{CHOICE:NOTICE|INFO|WARNING|ERROR}}",
+                "timestamp": "{{EVENT_TIME_ISO}}",
+                "resource": {"type": "{{CHOICE:gce_instance|gcs_bucket|project}}", "labels": {"project_id": "mock-gcp-project"}},
+                "protoPayload": {
+                  "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+                  "serviceName": "{{CHOICE:compute.googleapis.com|storage.googleapis.com|iam.googleapis.com}}",
+                  "methodName": "{{CHOICE:v1.compute.instances.insert|storage.objects.delete|SetIamPolicy|google.iam.admin.v1.CreateServiceAccountKey}}",
+                  "authenticationInfo": {"principalEmail": "{{CHOICE:admin@example.com|devops@example.com|ci-bot@mock-gcp-project.iam.gserviceaccount.com}}"},
+                  "requestMetadata": {"callerIp": "{{RANDOM_INT:1:223}}.{{RANDOM_INT:0:255}}.{{RANDOM_INT:0:255}}.{{RANDOM_INT:1:254}}"}
+                },
+                "seq": "{{SEQ}}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

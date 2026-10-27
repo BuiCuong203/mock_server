@@ -1,0 +1,25 @@
+{
+  "name": "cw_20_single_page_2000_events",
+  "description": "GĐ3 - Đúng 1 page = 2000 event (kịch trần Limit của Shipper): không có nextToken -> Kafka nhận đủ 2000 bản ghi, last_query = endTime + 1 ms",
+  "rules": [
+    {
+      "id": "cw_20_single_page_2000_1",
+      "name": "[CW] FilterLogEvents đúng 1 page 2000 event (Limit trần, không nextToken)",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "fixture": "cloudwatch/single_page_2000_events.json"
+      }
+    }
+  ]
+}

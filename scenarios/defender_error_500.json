@@ -1,0 +1,29 @@
+{
+  "name": "defender_error_500",
+  "description": "Giả lập lỗi sập máy chủ Defender (500) để test cơ chế thử lại (Retry) của Agent",
+  "rules": [
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Microsoft Defender 500 Error",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 500,
+        "delay_ms": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "InternalServerError",
+            "message": "We are experiencing internal problems. Please try again later."
+          }
+        }
+      }
+    }
+  ]
+}

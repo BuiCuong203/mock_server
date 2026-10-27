@@ -1,0 +1,58 @@
+{
+  "name": "empty_batch",
+  "description": "Giả lập trạng thái không có log mới (trả về danh sách rỗng / 0 events) để kiểm tra shipper có duy trì watermark hay không",
+  "rules": [
+    {
+      "id": "rule_empty_rest",
+      "name": "Empty REST API logs",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": "success",
+          "total": 0,
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "rule_empty_azure",
+      "name": "Empty Azure Activity logs",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/azure",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "@odata.nextLink": "",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "rule_empty_defender",
+      "name": "Empty Defender Alerts",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "@odata.nextLink": null,
+          "value": []
+        }
+      }
+    }
+  ]
+}

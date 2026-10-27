@@ -1,0 +1,27 @@
+{
+  "name": "oauth_proxy_error_500",
+  "description": "OAuth Proxy - L\u1ed7i 500 (Microsoft STS Down)",
+  "rules": [
+    {
+      "id": "rule_oauth_proxy_error",
+      "name": "Override: OAuth Proxy 500",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "host": "*.microsoftonline.com",
+        "path": "/oauth2/",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 500,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": "server_error",
+          "error_description": "AADSTS90000: Microsoft internal service error."
+        }
+      }
+    }
+  ]
+}

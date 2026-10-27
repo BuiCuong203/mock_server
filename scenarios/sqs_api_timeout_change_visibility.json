@@ -1,0 +1,65 @@
+{
+  "name": "sqs_api_timeout_change_visibility",
+  "description": "api_timeout - file S3 tải chậm 20s nên shipper gia hạn visibility (mỗi visibility_timeout/2 = 5s), ChangeMessageVisibility trễ 15s > api_timeout 10s -> warning Failed to extend message visibility timeout (api_timeout exceeded); file vẫn xử lý xong và message được xóa. Config test: wait_time 5, api_timeout 10, visibility_timeout 10",
+  "rules": [
+    {
+      "id": "sqs_to_cmv_slow",
+      "name": "[API TIMEOUT] ChangeMessageVisibility trễ 15s",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ChangeMessageVisibility"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml"
+        },
+        "body_type": "xml",
+        "body": "<?xml version=\"1.0\"?>\n<ChangeMessageVisibilityResponse xmlns=\"http://queue.amazonaws.com/doc/2012-11-05/\"><ResponseMetadata><RequestId>{{UUID}}</RequestId></ResponseMetadata></ChangeMessageVisibilityResponse>"
+      }
+    },
+    {
+      "id": "sqs_to_recv_ok2",
+      "name": "ReceiveMessage bình thường",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "stateful": {
+          "type": "sqs_receive",
+          "dataset_file": "s3_cloudtrail.json",
+          "bucket": "mock-s3-bucket",
+          "key_prefix": "AWSLogs/123456789012/CloudTrail/us-east-1/",
+          "object_minutes": 1,
+          "backlog_minutes": 10
+        }
+      }
+    },
+    {
+      "id": "sqs_to_s3_slow",
+      "name": "S3 GetObject chậm 20s",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "GET",
+        "path": "/\\d{4}/\\d{2}/\\d{2}/\\d{4}\\.json$",
+        "path_match": "regex"
+      },
+      "response": {
+        "stateful": {
+          "type": "s3_object",
+          "dataset_file": "s3_cloudtrail.json",
+          "time_field": "eventTime",
+          "object_minutes": 1
+        },
+        "delay_ms": 20000
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# e2e: azure  (http://localhost:18081 được run_e2e.sh thay bằng URL mock server)
+input:
+  - type: azure
+    input_id: "e2e_azure"
+    client_id: "mock_azure_client_id"
+    client_secret: "mock_azure_client_secret"
+    token_url: "https://login.microsoftonline.com/mock_tenant_id/oauth2/v2.0/token"
+    log_url: "https://graph.microsoft.com/v1.0/auditLogs/signIns"
+    proxy_url: "http://localhost:18081"
+    interval: 60
+    duration: 60
+    add_field:
+      log_source_name: "e2e azure"
+output:
+  - type: stdout

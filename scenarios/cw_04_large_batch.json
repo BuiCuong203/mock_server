@@ -1,0 +1,45 @@
+{
+  "name": "cw_04_large_batch",
+  "description": "GĐ3 - Khối lượng lớn: trang 1 = 2000 event (đúng Limit), trang 2 = 500 event. Kafka nhận đủ 2500 bản ghi, không trùng",
+  "rules": [
+    {
+      "id": "cw_04_large_batch_1",
+      "name": "[CW] Trang 2 - 500 event",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        },
+        "body_regex": "\"nextToken\"\\s*:\\s*\"cw-big-page-2\""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "fixture": "cloudwatch/large_page_2.json"
+      }
+    },
+    {
+      "id": "cw_04_large_batch_2",
+      "name": "[CW] Trang 1 - 2000 event",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1"
+        },
+        "fixture": "cloudwatch/large_page_1.json"
+      }
+    }
+  ]
+}

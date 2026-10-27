@@ -1,0 +1,131 @@
+[
+  {
+    "id": "rule_defender_token",
+    "name": "Defender OAuth2 Token (Direct)",
+    "category": "defender",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "path": "/mock/defender/token",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_xyz1234567890",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  },
+  {
+    "id": "rule_defender_alerts",
+    "name": "Microsoft Defender EDR Alerts (Direct)",
+    "category": "defender",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/mock/defender/alerts",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "stateful": {
+        "dataset_file": "defender_seed.json"
+      }
+    }
+  },
+  {
+    "id": "rule_defender_alerts_proxy",
+    "name": "Microsoft Defender EDR Alerts (Proxy)",
+    "category": "defender",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/api/alerts",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "stateful": {
+        "dataset_file": "defender_seed.json"
+      }
+    }
+  },
+  {
+    "id": "rule_defender_incidents",
+    "name": "Defender Incidents API",
+    "enabled": true,
+    "match": {
+      "method": "GET",
+      "path": "/api/incidents",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "@odata.nextLink": null,
+        "value": [
+          {
+            "incidentId": 10245,
+            "incidentName": "Multi-stage incident involving Initial Access and Lateral Movement",
+            "createdTime": "{{NOW_ISO}}",
+            "lastUpdateTime": "{{NOW_ISO}}",
+            "status": "Active",
+            "severity": "High",
+            "classification": "TruePositive",
+            "determination": "Malware",
+            "alertsCount": 3,
+            "alerts": [
+              {
+                "alertId": "da-{{TIMESTAMP}}-01",
+                "title": "Suspicious PowerShell invocation"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rule_defender_alerts_v2",
+    "name": "Defender Graph Security V2",
+    "enabled": true,
+    "match": {
+      "method": "GET",
+      "path": "/security/alerts_v2",
+      "path_match": "contains"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "@odata.nextLink": null,
+        "value": [
+          {
+            "id": "v2-alert-{{TIMESTAMP}}",
+            "createdDateTime": "{{NOW_ISO}}",
+            "title": "Mock Graph V2 Alert"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "name": "rest_api_rate_limit_429",
+  "description": "REST API - L\u1ed7i 429 Rate Limiting & Retry-After",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "sequence": [
+          {
+            "status": 429,
+            "headers": {
+              "Content-Type": "application/json",
+              "Retry-After": "5"
+            },
+            "body": {
+              "error": "Too Many Requests",
+              "message": "Quota exceeded, please retry after 5 seconds"
+            }
+          },
+          {
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "events": [
+                {
+                  "id": 1,
+                  "message": "Recovered Event"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

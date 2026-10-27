@@ -1,0 +1,25 @@
+{
+  "name": "aws_s3sqs_proxy_504",
+  "description": "aws_s3sqs - L\u1ed7i 504 Gateway Timeout",
+  "rules": [
+    {
+      "id": "rule_aws_s3_get_object",
+      "name": "Override: 504 Gateway Timeout",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(\\.log|\\.json|\\.gz|\\.txt|mock-s3-bucket|logs/)"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 504,
+        "headers": {
+          "Content-Type": "text/html",
+          "Server": "Squid/4.10"
+        },
+        "body": "<html><head><title>504 Gateway Time-out</title></head><body><center><h1>504 Gateway Time-out</h1></center><hr><center>Squid/4.10</center></body></html>"
+      }
+    }
+  ]
+}

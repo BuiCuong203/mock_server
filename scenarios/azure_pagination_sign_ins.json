@@ -1,0 +1,34 @@
+{
+  "name": "azure_pagination_sign_ins",
+  "description": "Azure - Ph\u00e2n trang 2 trang b\u1eb1ng @odata.nextLink",
+  "rules": [
+    {
+      "id": "rule_azure_signin_logs_proxy",
+      "match": {
+        "method": "GET",
+        "path": "/auditLogs/signIns",
+        "path_match": "contains"
+      },
+      "response": {
+        "sequence": [
+          {
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure_sign_ins_page1.json"
+          },
+          {
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "azure_sign_ins_page2.json"
+          }
+        ]
+      }
+    }
+  ]
+}

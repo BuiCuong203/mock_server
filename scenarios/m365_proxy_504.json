@@ -1,0 +1,25 @@
+{
+  "name": "m365_proxy_504",
+  "description": "m365 - L\u1ed7i 504 Gateway Timeout",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "name": "Override: 504 Gateway Timeout",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "delay_ms": 15000,
+        "status": 504,
+        "headers": {
+          "Content-Type": "text/html",
+          "Server": "Squid/4.10"
+        },
+        "body": "<html><head><title>504 Gateway Time-out</title></head><body><center><h1>504 Gateway Time-out</h1></center><hr><center>Squid/4.10</center></body></html>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "defender_stateful_dataset",
+  "description": "Defender - 8315 events (5 events/phút) từ hiện tại tới cuối ngày mai (Stateful OData)",
+  "rules": [
+    {
+      "id": "rule_defender_alerts",
+      "name": "Override: Defender Stateful Dataset",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path_match": "regex",
+        "path": "(alerts|incidents|hunting)"
+      },
+      "response": {
+        "stateful": {
+          "type": "odata",
+          "dataset_file": "defender_large.json"
+        }
+      }
+    }
+  ]
+}

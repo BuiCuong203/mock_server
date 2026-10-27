@@ -1,0 +1,12 @@
+# e2e: http — shipper mở HTTP server, Mock Sender (type http) POST /log kèm X-API-KEY do mock ký
+input:
+  - type: http
+    input_id: "e2e_http"
+    port: 18086
+    consumer_threads: 2
+    batch_size: 1000
+    tls: false
+    add_field:
+      log_source_name: "e2e http"
+output:
+  - type: stdout

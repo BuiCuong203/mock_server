@@ -1,0 +1,44 @@
+{
+  "name": "defender_single_record",
+  "description": "Defender - Trả về duy nhất 1 bản ghi",
+  "rules": [
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Defender Single Record",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "stateful": {
+          "dataset_file": "defender_single.json"
+        }
+      }
+    },
+    {
+      "id": "rule_defender_alerts",
+      "name": "Override: Defender Single Record (Direct)",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "stateful": {
+          "dataset_file": "defender_single.json"
+        }
+      }
+    }
+  ]
+}

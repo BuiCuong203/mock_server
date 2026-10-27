@@ -1,0 +1,979 @@
+{
+  "data": [
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:27D1341888FF",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "OPEN",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-16T22:49:53.000Z",
+      "last_accessed": "2026-10-17T01:40:51.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:877FEDDECADA",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T21:55:14.000Z",
+      "last_accessed": "2026-10-16T22:41:01.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:0CBCFC7FA2CC",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "HIGH",
+      "disposition": "NOT_APPLICABLE",
+      "assignee": null,
+      "created_time": "2026-10-16T21:04:29.000Z",
+      "last_accessed": "2026-10-16T22:25:22.000Z",
+      "first_alert_time": "2026-10-16T21:00:54.000Z",
+      "latest_alert_time": "2026-10-16T21:38:22.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:B822F98B4C70",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Account Authenticated to Critical Asset From New Source",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-16T20:18:48.000Z",
+      "last_accessed": "2026-10-16T22:31:46.000Z",
+      "first_alert_time": "2026-10-16T20:18:39.000Z",
+      "latest_alert_time": "2026-10-16T21:11:46.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "vpn",
+        "phishing"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:3DA7C2A65042",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T15:57:07.000Z",
+      "last_accessed": "2026-10-16T17:02:03.000Z",
+      "first_alert_time": "2026-10-16T15:47:41.000Z",
+      "latest_alert_time": "2026-10-16T16:06:03.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:11D75B7A52A9",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Ingress From Disabled Account",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-16T15:50:12.000Z",
+      "last_accessed": "2026-10-16T16:30:53.000Z",
+      "first_alert_time": "2026-10-16T15:44:36.000Z",
+      "latest_alert_time": "2026-10-16T16:06:53.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:FC9940B3BD7A",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "UNSPECIFIED",
+      "disposition": "MALICIOUS",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-16T15:04:26.000Z",
+      "last_accessed": "2026-10-16T17:26:23.000Z",
+      "first_alert_time": "2026-10-16T14:55:34.000Z",
+      "latest_alert_time": "2026-10-16T15:43:23.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:7A221FFD4BC4",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "CRITICAL",
+      "disposition": "BENIGN",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T13:44:42.000Z",
+      "last_accessed": "2026-10-16T14:47:37.000Z",
+      "first_alert_time": "2026-10-16T13:35:34.000Z",
+      "latest_alert_time": "2026-10-16T14:22:37.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:9E6F52BD94FE",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "CRITICAL",
+      "disposition": "MALICIOUS",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T13:00:10.000Z",
+      "last_accessed": "2026-10-16T15:43:16.000Z",
+      "first_alert_time": "2026-10-16T12:50:59.000Z",
+      "latest_alert_time": "2026-10-16T13:55:16.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:6A33C66A9007",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "HIGH",
+      "disposition": "BENIGN",
+      "assignee": null,
+      "created_time": "2026-10-16T12:49:14.000Z",
+      "last_accessed": "2026-10-16T14:27:10.000Z",
+      "first_alert_time": "2026-10-16T12:39:45.000Z",
+      "latest_alert_time": "2026-10-16T13:02:10.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "critical-asset",
+        "phishing"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:5E1B7E2D5CF5",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-16T12:24:55.000Z",
+      "last_accessed": "2026-10-16T12:42:03.000Z",
+      "first_alert_time": "2026-10-16T12:13:22.000Z",
+      "latest_alert_time": "2026-10-16T12:37:03.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:321C45CBA169",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-16T10:51:07.000Z",
+      "last_accessed": "2026-10-16T11:57:21.000Z",
+      "first_alert_time": "2026-10-16T10:36:54.000Z",
+      "latest_alert_time": "2026-10-16T11:38:21.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "phishing",
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:5F1ECC9A9EFD",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Threat hunt - lateral movement via SMB",
+      "source": "HUNT",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T09:37:10.000Z",
+      "last_accessed": "2026-10-16T11:27:38.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:39027F76A6EB",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Ingress From Disabled Account",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "CRITICAL",
+      "disposition": "BENIGN",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-16T09:02:34.000Z",
+      "last_accessed": "2026-10-16T10:33:43.000Z",
+      "first_alert_time": "2026-10-16T09:02:18.000Z",
+      "latest_alert_time": "2026-10-16T09:25:43.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:8E473785E710",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "WAITING",
+      "priority": "MEDIUM",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-16T07:20:58.000Z",
+      "last_accessed": "2026-10-16T08:28:31.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:A84E77D84874",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "UNSPECIFIED",
+      "disposition": "NOT_APPLICABLE",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T06:20:18.000Z",
+      "last_accessed": "2026-10-16T07:42:05.000Z",
+      "first_alert_time": "2026-10-16T06:18:09.000Z",
+      "latest_alert_time": "2026-10-16T06:47:05.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:2A69403923C9",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-16T05:10:37.000Z",
+      "last_accessed": "2026-10-16T06:51:27.000Z",
+      "first_alert_time": "2026-10-16T04:57:55.000Z",
+      "latest_alert_time": "2026-10-16T06:05:27.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:F0161F29E556",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "LOW",
+      "disposition": "BENIGN",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T04:41:56.000Z",
+      "last_accessed": "2026-10-16T06:11:48.000Z",
+      "first_alert_time": "2026-10-16T04:40:05.000Z",
+      "latest_alert_time": "2026-10-16T05:14:48.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:5EE98EE69D71",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T03:59:13.000Z",
+      "last_accessed": "2026-10-16T06:27:32.000Z",
+      "first_alert_time": "2026-10-16T03:53:29.000Z",
+      "latest_alert_time": "2026-10-16T04:34:32.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:85CAAE45D4D7",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-16T00:45:43.000Z",
+      "last_accessed": "2026-10-16T01:58:18.000Z",
+      "first_alert_time": "2026-10-16T00:35:23.000Z",
+      "latest_alert_time": "2026-10-16T00:49:18.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "edr"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:C6DAA8D316CB",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T23:34:50.000Z",
+      "last_accessed": "2026-10-16T00:48:47.000Z",
+      "first_alert_time": "2026-10-15T23:32:11.000Z",
+      "latest_alert_time": "2026-10-16T00:01:47.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "ad",
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:9EAA667FC6E7",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T22:02:51.000Z",
+      "last_accessed": "2026-10-16T00:05:12.000Z",
+      "first_alert_time": "2026-10-15T21:49:24.000Z",
+      "latest_alert_time": "2026-10-15T22:11:12.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "ad"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:C26032776D2D",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Account Authenticated to Critical Asset From New Source",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "MEDIUM",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T21:20:23.000Z",
+      "last_accessed": "2026-10-15T21:52:44.000Z",
+      "first_alert_time": "2026-10-15T21:19:32.000Z",
+      "latest_alert_time": "2026-10-15T21:51:44.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:9AC5A90D4D8C",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "OPEN",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T20:58:01.000Z",
+      "last_accessed": "2026-10-15T21:23:00.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "RAPID7",
+      "tags": [
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:9E4F39A0EC82",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "HIGH",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T20:20:47.000Z",
+      "last_accessed": "2026-10-15T21:25:28.000Z",
+      "first_alert_time": "2026-10-15T20:12:39.000Z",
+      "latest_alert_time": "2026-10-15T20:38:28.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:5C6DBFB598B2",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Ingress From Disabled Account",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-15T19:34:56.000Z",
+      "last_accessed": "2026-10-15T20:27:14.000Z",
+      "first_alert_time": "2026-10-15T19:34:34.000Z",
+      "latest_alert_time": "2026-10-15T20:18:14.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:19882A309E1C",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Ingress From Disabled Account",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T19:20:16.000Z",
+      "last_accessed": "2026-10-15T21:11:58.000Z",
+      "first_alert_time": "2026-10-15T19:15:33.000Z",
+      "latest_alert_time": "2026-10-15T19:22:58.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "ad"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:1847F72CB0D9",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T19:00:49.000Z",
+      "last_accessed": "2026-10-15T20:47:51.000Z",
+      "first_alert_time": "2026-10-15T18:51:54.000Z",
+      "latest_alert_time": "2026-10-15T19:25:51.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "ad",
+        "edr"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:445BE5BDAE4A",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "LOW",
+      "disposition": "MALICIOUS",
+      "assignee": null,
+      "created_time": "2026-10-15T18:01:50.000Z",
+      "last_accessed": "2026-10-15T19:39:31.000Z",
+      "first_alert_time": "2026-10-15T17:54:58.000Z",
+      "latest_alert_time": "2026-10-15T18:28:31.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:7FFF5B62F8EB",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Account Authenticated to Critical Asset From New Source",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "HIGH",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T15:40:08.000Z",
+      "last_accessed": "2026-10-15T16:10:31.000Z",
+      "first_alert_time": "2026-10-15T15:36:08.000Z",
+      "latest_alert_time": "2026-10-15T16:03:31.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:1091F344054C",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T14:15:13.000Z",
+      "last_accessed": "2026-10-15T15:47:57.000Z",
+      "first_alert_time": "2026-10-15T14:09:03.000Z",
+      "latest_alert_time": "2026-10-15T14:36:57.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:A95CF3805F78",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T13:05:24.000Z",
+      "last_accessed": "2026-10-15T15:06:38.000Z",
+      "first_alert_time": "2026-10-15T12:53:24.000Z",
+      "latest_alert_time": "2026-10-15T13:58:38.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:3A122925FBD4",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "HIGH",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-15T12:49:54.000Z",
+      "last_accessed": "2026-10-15T13:39:44.000Z",
+      "first_alert_time": "2026-10-15T12:47:15.000Z",
+      "latest_alert_time": "2026-10-15T13:05:44.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:C883E0C23CF9",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "MEDIUM",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T11:45:22.000Z",
+      "last_accessed": "2026-10-15T12:56:48.000Z",
+      "first_alert_time": "2026-10-15T11:40:49.000Z",
+      "latest_alert_time": "2026-10-15T11:48:48.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:188B1FE52615",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T10:36:28.000Z",
+      "last_accessed": "2026-10-15T12:11:57.000Z",
+      "first_alert_time": "2026-10-15T10:29:14.000Z",
+      "latest_alert_time": "2026-10-15T11:12:57.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:62DE1A5A5BEF",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Account Authenticated to Critical Asset From New Source",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-15T10:30:15.000Z",
+      "last_accessed": "2026-10-15T11:26:17.000Z",
+      "first_alert_time": "2026-10-15T10:20:57.000Z",
+      "latest_alert_time": "2026-10-15T10:38:17.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "vpn",
+        "edr"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:4AEC90B0D6ED",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Account Authenticated to Critical Asset From New Source",
+      "source": "ALERT",
+      "status": "CLOSED",
+      "priority": "CRITICAL",
+      "disposition": "NOT_APPLICABLE",
+      "assignee": null,
+      "created_time": "2026-10-15T09:15:02.000Z",
+      "last_accessed": "2026-10-15T10:50:21.000Z",
+      "first_alert_time": "2026-10-15T09:14:29.000Z",
+      "latest_alert_time": "2026-10-15T09:25:21.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:D5C722567F95",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Threat hunt - lateral movement via SMB",
+      "source": "HUNT",
+      "status": "CLOSED",
+      "priority": "HIGH",
+      "disposition": "MALICIOUS",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T08:23:59.000Z",
+      "last_accessed": "2026-10-15T09:16:18.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "phishing",
+        "edr"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:7F452800229D",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T07:26:19.000Z",
+      "last_accessed": "2026-10-15T09:18:24.000Z",
+      "first_alert_time": "2026-10-15T07:22:22.000Z",
+      "latest_alert_time": "2026-10-15T07:58:24.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "phishing"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:A0CC4FD77630",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Attacker Technique - PowerShell Encoded Command",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "HIGH",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T07:07:03.000Z",
+      "last_accessed": "2026-10-15T08:56:55.000Z",
+      "first_alert_time": "2026-10-15T06:58:19.000Z",
+      "latest_alert_time": "2026-10-15T07:37:55.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "phishing",
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:9B08409C873E",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T06:51:14.000Z",
+      "last_accessed": "2026-10-15T08:30:29.000Z",
+      "first_alert_time": "2026-10-15T06:44:22.000Z",
+      "latest_alert_time": "2026-10-15T07:24:29.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "critical-asset"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:FD9691B48B76",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Suspicious Authentication - Brute Force Against Domain Account",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "MEDIUM",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T06:48:55.000Z",
+      "last_accessed": "2026-10-15T07:58:16.000Z",
+      "first_alert_time": "2026-10-15T06:44:14.000Z",
+      "latest_alert_time": "2026-10-15T07:21:16.000Z",
+      "responsibility": "RAPID7",
+      "tags": [
+        "phishing",
+        "vpn"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:7B3DD05DB9AF",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Threat hunt - lateral movement via SMB",
+      "source": "HUNT",
+      "status": "CLOSED",
+      "priority": "HIGH",
+      "disposition": "NOT_APPLICABLE",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T06:19:00.000Z",
+      "last_accessed": "2026-10-15T08:41:16.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:0F9090B21B5C",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "OPEN",
+      "priority": "UNSPECIFIED",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T06:15:30.000Z",
+      "last_accessed": "2026-10-15T06:52:02.000Z",
+      "first_alert_time": "2026-10-15T06:08:01.000Z",
+      "latest_alert_time": "2026-10-15T06:44:02.000Z",
+      "responsibility": "CUSTOMER",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:D9D67BD3F8AA",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "INVESTIGATING",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T06:06:31.000Z",
+      "last_accessed": "2026-10-15T06:37:33.000Z",
+      "first_alert_time": "2026-10-15T05:58:20.000Z",
+      "latest_alert_time": "2026-10-15T06:25:33.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:A288CE967365",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Spoofed Domain Email Received",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "MEDIUM",
+      "disposition": "UNDECIDED",
+      "assignee": null,
+      "created_time": "2026-10-15T05:39:07.000Z",
+      "last_accessed": "2026-10-15T07:32:12.000Z",
+      "first_alert_time": "2026-10-15T05:26:00.000Z",
+      "latest_alert_time": "2026-10-15T06:17:12.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:7D910BD3F400",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "WAITING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Analyst 01",
+        "email": "soc01@example.com"
+      },
+      "created_time": "2026-10-15T05:08:59.000Z",
+      "last_accessed": "2026-10-15T06:10:33.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "RAPID7",
+      "tags": [
+        "phishing",
+        "ad"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:D8A80A81BBD4",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "CLOSED",
+      "priority": "CRITICAL",
+      "disposition": "BENIGN",
+      "assignee": {
+        "name": "SOC Analyst 02",
+        "email": "soc02@example.com"
+      },
+      "created_time": "2026-10-15T04:26:05.000Z",
+      "last_accessed": "2026-10-15T05:58:14.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "CUSTOMER",
+      "tags": [
+        "ad"
+      ]
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:F62760ED6EA5",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Network Access For Threat - Known Malicious IP",
+      "source": "ALERT",
+      "status": "WAITING",
+      "priority": "CRITICAL",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T02:02:18.000Z",
+      "last_accessed": "2026-10-15T02:50:49.000Z",
+      "first_alert_time": "2026-10-15T01:57:56.000Z",
+      "latest_alert_time": "2026-10-15T02:16:49.000Z",
+      "responsibility": "RAPID7",
+      "tags": []
+    },
+    {
+      "rrn": "rrn:investigation:us:44d88612-fea8-a8f3-6de8-2e1278abb02f:investigation:FF2EB48C3087",
+      "organization_id": "44d88612-fea8-a8f3-6de8-2e1278abb02f",
+      "title": "Manual investigation - unusual VPN logins",
+      "source": "MANUAL",
+      "status": "INVESTIGATING",
+      "priority": "LOW",
+      "disposition": "UNDECIDED",
+      "assignee": {
+        "name": "SOC Lead",
+        "email": "soclead@example.com"
+      },
+      "created_time": "2026-10-15T01:51:24.000Z",
+      "last_accessed": "2026-10-15T03:36:05.000Z",
+      "first_alert_time": null,
+      "latest_alert_time": null,
+      "responsibility": "RAPID7",
+      "tags": [
+        "vpn"
+      ]
+    }
+  ],
+  "metadata": {
+    "index": 0,
+    "size": 50,
+    "total_data": 50,
+    "total_pages": 1
+  }
+}

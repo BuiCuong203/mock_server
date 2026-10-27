@@ -1,0 +1,29 @@
+{
+  "_comment": "Cấu hình mock Azure Event Hubs. Hub không khai báo dùng cấu hình 'default'. rate_per_partition = event/giây mỗi partition; mỗi event là {\"records\": [...]} gồm records_per_event bản ghi (shipper tách mỗi bản ghi thành 1 log). Template hỗ trợ {{SEQ}}, {{EVENT_TIME_ISO}}, {{PARTITION}}, {{UUID}}, {{RANDOM_INT:a:b}}, {{CHOICE:a|b}}.",
+  "default": {
+    "partition_count": 2,
+    "rate_per_partition": 1,
+    "backlog_seconds": 120,
+    "records_per_event": 2,
+    "templates": [
+      {
+        "time": "{{EVENT_TIME_ISO}}",
+        "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000000/RESOURCEGROUPS/RG-SIEM/PROVIDERS/MICROSOFT.KEYVAULT/VAULTS/KV-MOCK",
+        "operationName": "{{CHOICE:VaultGet|SecretGet|SecretSet|KeyDelete|Authentication}}",
+        "category": "{{CHOICE:AuditEvent|SignInLogs|AzureActivity}}",
+        "resultType": "{{CHOICE:Success|Success|Success|Failure}}",
+        "callerIpAddress": "{{RANDOM_INT:1:223}}.{{RANDOM_INT:0:255}}.{{RANDOM_INT:0:255}}.{{RANDOM_INT:1:254}}",
+        "identity": {"claim": {"upn": "{{CHOICE:admin@contoso.com|devops@contoso.com|svc-backup@contoso.com}}"}},
+        "correlationId": "{{UUID}}",
+        "seq": "{{SEQ}}",
+        "partition": "{{PARTITION}}"
+      }
+    ]
+  },
+  "hubs": {
+    "siem-hub": {
+      "partition_count": 2,
+      "rate_per_partition": 1
+    }
+  }
+}

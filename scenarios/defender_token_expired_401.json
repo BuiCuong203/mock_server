@@ -1,0 +1,50 @@
+{
+  "name": "defender_token_expired_401",
+  "description": "Defender - Token hết hạn (API Alerts trả về 401), ép Shipper phải xin lại token",
+  "rules": [
+    {
+      "id": "rule_defender_alerts",
+      "name": "Override: Defender Direct Expired Token",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "InvalidAuthenticationToken",
+            "message": "Access token has expired."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_defender_alerts_proxy",
+      "name": "Override: Defender Proxy Expired Token",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/api/alerts",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "InvalidAuthenticationToken",
+            "message": "Access token has expired."
+          }
+        }
+      }
+    }
+  ]
+}

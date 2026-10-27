@@ -1,0 +1,84 @@
+# e2e: beats_routing — bộ lọc beats lấy từ cym.yml thật (collector) + đánh dấu nhánh output (raw_input / parsed)
+# để kiểm tra log_parser của event có nằm trong danh sách parser hay không.
+input:
+  - type: beats
+    port: 15047
+    codec:
+      type: plain
+    add_field:
+      input_plugin: beats
+      proto_id: beats_5044
+      input_id: beats_default
+filter:
+  - type: "if"
+    condition:
+      - {type: equal, key: input_plugin, value: "beats"}
+      - {type: exist, key: source, value: true}
+    action:
+      - type: copy
+        option:
+          log_file: "source"
+      - type: lowercase
+        option:
+          - source
+  - type: "if"
+    condition:
+      - {type: equal, key: input_plugin, value: "beats"}
+    action:
+      - type: copy
+        option:
+          server_id: "[beat][name]"
+      - type: remove_field
+        option: [beat, offset, input_type, host, timestamp]
+  - type: "switch"
+    case:
+      - type: "if"
+        condition:
+          - {type: equal, key: input_plugin, value: "beats"}
+          - {type: exist, key: log_parser, value: true}
+        action:
+      - type: "if"
+        condition:
+          - {type: equal, key: input_plugin, value: "beats"}
+          - {type: equal, key: type, value: "nginx_access"}
+        action:
+          - type: replace
+            option:
+              log_parser: "nginx_access"
+      - type: "if"
+        condition:
+          - {type: equal, key: input_plugin, value: "beats"}
+          - {type: contain, key: source, value: "access"}
+          - {type: contain, key: source, value: "log"}
+        action:
+          - type: replace
+            option:
+              log_parser: "web_access"
+      - type: "if"
+        condition:
+          - {type: exist, key: log_parser, value: false}
+        action:
+          - type: replace
+            option:
+              log_parser: "unknown"
+  # Đánh dấu nhánh output như cym.yml thật (danh sách rút gọn, gồm các parser web có trong danh sách thật)
+  - type: "if"
+    condition:
+      - type: in
+        key: log_parser
+        value: [apache_access, iis_access, tomcat_access, web_access, nginx_access_02, nginx_kubernetes]
+    action:
+      - type: add_field
+        option:
+          route: "parsed (nhánh in)"
+  - type: "if"
+    condition:
+      - type: not_in
+        key: log_parser
+        value: [apache_access, iis_access, tomcat_access, web_access, nginx_access_02, nginx_kubernetes]
+    action:
+      - type: add_field
+        option:
+          route: "raw_input (nhánh not_in)"
+output:
+  - type: stdout

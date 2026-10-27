@@ -1,0 +1,23 @@
+{
+  "name": "rest_api_paging_page_size",
+  "description": "REST API - Phân trang Page-Size (Stateful, hỗ trợ truyền params page/size)",
+  "rules": [
+    {
+      "id": "rule_rest_api_logs",
+      "name": "Override: REST API Logs Stateful Page Size",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "stateful": {
+          "type": "page_size",
+          "dataset_file": "rest_cursor_dataset.json",
+          "size": 50
+        }
+      }
+    }
+  ]
+}

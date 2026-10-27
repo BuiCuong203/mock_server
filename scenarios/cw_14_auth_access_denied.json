@@ -1,0 +1,29 @@
+{
+  "name": "cw_14_auth_access_denied",
+  "description": "GĐ2 - Thiếu quyền logs:FilterLogEvents (AccessDeniedException 400)",
+  "rules": [
+    {
+      "id": "cw_14_auth_access_denied_1",
+      "name": "[CW] AccessDenied",
+      "enabled": true,
+      "mode": "all",
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328.FilterLogEvents"
+        }
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "AccessDeniedException"
+        },
+        "body": {
+          "__type": "AccessDeniedException",
+          "message": "User: arn:aws:iam::123456789012:user/cym-shipper is not authorized to perform: logs:FilterLogEvents on resource: arn:aws:logs:us-east-1:123456789012:log-group:mock-cw-group:*"
+        }
+      }
+    }
+  ]
+}

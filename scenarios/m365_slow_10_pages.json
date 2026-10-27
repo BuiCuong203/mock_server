@@ -1,0 +1,119 @@
+{
+  "name": "m365_slow_10_pages",
+  "description": "m365 - Ch\u1eadm 3s trong 10 trang \u0111\u1ea7u",
+  "rules": [
+    {
+      "id": "rule_m365_blob_content",
+      "name": "Override: m365 Slow 10 Pages",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/audit/",
+        "path_match": "contains"
+      },
+      "response": {
+        "sequence": [
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 3000,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          },
+          {
+            "delay_ms": 10,
+            "status": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body_type": "fixture",
+            "fixture": "m365/audit_general.json"
+          }
+        ]
+      }
+    }
+  ]
+}

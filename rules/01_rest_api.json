@@ -1,0 +1,45 @@
+[
+  {
+    "id": "rule_rest_api_logs",
+    "name": "Generic REST API Pull Logs",
+    "category": "rest_api",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "GET",
+      "path": "/mock/rest_api/logs",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body_type": "fixture",
+      "fixture": "rest_api/default_logs.json"
+    }
+  },
+  {
+    "id": "rule_rest_api_token",
+    "name": "REST API OAuth2 Token",
+    "category": "rest_api",
+    "enabled": true,
+    "mode": "all",
+    "match": {
+      "method": "POST",
+      "path": "/mock/rest_api/token",
+      "path_match": "prefix"
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "access_token": "mock_jwt_access_token_rest_12345",
+        "token_type": "Bearer",
+        "expires_in": 3600
+      }
+    }
+  }
+]

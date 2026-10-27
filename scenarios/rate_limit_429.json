@@ -1,0 +1,137 @@
+{
+  "name": "rate_limit_429",
+  "description": "Giả lập Rate Limiting (429 Too Many Requests) kèm header Retry-After để test cơ chế retry & backoff của Shipper",
+  "rules": [
+    {
+      "id": "rule_rate_limit_rest",
+      "name": "429 Throttled on REST API",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/rest_api/logs",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Retry-After": "15",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "RateLimitExceeded",
+            "message": "Too many requests. Please retry after 15 seconds."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_rate_limit_azure",
+      "name": "429 Throttled on Azure Graph API",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/azure",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Retry-After": "30",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "ActivityLimitReached",
+            "message": "The tenant has exceeded the allowed query request rate."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_rate_limit_defender",
+      "name": "429 Throttled on Defender Alerts",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/mock/defender/alerts",
+        "path_match": "prefix"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Retry-After": "20",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "TooManyRequests",
+            "message": "Defender API call quota exceeded."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_rate_limit_m365",
+      "name": "429 Throttled on Office 365 Feed",
+      "enabled": true,
+      "match": {
+        "method": "GET",
+        "path": "/subscriptions/content",
+        "path_match": "contains"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Retry-After": "60",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": {
+            "code": "AF429",
+            "message": "Tenant has exceeded maximum request rate for Office 365 Activity Feed API."
+          }
+        }
+      }
+    },
+    {
+      "id": "rule_rate_limit_cloudwatch",
+      "name": "429 Throttled on AWS CloudWatch",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "headers": {
+          "X-Amz-Target": "Logs_20140328"
+        }
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Content-Type": "application/x-amz-json-1.1",
+          "x-amzn-ErrorType": "ThrottlingException"
+        },
+        "body": {
+          "__type": "ThrottlingException",
+          "message": "Rate exceeded for operation FilterLogEvents"
+        }
+      }
+    },
+    {
+      "id": "rule_rate_limit_sqs",
+      "name": "429 Throttled on AWS SQS",
+      "enabled": true,
+      "match": {
+        "method": "POST",
+        "body_contains": "Action=ReceiveMessage"
+      },
+      "response": {
+        "status": 429,
+        "headers": {
+          "Content-Type": "application/xml"
+        },
+        "body_type": "xml",
+        "body": "<ErrorResponse><Error><Type>Sender</Type><Code>OverLimit</Code><Message>Action ReceiveMessage is throttled</Message></Error><RequestId>{{UUID}}</RequestId></ErrorResponse>"
+      }
+    }
+  ]
+}
