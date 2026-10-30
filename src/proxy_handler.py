@@ -3,6 +3,8 @@ import ssl
 import time
 import socket
 import json
+import base64
+import hashlib
 from urllib.parse import urlparse, parse_qs
 from http.server import BaseHTTPRequestHandler
 from .config import (
@@ -12,6 +14,8 @@ from .request_logger import request_logger
 from .scenario_manager import scenario_manager
 from .admin_api import AdminApi
 from .web_dashboard import WebDashboard
+from . import azure_blob_mock
+from . import event_hubs_broker
 
 
 def process_http_request(
@@ -51,6 +55,48 @@ def process_http_request(
         handler_obj.end_headers()
         handler_obj.wfile.write(resp_bytes)
         handler_obj.wfile.flush()
+        return
+
+    # 2.1. AZURE EVENT HUBS WEBSOCKET UPGRADE (*.servicebus.windows.net)
+    upgrade = headers.get("Upgrade", "") or headers.get("upgrade", "")
+    host_no_port = host.split(":")[0].lower()
+    if upgrade.lower() == "websocket" and (host_no_port.endswith(".servicebus.windows.net") or "/$servicebus/websocket" in raw_path):
+        ws_key = headers.get("Sec-WebSocket-Key") or headers.get("sec-websocket-key", "")
+        accept_key = base64.b64encode(hashlib.sha1((ws_key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").encode()).digest()).decode()
+        handler_obj.send_response(101, "Switching Protocols")
+        handler_obj.send_header("Upgrade", "websocket")
+        handler_obj.send_header("Connection", "Upgrade")
+        handler_obj.send_header("Sec-WebSocket-Accept", accept_key)
+        handler_obj.send_header("Sec-WebSocket-Protocol", "amqp")
+        handler_obj.end_headers()
+        handler_obj.wfile.flush()
+        tag = f"[{'PROXY' if is_proxy else 'DIRECT'}]"
+        print(f"[{now_str}] {GREEN}{tag} [WS UPGRADE 101]{RESET} {BOLD}{raw_path}{RESET} (Host: {host}) -> {CYAN}event_hubs_broker{RESET}")
+        event_hubs_broker.handle_websocket(handler_obj.connection, host_no_port)
+        handler_obj.close_connection = True
+        return
+
+    # 2.2. AZURE BLOB STORAGE MOCK (*.blob.core.windows.net)
+    if host_no_port.endswith(".blob.core.windows.net"):
+        status, resp_hdrs, resp_bytes = azure_blob_mock.handle(method, raw_path, host, params, headers, body_bytes)
+        if method == "HEAD":
+            resp_bytes = b""
+        handler_obj.send_response(status)
+        for hk, hv in resp_hdrs.items():
+            handler_obj.send_header(hk, hv)
+        handler_obj.end_headers()
+        if method != "HEAD":
+            handler_obj.wfile.write(resp_bytes)
+        handler_obj.wfile.flush()
+        duration_ms = (time.time() - start_time) * 1000
+        request_logger.log(
+            method=method, path=path, host=host, client_ip=client_ip, params=params,
+            req_headers=headers, req_body=body_str, status=status, resp_headers=resp_hdrs,
+            resp_body=f"[{len(resp_bytes)} bytes]" if method == "HEAD" else resp_bytes.decode('utf-8', errors='ignore')[:500],
+            matched_rule="azure_blob_mock", duration_ms=duration_ms
+        )
+        tag = f"[{'PROXY' if is_proxy else 'DIRECT'}]"
+        print(f"[{now_str}] {GREEN}{tag} [{method} {status}]{RESET} {BOLD}{path}{RESET} (Host: {host}) -> {CYAN}azure_blob_mock{RESET}")
         return
 
     # 3. GENERIC DYNAMIC RULE MATCHING (Direct API & HTTPS Proxy)
@@ -101,7 +147,8 @@ def process_http_request(
     for hk, hv in resp_hdrs.items():
         handler_obj.send_header(hk, hv)
     handler_obj.end_headers()
-    handler_obj.wfile.write(resp_bytes)
+    if method != "HEAD":
+        handler_obj.wfile.write(resp_bytes)
     handler_obj.wfile.flush()
 
     # 5. AUDIT LOG & CONSOLE OUTPUT
@@ -164,7 +211,7 @@ class MockCloudHandler(BaseHTTPRequestHandler):
 
     def do_HEAD(self):
         client_ip = self.client_address[0] if self.client_address else "127.0.0.1"
-        process_http_request(self, "GET", self.path, client_ip, dict(self.headers), b"", is_proxy=False)
+        process_http_request(self, "HEAD", self.path, client_ip, dict(self.headers), b"", is_proxy=False)
 
     def do_GET(self):
         client_ip = self.client_address[0] if self.client_address else "127.0.0.1"
@@ -217,7 +264,7 @@ class TLSProxyConnectionHandler(MockCloudHandler):
 
     def do_HEAD(self):
         client_ip = self.client_address[0] if self.client_address else "127.0.0.1"
-        process_http_request(self, "GET", self.path, client_ip, dict(self.headers), b"", is_proxy=True)
+        process_http_request(self, "HEAD", self.path, client_ip, dict(self.headers), b"", is_proxy=True)
 
     def do_GET(self):
         client_ip = self.client_address[0] if self.client_address else "127.0.0.1"

@@ -1,0 +1,15 @@
+# e2e: azure_event_hubs — kết nối qua proxy_url = mock server, AMQP 1.0 qua WebSocket + Blob lease
+input:
+  - type: azure_event_hubs
+    input_id: "e2e_event_hubs"
+    connection_string: "Endpoint=sb://mock-hub.servicebus.windows.net/;SharedAccessKeyName=RootKey;SharedAccessKey=mock_key==;EntityPath=insights-logs"
+    consumer_group: "$Default"
+    container_name: "insights-logs-checkpoints"
+    storage_account: "mockstorageaccount"
+    storage_account_key: "mock_storage_account_key_base64=="
+    proxy_url: "__MOCK_URL__"
+    log_type: "default"
+    add_field:
+      log_source_name: "e2e azure_event_hubs"
+output:
+  - type: stdout

@@ -268,19 +268,27 @@ class AdminApi:
                 code, res = pubsub_runner.publish(data)
                 return json_response(code or 502, res)
 
-        # 13. NGUỒN LUỒNG (SLS Alibaba): trạng thái + bơm thêm log
+        # 13. NGUỒN LUỒNG (SLS Alibaba, Azure Event Hubs): trạng thái + bơm thêm log
         if path.startswith("/mock/admin/api/streams"):
-            from . import sls_mock
+            from . import sls_mock, event_hubs_broker, azure_blob_mock
             try:
                 data = json.loads(body_str) if body_str else {}
             except json.JSONDecodeError as e:
                 return json_response(400, {"error": f"Invalid JSON payload: {e}"})
             if path == "/mock/admin/api/streams" and m == "GET":
-                return json_response(200, {"log_service_alibaba": sls_mock.snapshot()})
+                return json_response(200, {
+                    "log_service_alibaba": sls_mock.snapshot(),
+                    "azure_event_hubs": event_hubs_broker.snapshot(),
+                    "azure_blob": azure_blob_mock.snapshot(),
+                })
             if path == "/mock/admin/api/streams/sls/inject" and m == "POST":
                 if not data.get("project") or not data.get("logstore"):
                     return json_response(400, {"error": "Cần 'project' và 'logstore'"})
                 n = sls_mock.inject(data["project"], data["logstore"], int(data.get("count", 10)), {})
+                return json_response(200, {"success": True, "injected": n})
+            if path == "/mock/admin/api/streams/azure_event_hubs/inject" and m == "POST":
+                hub = data.get("hub") or data.get("hub_name") or "insights-logs"
+                n = event_hubs_broker.inject(hub, int(data.get("count", 10)))
                 return json_response(200, {"success": True, "injected": n})
 
         return json_response(404, {"error": "Admin API endpoint not found", "path": path})

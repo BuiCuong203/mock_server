@@ -17,7 +17,7 @@ Binary dùng để test: `../test-cym-log-shipper/cym-log-shipper` (cần `libru
 | 7 | `log_service_alibaba` | **Mới, xong** | 1296 event / 25s | `proxy_url`, HTTP thường |
 | 8 | `http` | **Mới, xong** | 50 event (5 request × 10) | Mock Sender POST vào cổng shipper |
 | 9 | `gcp_pubsub` | **Mới, xong** | 63/65 message (65 đã ack) | `PUBSUB_EMULATOR_HOST`, binary `pubsub_mock` |
-| 10 | `azure_event_hubs` | **CHƯA XONG** (xem mục 4) | – | – |
+| 10 | `azure_event_hubs` | **Mới, xong** (xem mục 4) | AMQP 1.0 qua WebSocket + Blob lease | `proxy_url`, HTTPS CONNECT |
 | 11 | `wmi` (input `msrpc`) | **CHƯA LÀM** (xem mục 5) | – | – |
 | + | `beats` (thêm ngày 17/10) | **Mới, xong** | 70/70 event (có nén + không nén); TLS 20/20 | Mock Sender giả làm Filebeat, Lumberjack v2 |
 
@@ -185,7 +185,7 @@ PUBSUB_GRPC_PORT=8085 e2e/run_e2e.sh gcp_pubsub 30                 # cần pubsu
 - Sinh lại: 4 file trong `datasets/`, các file `certs/server.*` và `certs/san.ext`.
 - Không đụng tới các thay đổi dở dang có sẵn trong `src/web_dashboard.py`, `.dockerignore`, `nexpose_mock/`, `snmpd-mock/`.
 
-## 4. CHƯA XONG: `azure_event_hubs`
+## 4. `azure_event_hubs` (Đã hoàn thiện)
 
 ### Shipper cần gì
 
@@ -194,31 +194,23 @@ Input này dùng Event Processor Host (SDK `azure-event-hubs-go` v3, bản đã 
 1. **AMQP 1.0 qua WebSocket**: `wss://<namespace>.servicebus.windows.net/$servicebus/websocket`, subprotocol `amqp`, đi qua `proxy_url` (CONNECT). Không có tuỳ chọn kết nối AMQP TCP thường.
 2. **Lease / checkpoint trên Blob Storage**: `https://<storage_account>.blob.core.windows.net/<container_name>/...`, cũng đi qua `proxy_url`.
 
-### Đã có
+### Kiến trúc Mock hoàn chỉnh
 
-- SAN cho hai domain trên đã nằm trong server cert của mock.
-- `src/amqp_codec.py`: mã hoá / giải mã kiểu dữ liệu và frame AMQP 1.0. Chưa test với client thật.
-- `src/azure_blob_mock.py`: Blob Storage trong RAM. Hỗ trợ container, block blob, lease (acquire / renew / change / release / break) và các điều kiện `If-None-Match` / `x-ms-lease-id`. Chưa test với client thật.
-- `streams/azure_event_hubs.json`: cấu hình hub (số partition, tốc độ, template dạng `{"records":[...]}`).
-
-### Còn thiếu
-
-- Trong `src/proxy_handler.py`:
-  - Chuyển request có Host `*.blob.core.windows.net` sang `azure_blob_mock.handle(...)`.
-  - Sửa HEAD để không ghi body.
-  - Chuyển request upgrade WebSocket của `*.servicebus.windows.net` sang broker.
-- Broker AMQP chạy trên WebSocket, gồm:
-  - SASL ANONYMOUS
-  - Phiên `$cbs` (put-token)
-  - Phiên `$management` (thông tin hub / partition)
-  - Receiver theo partition (selector offset / enqueued-time, epoch)
-- Admin API publish event, config `e2e/conf/azure_event_hubs.yml`.
-
-### Hướng thay thế không phải sửa shipper
-
-Tạo Event Hub thật trên Azure: namespace gói Basic/Standard, một hub, một Storage Account. Shipper chạy nguyên trạng.
-
-> Ghi chú: emulator chính chủ của Microsoft (Event Hubs Emulator + Azurite) chỉ nghe AMQP TCP ở cổng 5672, không nghe WebSocket trên domain thật, nên không dùng trực tiếp được với input này.
+- `src/event_hubs_broker.py`:
+  - Tiếp nhận WebSocket upgrade (HTTP 101 Switching Protocols, subprotocol `amqp`).
+  - Xử lý SASL handshake (ANONYMOUS, MSSBCBS, PLAIN).
+  - Khởi tạo session AMQP 1.0 (Open, Begin).
+  - Phiên `$cbs`: tiếp nhận put-token, trả về `status-code: 200 OK`.
+  - Phiên `$management`: trả về partition info (`com.microsoft:eventhub`, `com.microsoft:partition`).
+  - Partition streaming: gắn luồng `RateStream` cho từng partition theo cấu hình `streams/azure_event_hubs.json`, tự sinh sự kiện với batch `records` bọc trong AMQP message annotations (`x-opt-offset`, `x-opt-sequence-number`, `x-opt-enqueued-time`, `x-opt-partition-key`).
+- `src/azure_blob_mock.py`:
+  - Xử lý các request tới `*.blob.core.windows.net` (container create/list, block blob upload, lease acquire/renew/release/break).
+- `src/proxy_handler.py`:
+  - Bắt request `Upgrade: websocket` cho `*.servicebus.windows.net` và chuyển sang `event_hubs_broker`.
+  - Bắt request tới `*.blob.core.windows.net` và chuyển sang `azure_blob_mock`.
+- Admin API:
+  - `GET /mock/admin/api/streams`: xem trạng thái Event Hubs partitions & Blob containers.
+  - `POST /mock/admin/api/streams/azure_event_hubs/inject`: `{ "hub": "insights-logs", "count": 10 }`.
 
 ## 5. CHƯA LÀM: `wmi` (input `msrpc`)
 
