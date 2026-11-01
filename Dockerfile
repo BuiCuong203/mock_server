@@ -31,7 +31,7 @@ RUN if [ -f requirements.txt ]; then \
 # Copy toàn bộ source code
 COPY . .
 COPY --from=pubsub-builder /out/pubsub_mock /app/bin/pubsub_mock
-RUN chmod +x /app/run.sh /app/server.py /app/bin/pubsub_mock
+RUN sed -i 's/\r$//' /app/run.sh /app/server.py && chmod +x /app/run.sh /app/server.py /app/bin/pubsub_mock
 
 # Expose default port (HTTP mock + proxy) và gRPC GCP Pub/Sub
 EXPOSE 8081 8085

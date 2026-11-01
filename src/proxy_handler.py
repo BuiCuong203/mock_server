@@ -31,7 +31,8 @@ def process_http_request(
     parsed = urlparse(raw_path)
     path = parsed.path
     params = parse_qs(parsed.query)
-    host = headers.get("Host", "") or headers.get("host", "")
+    headers_ci = {k.lower(): v for k, v in headers.items()}
+    host = headers_ci.get("host", "")
     body_str = body_bytes.decode("utf-8", errors="ignore")
     now_str = time.strftime('%H:%M:%S')
 
@@ -58,10 +59,10 @@ def process_http_request(
         return
 
     # 2.1. AZURE EVENT HUBS WEBSOCKET UPGRADE (*.servicebus.windows.net)
-    upgrade = headers.get("Upgrade", "") or headers.get("upgrade", "")
+    upgrade = headers_ci.get("upgrade", "")
     host_no_port = host.split(":")[0].lower()
     if upgrade.lower() == "websocket" and (host_no_port.endswith(".servicebus.windows.net") or "/$servicebus/websocket" in raw_path):
-        ws_key = headers.get("Sec-WebSocket-Key") or headers.get("sec-websocket-key", "")
+        ws_key = headers_ci.get("sec-websocket-key", "").strip()
         accept_key = base64.b64encode(hashlib.sha1((ws_key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").encode()).digest()).decode()
         handler_obj.send_response(101, "Switching Protocols")
         handler_obj.send_header("Upgrade", "websocket")
@@ -71,7 +72,7 @@ def process_http_request(
         handler_obj.end_headers()
         handler_obj.wfile.flush()
         tag = f"[{'PROXY' if is_proxy else 'DIRECT'}]"
-        print(f"[{now_str}] {GREEN}{tag} [WS UPGRADE 101]{RESET} {BOLD}{raw_path}{RESET} (Host: {host}) -> {CYAN}event_hubs_broker{RESET}")
+        print(f"[{now_str}] {GREEN}{tag} [WS UPGRADE 101]{RESET} {BOLD}{raw_path}{RESET} (Host: {host}, Key: {ws_key} -> Accept: {accept_key}) -> {CYAN}event_hubs_broker{RESET}")
         event_hubs_broker.handle_websocket(handler_obj.connection, host_no_port)
         handler_obj.close_connection = True
         return

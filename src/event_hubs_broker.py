@@ -170,12 +170,13 @@ def send_ws_frame(sock: socket.socket, data: bytes, opcode: int = 2):
 
 # ------------------------------------------------------------------ AMQP Session over WebSocket
 class _Link:
-    def __init__(self, handle: int, name: str, role: bool, source_addr: str, target_addr: str, filter_map: Any = None):
+    def __init__(self, handle: int, name: str, role: bool, source_addr: str, target_addr: str, channel: int = 0, filter_map: Any = None):
         self.handle = handle
         self.name = name
         self.role = role  # vai trò phía server: True = server là receiver, False = server là sender
         self.source_addr = source_addr
         self.target_addr = target_addr
+        self.channel = channel
         self.filter_map = filter_map
         self.credit = 0
         self.delivery_count = 0
@@ -241,10 +242,13 @@ class EventHubsSession:
                 if opcode == 2 or opcode == 0:  # Binary (hoặc continuation)
                     self.in_buf.extend(payload)
                     self._process_amqp_buffer()
-        except (socket.timeout, ConnectionResetError, BrokenPipeError) as e:
-            pass
+        except socket.timeout:
+            print(f"[EVENT_HUBS] Socket TIMEOUT (60s không có dữ liệu từ client)")
+        except (ConnectionResetError, BrokenPipeError) as e:
+            print(f"[EVENT_HUBS] Client ngắt kết nối TCP/WS: {e}")
         except Exception as e:
-            print(f"[EVENT_HUBS] Lỗi phiên AMQP: {e}")
+            import traceback
+            print(f"[EVENT_HUBS] Lỗi phiên AMQP: {e}\n{traceback.format_exc()}")
         finally:
             self.running = False
             with _config_lock:
@@ -267,8 +271,8 @@ class EventHubsSession:
                 if proto_id == 3:  # SASL
                     # Đáp lại SASL header
                     self.send_raw_amqp(b"AMQP\x03\x01\x00\x00")
-                    # Gửi sasl-mechanisms (descriptor 0x40)
-                    mechs = Described(ULong(0x40), [[Sym("ANONYMOUS"), Sym("MSSBCBS"), Sym("PLAIN")]])
+                    # Gửi sasl-mechanisms (descriptor 0x40, field 0: array of symbols)
+                    mechs = Described(ULong(0x40), [codec.Array([Sym("ANONYMOUS"), Sym("MSSBCBS"), Sym("PLAIN")], kind="sym")])
                     self.send_amqp_frame(channel=0, performative=mechs, frame_type=codec.FRAME_SASL)
                     continue
 
@@ -335,11 +339,21 @@ class EventHubsSession:
             source = codec.field(val, 5)
             target = codec.field(val, 6)
 
-            src_addr = source.value[0] if (source and isinstance(source.value, list) and source.value) else ""
-            tgt_addr = target.value[0] if (target and isinstance(target.value, list) and target.value) else ""
+            src_addr = ""
+            tgt_addr = ""
+            if source and isinstance(source, Described):
+                src_addr = source.value[0] if (isinstance(source.value, list) and source.value and source.value[0] is not None) else ""
+            if target and isinstance(target, Described):
+                tgt_addr = target.value[0] if (isinstance(target.value, list) and target.value and target.value[0] is not None) else ""
+
+            src_addr = str(src_addr) if src_addr else ""
+            tgt_addr = str(tgt_addr) if tgt_addr else ""
+
+            print(f"[EVENT_HUBS] ATTACH handle={handle} name={name!r} role={'client-receiver' if role else 'client-sender'} src={src_addr!r} tgt={tgt_addr!r} ch={channel}")
 
             server_role = not role
-            link = _Link(handle, name, server_role, src_addr, tgt_addr)
+            link = _Link(handle, name, server_role, src_addr, tgt_addr, channel=channel)
+            link.credit = 200  # Cấp credit khởi tạo ngay
             self.links[handle] = link
 
             # Phản hồi attach
@@ -355,27 +369,33 @@ class EventHubsSession:
             if not role:
                 flow = Described(ULong(0x13), [
                     UInt(self.next_incoming_id), UInt(5000), UInt(self.next_outgoing_id), UInt(5000),
-                    UInt(handle), UInt(0), UInt(100), UInt(0), False, False
+                    UInt(handle), UInt(0), UInt(200), UInt(0), False, False
                 ])
                 self.send_amqp_frame(channel=channel, performative=flow)
+                print(f"[EVENT_HUBS] -> Gửi FLOW credit=200 cho client sender handle={handle}")
 
-            # Nếu client là RECEIVER:
+            # Nếu client là RECEIVER (server là SENDER = gửi log đến client):
             if role:
                 if src_addr == "$cbs":
                     self.cbs_rx_handle = handle
-                elif src_addr == "$management":
-                    self.mgmt_rx_handle = handle
+                    print(f"[EVENT_HUBS] CBS receiver handle={handle}")
                 elif "Partitions/" in src_addr:
                     # Link nhận log partition (ví dụ: "insights-logs/ConsumerGroups/$Default/Partitions/0")
                     link.is_partition = True
                     parts = src_addr.strip("/").split("/")
-                    link.hub_name = parts[0]
-                    link.consumer_group = parts[2] if len(parts) >= 3 else "$Default"
+                    link.hub_name = parts[0] if parts else "insights-logs"
+                    # parts[2] = ConsumerGroups, parts[3] = $Default, parts[4] = Partitions, parts[5] = id
+                    # Pattern: hub/ConsumerGroups/group/Partitions/id
+                    if "ConsumerGroups" in parts:
+                        cg_idx = parts.index("ConsumerGroups")
+                        link.consumer_group = parts[cg_idx + 1] if cg_idx + 1 < len(parts) else "$Default"
                     link.partition_id = parts[-1]
                     link.stream, link.conf = get_stream(link.hub_name, link.partition_id)
 
                     # Đọc filter nếu có (x-opt-offset / x-opt-enqueuedtimeutc)
-                    filter_map = source.value[7] if (source and len(source.value) > 7) else None
+                    filter_map = None
+                    if source and isinstance(source, Described) and isinstance(source.value, list) and len(source.value) > 7:
+                        filter_map = source.value[7]
                     link.filter_map = filter_map
                     start_off = 0
                     if filter_map and isinstance(filter_map, dict):
@@ -386,15 +406,32 @@ class EventHubsSession:
                                 start_off = int(m_off.group(1)) + 1
                     link.current_seq = start_off
                     self.partition_links.append(link)
-                    print(f"[EVENT_HUBS] Client mở Partition Receiver: {src_addr} (bắt đầu seq={start_off})")
+                    print(f"[EVENT_HUBS] Partition Receiver: {src_addr} hub={link.hub_name} partition={link.partition_id} start_seq={start_off}")
+                else:
+                    # management hoặc $cbs reply-to link
+                    if src_addr and "$management" not in src_addr and "$cbs" not in src_addr:
+                        # Có thể là dynamic reply-to link
+                        pass
+                    self.mgmt_rx_handle = handle
+                    print(f"[EVENT_HUBS] Management/reply-to receiver: handle={handle} src={src_addr!r}")
 
         elif code == 0x13:  # flow
             handle = codec.field(val, 4)
             credit = codec.field(val, 6)
+            delivery_count = codec.field(val, 7)  # delivery-count of receiver
             if handle is not None and credit is not None:
                 h = int(handle)
                 if h in self.links:
-                    self.links[h].credit += int(credit)
+                    # AMQP 1.0: sender available credit = (receiver_delivery_count + link_credit) - sender_delivery_count
+                    # go-amqp thường gửi link-credit là giá trị muốn thêm (additive),
+                    # set credit = giá trị tuyệt đối từ flow để đảm bảo không bị stuck
+                    old = self.links[h].credit
+                    self.links[h].credit = int(credit)  # set tuyệt đối thay vì cộng thêm
+                    print(f"[EVENT_HUBS] FLOW handle={h} credit={credit} (old={old}) -> credit set to {self.links[h].credit}")
+            elif credit is not None:
+                for l in self.partition_links:
+                    l.credit = int(credit)
+                    print(f"[EVENT_HUBS] FLOW (no handle) credit={credit} -> all partition links credit={l.credit}")
 
         elif code == 0x14:  # transfer
             handle = int(codec.field(val, 0, 0))
@@ -440,7 +477,7 @@ class EventHubsSession:
                     val_data = {
                         "name": name,
                         "partition_count": Int(p_count),
-                        "partition_ids": p_ids,
+                        "partition_ids": codec.Array(p_ids, kind="str"),
                         "created_at": Timestamp(int(time.time() * 1000))
                     }
                 else:  # com.microsoft:partition
@@ -455,7 +492,14 @@ class EventHubsSession:
                         "is_partition_empty": False
                     }
 
-                if self.mgmt_rx_handle is not None:
+                rx_h = self.mgmt_rx_handle
+                if rx_h is None:
+                    for h, l in self.links.items():
+                        if not l.role and not l.is_partition and h != self.cbs_rx_handle:
+                            rx_h = h
+                            break
+
+                if rx_h is not None:
                     resp_payload = codec.encode_message(
                         properties={"correlation-id": req_msg_id},
                         app_props={"status-code": Int(200), "status-description": "OK"},
@@ -463,7 +507,7 @@ class EventHubsSession:
                     )
                     self.delivery_id_seq += 1
                     transfer = Described(ULong(0x14), [
-                        UInt(self.mgmt_rx_handle), UInt(self.delivery_id_seq),
+                        UInt(rx_h), UInt(self.delivery_id_seq),
                         struct.pack(">I", self.delivery_id_seq), UInt(0), True
                     ])
                     self.send_amqp_frame(channel=channel, performative=transfer, payload=resp_payload)
@@ -471,23 +515,56 @@ class EventHubsSession:
 
         elif code == 0x16:  # detach
             handle = codec.field(val, 0)
+            closed = codec.field(val, 1, True)
             if handle is not None:
-                detach_resp = Described(ULong(0x16), [UInt(int(handle)), True])
+                h = int(handle)
+                detach_resp = Described(ULong(0x16), [UInt(h), closed])
                 self.send_amqp_frame(channel=channel, performative=detach_resp)
+                print(f"[EVENT_HUBS] DETACH handle={h} closed={closed} ch={channel}")
+                if h in self.links:
+                    del self.links[h]
+
+        elif code == 0x17:  # end (session)
+            end_resp = Described(ULong(0x17), [])
+            self.send_amqp_frame(channel=channel, performative=end_resp)
+            print(f"[EVENT_HUBS] Session END ch={channel}")
 
         elif code == 0x18:  # close
             close_resp = Described(ULong(0x18), [])
             self.send_amqp_frame(channel=channel, performative=close_resp)
             self.running = False
+            print(f"[EVENT_HUBS] Connection CLOSE ch={channel}")
+
+        else:
+            print(f"[EVENT_HUBS] Performative: code=0x{code:02x} ch={channel} val={val!r}")
 
     def _partition_streaming_loop(self):
         """Vòng lặp sinh và bắn event cho các partition receiver có credit."""
+        log_counter = 0
         while self.running:
             sent_any = False
             for link in list(self.partition_links):
                 if not self.running:
                     break
-                if not link.is_partition or link.credit <= 0 or not link.stream:
+                if not link.is_partition or not link.stream:
+                    continue
+
+                # Log trạng thái định kỳ
+                if log_counter % 50 == 0:
+                    print(f"[EVENT_HUBS] Stream status: hub={link.hub_name} p={link.partition_id} credit={link.credit} seq={link.current_seq} available={link.stream.available()}")
+
+                if link.credit <= 0:
+                    # Gửi flow để yêu cầu credit nếu bị cạn
+                    # Server (sender) gửi FLOW với link-credit=0 để báo trạng thái và client sẽ gửi credit mới
+                    try:
+                        flow_frame = Described(ULong(0x13), [
+                            UInt(self.next_incoming_id), UInt(5000),
+                            UInt(self.next_outgoing_id), UInt(5000),
+                            UInt(link.handle), UInt(link.current_seq), UInt(0), UInt(link.current_seq), False, True
+                        ])
+                        self.send_amqp_frame(channel=link.channel, performative=flow_frame)
+                    except Exception:
+                        pass
                     continue
 
                 available = link.stream.available()
@@ -520,18 +597,30 @@ class EventHubsSession:
                     )
 
                     self.delivery_id_seq += 1
+                    # Transfer frame fields: [handle, delivery-id, delivery-tag, message-format, settled, more]
+                    # settled=True: server tự confirm, không cần disposition từ client
+                    # more=False (không set = mặc định False): đây là frame cuối của message
+                    delivery_tag = bytes([0, 0, (self.delivery_id_seq >> 8) & 0xFF, self.delivery_id_seq & 0xFF])
                     transfer = Described(ULong(0x14), [
                         UInt(link.handle), UInt(self.delivery_id_seq),
-                        struct.pack(">I", self.delivery_id_seq), UInt(0), False
+                        delivery_tag,  # delivery-tag
+                        UInt(0),       # message-format
+                        True           # settled=True
                     ])
-                    self.send_amqp_frame(channel=0, performative=transfer, payload=msg_payload)
-                    link.credit -= 1
-                    link.current_seq += 1
-                    sent_any = True
-                    print(f"[EVENT_HUBS] Bắn event seq={link.current_seq - 1} vào {link.hub_name}/p{link.partition_id} ({len(records)} log records)")
+                    try:
+                        self.send_amqp_frame(channel=link.channel, performative=transfer, payload=msg_payload)
+                        link.credit -= 1
+                        link.current_seq += 1
+                        sent_any = True
+                        print(f"[EVENT_HUBS] TX seq={link.current_seq - 1} hub={link.hub_name}/p{link.partition_id} records={len(records)} credit_left={link.credit}")
+                    except Exception as e:
+                        print(f"[EVENT_HUBS] Lỗi gửi transfer: {e}")
+                        self.running = False
+                        break
 
+            log_counter += 1
             if not sent_any:
-                time.sleep(0.1)
+                time.sleep(0.2)
 
 
 def handle_websocket(sock: socket.socket, host: str):

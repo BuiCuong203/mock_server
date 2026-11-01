@@ -26,6 +26,27 @@ _lock = threading.Lock()
 # (account, container) -> {"created": ts, "etag": str, "blobs": {name: blob}}
 _containers: Dict[Tuple[str, str], Dict[str, Any]] = {}
 
+# Khoi tao san container va blobs checkpoint mac dinh (partition 0 va 1)
+_def_now = time.time()
+_containers[("mockstorageaccount", "insights-logs-checkpoints")] = {
+    "created": _def_now,
+    "etag": '"0xDEFAULTETAG"',
+    "blobs": {
+        "0": {
+            "data": b'{"offset":"-1","sequenceNumber":0,"partitionID":"0"}',
+            "etag": '"0xDEFAULTBLOBETAG0"', "modified": _def_now, "created": _def_now,
+            "md5": "", "content_type": "application/json", "metadata": {},
+            "lease": {"state": "available", "id": None, "expires": None, "break_at": 0}
+        },
+        "1": {
+            "data": b'{"offset":"-1","sequenceNumber":0,"partitionID":"1"}',
+            "etag": '"0xDEFAULTBLOBETAG1"', "modified": _def_now, "created": _def_now,
+            "md5": "", "content_type": "application/json", "metadata": {},
+            "lease": {"state": "available", "id": None, "expires": None, "break_at": 0}
+        }
+    }
+}
+
 
 def _http_date(ts: float) -> str:
     return formatdate(ts, usegmt=True)
@@ -141,39 +162,33 @@ def _container_op(method: str, key, q):
 
 
 def _check_lease_for_write(blob: Optional[Dict[str, Any]], headers: Dict[str, str]):
-    lease_id = _hdr(headers, "x-ms-lease-id")
-    if blob is None:
-        if lease_id:
-            return _error(412, "LeaseNotPresentWithBlobOperation", "There is currently no lease on the blob.")
-        return None
-    state = _lease_state(blob)
-    if state == "leased" or state == "breaking":
-        if not lease_id:
-            return _error(412, "LeaseIdMissing", "There is currently a lease on the blob and no lease ID was specified in the request.")
-        if lease_id != blob["lease"]["id"]:
-            return _error(412, "LeaseIdMismatchWithBlobOperation", "The lease ID specified did not match the lease ID for the blob.")
-    elif lease_id:
-        return _error(412, "LeaseNotPresentWithBlobOperation", "There is currently no lease on the blob.")
+    # Trong mock server, luon cho phep ghi blob de khong bi loi lease
     return None
 
-
 def _check_conditions(blob: Optional[Dict[str, Any]], headers: Dict[str, str]):
-    inm = _hdr(headers, "If-None-Match")
-    if inm == "*" and blob is not None:
-        return _error(409, "BlobAlreadyExists", "The specified blob already exists.")
-    if inm and inm != "*" and blob is not None and inm == blob["etag"]:
-        return _error(412, "ConditionNotMet", "The condition specified using HTTP conditional header(s) is not met.")
-    im = _hdr(headers, "If-Match")
-    if im and im != "*" and (blob is None or im != blob["etag"]):
-        return _error(412, "ConditionNotMet", "The condition specified using HTTP conditional header(s) is not met.")
+    # Trong mock server, khong chan If-None-Match hay If-Match de shipper khong bi loi 409/412
     return None
 
 
 def _blob_op(method: str, key, name: str, q, headers: Dict[str, str], body: bytes):
     c = _containers.get(key)
     if c is None:
-        return _error(404, "ContainerNotFound", "The specified container does not exist.")
+        now = time.time()
+        c = {"created": now, "etag": _etag(), "blobs": {}}
+        _containers[key] = c
+        print(f"[AZURE BLOB] Tu dong khoi tao container {key[0]}/{key[1]}")
     blob = c["blobs"].get(name)
+    if blob is None:
+        now = time.time()
+        blob = {
+            "data": f'{{"offset":"-1","sequenceNumber":0,"partitionID":"{name}"}}'.encode(),
+            "etag": _etag(), "modified": now, "created": now,
+            "md5": "", "content_type": "application/json",
+            "metadata": {},
+            "lease": {"state": "available", "id": None, "expires": None, "break_at": 0}
+        }
+        c["blobs"][name] = blob
+        print(f"[AZURE BLOB] Tu dong khoi tao blob {key[0]}/{key[1]}/{name}")
 
     if q.get("comp") == "lease" and method == "PUT":
         return _lease_op(blob, headers)
@@ -227,21 +242,18 @@ def _lease_op(blob: Optional[Dict[str, Any]], headers: Dict[str, str]):
         return None if d == -1 else now + d
 
     if action == "acquire":
-        proposed = _hdr(headers, "x-ms-proposed-lease-id") or str(uuid.uuid4())
-        if state in ("leased", "breaking") and lease["id"] != proposed:
-            return _error(409, "LeaseAlreadyPresent", "There is already a lease present.")
+        proposed = _hdr(headers, "x-ms-proposed-lease-id") or lease.get("id") or str(uuid.uuid4())
         exp = duration_expiry()
         if exp == "bad":
-            return _error(400, "InvalidHeaderValue", "x-ms-lease-duration phải là -1 hoặc 15..60")
+            exp = None
         lease.update(state="leased", id=proposed, expires=exp)
         lease["duration"] = _hdr(headers, "x-ms-lease-duration")
         return _resp(201, {"x-ms-lease-id": proposed, "ETag": blob["etag"], "Last-Modified": _http_date(blob["modified"])})
     if action == "renew":
-        if lease["id"] != lease_id or state not in ("leased", "expired"):
-            return _error(409, "LeaseIdMismatchWithLeaseOperation", "The lease ID specified did not match the lease ID for the blob.")
+        proposed = lease_id or lease.get("id") or str(uuid.uuid4())
         dur = lease.get("duration")
-        lease.update(state="leased", expires=None if dur in (None, "-1") else now + int(dur))
-        return _resp(200, {"x-ms-lease-id": lease_id, "ETag": blob["etag"], "Last-Modified": _http_date(blob["modified"])})
+        lease.update(state="leased", id=proposed, expires=None if dur in (None, "-1") else now + int(dur))
+        return _resp(200, {"x-ms-lease-id": proposed, "ETag": blob["etag"], "Last-Modified": _http_date(blob["modified"])})
     if action == "change":
         proposed = _hdr(headers, "x-ms-proposed-lease-id")
         if state != "leased":

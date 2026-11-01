@@ -2,19 +2,10 @@
 .server.pid
 server.log
 *.log
-**/*.tar.gz
 __pycache__
 *.pyc
-*.7z
-**/*.bak
-**/*.bak-*
-
-# Dữ liệu mount từ ngoài (xem volumes trong docker-compose.yml) -> không đóng vào image
-certs
-fixtures
-rules
-scenarios
-datasets
+*.bak
+*.bak-*
 
 # Nexpose / Rapid7 mock: không đóng vào image (nặng, chạy riêng)
 nexpose_mock
@@ -26,3 +17,25 @@ pubsub_mock/pubsub_mock
 
 # binary build sẵn trên máy (image tự build pubsub_mock ở stage riêng)
 bin/
+
+# File nén và archive
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Các file dataset cực lớn (> 5MB) để giữ image gọn nhẹ
+datasets/cloudwatch_large.json
+datasets/defender_large.json
+datasets/m365_large.json
+datasets/azure_directory_audits.json
+datasets/azure_large.json
+datasets/s3_cloudtrail.json
+datasets/rest_kafka_demo.json
+datasets/defender_seed.json
+datasets/rest_large.json
+
+# Scratch files
+scratch_parse.py
+update_container.sh
+build_on_vps.sh

@@ -99,8 +99,8 @@ def encode(v: Any) -> bytes:
 
 
 _ARRAY_CTORS = {
-    "sym": (b"\xb3", lambda x: struct.pack(">I", len(x.encode())) + x.encode()),
-    "str": (b"\xb1", lambda x: struct.pack(">I", len(x.encode("utf-8"))) + x.encode("utf-8")),
+    "sym": (b"\xa3", lambda x: bytes([len(x.encode("ascii", "replace"))]) + x.encode("ascii", "replace")),
+    "str": (b"\xa1", lambda x: bytes([len(x.encode("utf-8"))]) + x.encode("utf-8")),
     "uint": (b"\x70", lambda x: struct.pack(">I", x)),
     "ulong": (b"\x80", lambda x: struct.pack(">Q", x)),
     "long": (b"\x81", lambda x: struct.pack(">q", x)),
@@ -111,6 +111,8 @@ _ARRAY_CTORS = {
 def _encode_array(a: Array) -> bytes:
     ctor, enc = _ARRAY_CTORS[a.kind]
     body = ctor + b"".join(enc(x) for x in a.items)
+    if len(body) + 1 < 256 and len(a.items) < 256:
+        return b"\xe0" + bytes([len(body) + 1, len(a.items)]) + body
     return b"\xf0" + struct.pack(">II", len(body) + 4, len(a.items)) + body
 
 
